@@ -15,13 +15,19 @@
     <script type="module" src="/src/main.js"></script>
   </head>
   <body>
-    <a href="/src/pages/hyongju/components/Navitems.html">1</a>
-    <a href="/src/pages/hyongju/components/back.html">1</a>
-    <a href="/src/pages/hyongju/components/time&cellular.html">1</a>
-    <a href="/src/pages/hyongju/components/button.html">1</a>
-    <a href="/src/pages/hyongju/components/category.html">1</a>
-    <a href="/src/pages/hyongju/components/signupNumber.html">1</a>
-    <a href="/src/pages/hyongju/components/signupText.html">1</a>
-    <a href="/src/pages/hyongju/components/start.html">1</a>
+    <div class="max-w-md mx-auto p-4">
+     
+      <div class="mb-4">
+        <div class="relative">
+          <input
+            type="tel"
+            id="number"
+            class="w-full px-3 py-2 rounded border border-black text-sm font-['Pretendard'] focus:ring-black"
+            placeholder="인증번호 입력"
+            pattern="[0-9]{6}"
+            maxlength="6"
+          />
+        </div>
+      </div>
   </body>
 </html>
