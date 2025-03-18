@@ -1,4 +1,90 @@
 @import "tailwindcss";
 
 @theme {
+  /* font */
+  --font-sans: "pretendard" sans-serif;
+
+  --text-xxxl: 2.7625rem;
+  --text-xxl: 2.075rem;
+  --text-xl: 1.5562rem;
+  --text-l: 1.1687rem;
+  --text-m: 0.875rem;
+  --text-s: 0.6563rem;
+  --text-underline: 0.625rem;
+
+  /* spacing */
+  --spacing-52: 3.25rem;
+  --spacing-60: 3.75rem;
+
+  /* Foundation 색상 */
+  --color-primary: #373f67;
+  --color-secondary: #5a88ee;
+  --color-tertiary: #719c77;
+  --color-negative: #ef4444;
+  --color-background: #ffffff;
+
+  /* Contents 색상 */
+  --color-content-primary: #000000;
+  --color-content-secondary: #919191;
+  --color-content-tertiary: #9da1b4;
+
+  /* media 중단점 */
+  --breakpoint-*: initial;
+  --breakpoint-sm: 37.5rem;
+  --breakpoint-md: 71rem;
+}
+
+@layer components {
+  /* 헤딩 스타일  */
+  .headding-xxxl {
+    @apply text-[44.2px] text-(--color-content-primary) font-bold leading-[140%] font-sans;
+  }
+  .headding-xxl {
+    @apply text-[33.2px] text-(--color-content-primary) font-bold leading-[140%] font-sans;
+  }
+  .headding-xl {
+    @apply text-[24.9px] text-(--color-content-primary) font-bold leading-[140%] font-sans;
+  }
+  .headding-l {
+    @apply text-[18.7px] text-(--color-content-primary) font-bold leading-[140%] font-sans;
+  }
+  .headding-m {
+    @apply text-[14px] text-(--color-content-primary) font-bold leading-[140%] font-sans;
+  }
+  .headding-s {
+    @apply text-[10.5px] text-(--color-content-primary) font-bold leading-[140%] font-sans;
+  }
+
+  /* 라벨 스타일 */
+  .label-xxl {
+    @apply text-[33.2px] text-(--color-content-primary) font-semibold leading-[150%] font-sans;
+  }
+  .label-xl {
+    @apply text-[24.9px] text-(--color-content-primary) font-semibold leading-[150%] font-sans;
+  }
+  .label-l {
+    @apply text-[18.7px] text-(--color-content-primary) font-semibold leading-[150%] font-sans;
+  }
+  .label-m {
+    @apply text-[14px] text-(--color-content-primary) font-semibold leading-[150%] font-sans;
+  }
+  .label-s {
+    @apply text-[10.5px] text-(--color-content-primary) font-semibold leading-[150%] font-sans;
+  }
+
+  .paragraph-xl {
+    @apply text-[24.9px] text-(--color-content-primary) font-normal leading-[160%] font-sans;
+  }
+  .paragraph-l {
+    @apply text-[24.9px] text-(--color-content-primary) font-normal leading-[160%] font-sans;
+  }
+  .paragraph-m {
+    @apply text-[14px] text-(--color-content-primary) font-normal leading-[160%] font-sans;
+  }
+  .paragraph-s {
+    @apply text-[10.5px] text-(--color-content-primary) font-normal leading-[160%] font-sans;
+  }
+  .paragraph-underline {
+    @apply text-[10px] text-(--color-content-primary) font-normal leading-[160%] font-sans;
+  }
 }
