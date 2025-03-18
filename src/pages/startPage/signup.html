@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>11조 위닝일레븐</title>
+    <link rel="icon" href="/vite.svg" />
+    <link
+      rel="preload"
+      as="font"
+      href="/font/woff2/PretendardVariable.woff2"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" as="style" href="/font/pretendardvariable.css" />
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body>
+    <div class="w-[320px] h-[693px] relative">
+      <div
+        class="px-[24px] pt-[8px] pb-[4px] bg-white inline-flex justify-end items-center gap-44"
+      >
+        <div
+          class="text-center justify-center text-black text-sm font-semibold font-['Pretendard']"
+        >
+          2:26
+        </div>
+        <div class="flex justify-center items-center">
+          <div class="w-6 h-4 relative">
+            <div
+              class="w-3.5 h-4 left-[10px] absolute bg-cover bg-[url('./assets/celluar.svg')]"
+            ></div>
+          </div>
+          <div class="flex justify-center items-center gap-0.5">
+            <div class="w-6 h-6 relative">
+              <div
+                class="w-6 h-6 absolute bg-cover bg-[url('./assets/lte.svg')]"
+              ></div>
+            </div>
+            <div class="w-6 h-5 relative">
+              <div
+                class="w-5 h-5 absolute bg-cover bg-[url('./assets/battery.svg')]"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="mt-[18px] pl-[12px] pr-[12px] py-[8px] bg-white flex justify-start items-center gap-1 w-full"
+      >
+        <button class="w-5 h-5 relative">
+          <a
+            href="./start.html"
+            class="w-5 h-5 relative block"
+            aria-label="메인 페이지로 이동"
+          >
+            <div
+              class="w-5 h-5 top-[2px] absolute bg-[url('./assets/direction=left.svg')] bg-cover"
+            ></div>
+          </a>
+        </button>
+      </div>
+
+      <!-- 가로로 표시되도록 수정한 인사말 섹션 -->
+      <div class="px-4 py-3 bg-white">
+        <div class="flex flex-row items-center justify-between">
+          <div>
+            <h1
+              class="text-black text-lg font-semibold font-['Pretendard'] leading-7"
+            >
+              안녕하세요!
+              <br />휴대폰 번호로 가입해주세요.
+            </h1>
+            <p
+              class="text-black text-xs font-normal font-['Pretendard'] mt-1 max-w-[250px]"
+            >
+              휴대폰 번호는 안전하게 보관되며 서로에게 공개되지 않아요.
+            </p>
+          </div>
+          <div class="flex-shrink-0">
+            <!-- 필요한 경우 이미지나 아이콘 추가 가능 -->
+          </div>
+        </div>
+      </div>
+
+      <!-- 전화번호 입력 폼 -->
+      <div class="px-4 py-3 mt-4">
+        <div class="">
+          <input
+            type="tel"
+            placeholder="휴대폰 번호 ( - 없이 숫자만 입력)"
+            class="phone-input w-full pl-3 py-2 border text-sm border-gray-400 rounded-lg focus:outline-none focus:ring-1 focus:ring-blue-500"
+          />
+
+          <!-- 키보드 컨테이너 -->
+          <div
+            class="keyboard-container hidden absolute bottom-0 left-0 right-0"
+          >
+            <div class="bg-gray-200 rounded-t-lg p-2 select-none">
+              <!-- 1, 2, 3 키 -->
+              <div class="flex justify-between mb-2">
+                <div
+                  class="w-[90px] h-12 bg-white rounded-lg border border-gray-300 flex items-center justify-center text-lg font-bold font-['Pretendard'] shadow-sm cursor-pointer hover:bg-gray-50 active:bg-gray-100 active:translate-y-0.5"
+                >
+                  1
+                </div>
+                <div
+                  class="w-[90px] h-12 bg-white rounded-lg border border-gray-300 flex items-center justify-center text-lg font-bold font-['Pretendard'] shadow-sm cursor-pointer hover:bg-gray-50 active:bg-gray-100 active:translate-y-0.5"
+                >
+                  2
+                </div>
+                <div
+                  class="w-[90px] h-12 bg-white rounded-lg border border-gray-300 flex items-center justify-center text-lg font-bold font-['Pretendard'] shadow-sm cursor-pointer hover:bg-gray-50 active:bg-gray-100 active:translate-y-0.5"
+                >
+                  3
+                </div>
+              </div>
+
+              <!-- 4, 5, 6 키 -->
+              <div class="flex justify-between mb-2">
+                <div
+                  class="w-[90px] h-12 bg-white rounded-lg border border-gray-300 flex items-center justify-center text-lg font-bold font-['Pretendard'] shadow-sm cursor-pointer hover:bg-gray-50 active:bg-gray-100 active:translate-y-0.5"
+                >
+                  4
+                </div>
+                <div
+                  class="w-[90px] h-12 bg-white rounded-lg border border-gray-300 flex items-center justify-center text-lg font-bold font-['Pretendard'] shadow-sm cursor-pointer hover:bg-gray-50 active:bg-gray-100 active:translate-y-0.5"
+                >
+                  5
+                </div>
+                <div
+                  class="w-[90px] h-12 bg-white rounded-lg border border-gray-300 flex items-center justify-center text-lg font-bold font-['Pretendard'] shadow-sm cursor-pointer hover:bg-gray-50 active:bg-gray-100 active:translate-y-0.5"
+                >
+                  6
+                </div>
+              </div>
+
+              <!-- 7, 8, 9 키 -->
+              <div class="flex justify-between mb-2">
+                <div
+                  class="w-[90px] h-12 bg-white rounded-lg border border-gray-300 flex items-center justify-center text-lg font-bold font-['Pretendard'] shadow-sm cursor-pointer hover:bg-gray-50 active:bg-gray-100 active:translate-y-0.5"
+                >
+                  7
+                </div>
+                <div
+                  class="w-[90px] h-12 bg-white rounded-lg border border-gray-300 flex items-center justify-center text-lg font-bold font-['Pretendard'] shadow-sm cursor-pointer hover:bg-gray-50 active:bg-gray-100 active:translate-y-0.5"
+                >
+                  8
+                </div>
+                <div
+                  class="w-[90px] h-12 bg-white rounded-lg border border-gray-300 flex items-center justify-center text-lg font-bold font-['Pretendard'] shadow-sm cursor-pointer hover:bg-gray-50 active:bg-gray-100 active:translate-y-0.5"
+                >
+                  9
+                </div>
+              </div>
+
+              <!-- 특수문자, 0, 삭제 키 -->
+              <div class="flex justify-between mb-2">
+                <div
+                  class="w-[90px] h-12 rounded-lg border-none flex items-center justify-center text-lg font-bold font-['Pretendard'] shadow-sm cursor-pointer hover:bg-gray-50 active:bg-gray-100 active:translate-y-0.5"
+                >
+                  +*#
+                </div>
+                <div
+                  class="w-[90px] h-12 bg-white rounded-lg border border-gray-300 flex items-center justify-center text-lg font-bold font-['Pretendard'] shadow-sm cursor-pointer hover:bg-gray-50 active:bg-gray-100 active:translate-y-0.5"
+                >
+                  0
+                </div>
+                <div
+                  class="flex w-[90px] h-12 rounded-lg border-none items-center justify-center text-lg font-bold font-['Pretendard'] shadow-sm cursor-pointer hover:bg-gray-50 active:bg-gray-100 active:translate-y-0.5"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2M3 12l6.414 6.414a2 2 0 001.414.586H19a2 2 0 002-2V7a2 2 0 00-2-2h-8.172a2 2 0 00-1.414.586L3 12z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          type="button"
+          class="w-full mt-4 py-2 border text-sm border-gray-400 rounded-lg text-neutral-400 font-['Pretendard'] font-medium"
+        >
+          인증번호 받기
+        </button>
+      </div>
+
+      <p class="flex justify-center items-center mt-1 text-xs text-black">
+        휴대폰 번호가 변경되었나요?
+        <a href="/" class="underline">이메일로 계정찾기</a>
+      </p>
+    </div>
+  </body>
+</html>

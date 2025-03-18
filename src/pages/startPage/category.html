@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>11조 위닝일레븐</title>
+    <link rel="icon" href="/vite.svg" />
+    <link
+      rel="preload"
+      as="font"
+      href="/font/woff2/PretendardVariable.woff2"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" as="style" href="/font/pretendardvariable.css" />
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body>
+    <div class="w-[320px] h-[693px] relative">
+      <div
+        class="px-[24px] pt-[8px] pb-[4px] bg-white inline-flex justify-end items-center gap-44"
+      >
+        <div
+          class="text-center justify-center text-black text-sm font-semibold font-['Pretendard']"
+        >
+          2:26
+        </div>
+        <div class="flex justify-center items-center">
+          <div class="w-6 h-4 relative">
+            <div
+              class="w-3.5 h-4 left-[10px] absolute bg-cover bg-[url('./assets/celluar.svg')]"
+            ></div>
+          </div>
+          <div class="flex justify-center items-center gap-0.5">
+            <div class="w-6 h-6 relative">
+              <div
+                class="w-6 h-6 absolute bg-cover bg-[url('./assets/lte.svg')]"
+              ></div>
+            </div>
+            <div class="w-6 h-5 relative">
+              <div
+                class="w-5 h-5 absolute bg-cover bg-[url('./assets/battery.svg')]"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="mt-[18px] pl-[12px] pr-[12px] py-[8px] bg-white flex justify-start items-center gap-1 w-full"
+      >
+        <button class="w-5 h-5 relative">
+          <a
+            href="./start.html"
+            class="w-5 h-5 relative block"
+            aria-label="메인 페이지로 이동"
+          >
+            <div
+              class="w-5 h-5 top-[2px] absolute bg-[url('./assets/direction=left.svg')] bg-cover"
+            ></div>
+          </a>
+        </button>
+        <div class="relative w-full flex items-center">
+          <div class="absolute left-2 w-4 h-4 flex items-center justify-center">
+            <div class="w-3 h-3 bg-[url('./assets/search.svg')] bg-cover"></div>
+          </div>
+          <input
+            type="text"
+            placeholder="분야 (이름)로 검색 ( ex.프론트)"
+            class="w-full pl-8 pr-4 py-1.5 border-b-[0.50px] border-neutral-400 text-sm font-['Pretendard'] focus:outline-none focus:border-blue-500"
+          />
+        </div>
+      </div>
+      <div class="flex p-3">
+        <button
+          type="button"
+          class="w-full py-2 bg-[#373f67] rounded-[8px] inline-flex justify-center items-center gap-2 hover:bg-[#2a3154] active:bg-[#1e2440]"
+        >
+          <div class="w-4 h-4 relative flex-shrink-0">
+            <div
+              class="w-5 h-5 absolute bg-[url('./assets/positionWhite.svg')] bg-cover bg-no-repeat"
+            ></div>
+          </div>
+          <span
+            class="text-white text-sm font-bold font-['Pretendard'] whitespace-nowrap"
+          >
+            관심분야 선택하기
+          </span>
+        </button>
+      </div>
+
+      <div class="grid grid-cols-2 gap-3 px-3 pb-4 max-w-md">
+        <div class="relative">
+          <input
+            type="checkbox"
+            id="frontend"
+            class="category-checkbox peer sr-only"
+          />
+          <label for="frontend" class="category-label">
+            <div class="category-subtitle">프로그래밍</div>
+            <div class="category-title">
+              프론트엔드
+              <div class="icon-container">
+                <div class="plus-icon"></div>
+                <div class="check-icon"></div>
+              </div>
+            </div>
+          </label>
+        </div>
+
+        <div class="relative">
+          <input
+            type="checkbox"
+            id="backend"
+            class="category-checkbox peer sr-only"
+          />
+          <label for="backend" class="category-label">
+            <div class="category-subtitle">프로그래밍</div>
+            <div class="category-title">
+              백 엔드
+              <div class="icon-container">
+                <div class="plus-icon"></div>
+                <div class="check-icon"></div>
+              </div>
+            </div>
+          </label>
+        </div>
+
+        <div class="relative">
+          <input
+            type="checkbox"
+            id="react"
+            class="category-checkbox peer sr-only"
+          />
+          <label for="react" class="category-label">
+            <div class="category-subtitle">프로그래밍</div>
+            <div class="category-title">
+              리액트
+              <div class="icon-container">
+                <div class="plus-icon"></div>
+                <div class="check-icon"></div>
+              </div>
+            </div>
+          </label>
+        </div>
+
+        <div class="relative">
+          <input
+            type="checkbox"
+            id="fullstack"
+            class="category-checkbox peer sr-only"
+            checked
+          />
+          <label for="fullstack" class="category-label">
+            <div class="category-subtitle">프로그래밍</div>
+            <div class="category-title">
+              풀스택
+              <div class="icon-container">
+                <div class="plus-icon"></div>
+                <div class="check-icon"></div>
+              </div>
+            </div>
+          </label>
+        </div>
+
+        <div class="relative">
+          <input
+            type="checkbox"
+            id="algorithm"
+            class="category-checkbox peer sr-only"
+          />
+          <label for="algorithm" class="category-label">
+            <div class="category-subtitle">프로그래밍</div>
+            <div class="category-title">
+              알고리즘
+              <div class="icon-container">
+                <div class="plus-icon"></div>
+                <div class="check-icon"></div>
+              </div>
+            </div>
+          </label>
+        </div>
+
+        <div class="relative">
+          <input
+            type="checkbox"
+            id="basic"
+            class="category-checkbox peer sr-only"
+          />
+          <label for="basic" class="category-label">
+            <div class="category-subtitle">프로그래밍</div>
+            <div class="category-title">
+              기초지식
+              <div class="icon-container">
+                <div class="plus-icon"></div>
+                <div class="check-icon"></div>
+              </div>
+            </div>
+          </label>
+        </div>
+
+        <div class="relative">
+          <input
+            type="checkbox"
+            id="ui"
+            class="category-checkbox peer sr-only"
+            checked
+          />
+          <label for="ui" class="category-label">
+            <div class="category-subtitle">디자인</div>
+            <div class="category-title">
+              UI디자인
+              <div class="icon-container">
+                <div class="plus-icon"></div>
+                <div class="check-icon"></div>
+              </div>
+            </div>
+          </label>
+        </div>
+
+        <div class="relative">
+          <input
+            type="checkbox"
+            id="ux"
+            class="category-checkbox peer sr-only"
+            checked
+          />
+          <label for="ux" class="category-label">
+            <div class="category-subtitle">디자인</div>
+            <div class="category-title">
+              UX디자인
+              <div class="icon-container">
+                <div class="plus-icon"></div>
+                <div class="check-icon"></div>
+              </div>
+            </div>
+          </label>
+        </div>
+
+        <div class="relative">
+          <input
+            type="checkbox"
+            id="uiux"
+            class="category-checkbox peer sr-only"
+            checked
+          />
+          <label for="uiux" class="category-label">
+            <div class="category-subtitle">디자인</div>
+            <div class="category-title">
+              UI • UX
+              <div class="icon-container">
+                <div class="plus-icon"></div>
+                <div class="check-icon"></div>
+              </div>
+            </div>
+          </label>
+        </div>
+
+        <div class="relative">
+          <input
+            type="checkbox"
+            id="data-analysis"
+            class="category-checkbox peer sr-only"
+          />
+          <label for="data-analysis" class="category-label">
+            <div class="category-subtitle">데이터</div>
+            <div class="category-title">
+              데이터분석
+              <div class="icon-container">
+                <div class="plus-icon"></div>
+                <div class="check-icon"></div>
+              </div>
+            </div>
+          </label>
+        </div>
+
+        <div class="relative">
+          <input
+            type="checkbox"
+            id="statistics"
+            class="category-checkbox peer sr-only"
+          />
+          <label for="statistics" class="category-label">
+            <div class="category-subtitle">데이터</div>
+            <div class="category-title">
+              통계분석
+              <div class="icon-container">
+                <div class="plus-icon"></div>
+                <div class="check-icon"></div>
+              </div>
+            </div>
+          </label>
+        </div>
+
+        <div class="relative">
+          <input
+            type="checkbox"
+            id="visualization"
+            class="category-checkbox peer sr-only"
+          />
+          <label for="visualization" class="category-label">
+            <div class="category-subtitle">데이터</div>
+            <div class="category-title">
+              시각화
+              <div class="icon-container">
+                <div class="plus-icon"></div>
+                <div class="check-icon"></div>
+              </div>
+            </div>
+          </label>
+        </div>
+      </div>
+      <div class="flex p-3">
+        <button
+          type="button"
+          class="w-full py-2 bg-[#373f67] rounded-[8px] inline-flex justify-center items-center gap-1 hover:bg-[#2a3154] active:bg-[#1e2440]"
+        >
+          <span
+            class="text-white text-sm font-bold whitespace-nowrap font-['Pretendard']"
+          >
+            이대로 저장할래요
+          </span>
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
