@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>11조 위닝일레븐</title>
+    <link rel="icon" href="/vite.svg" />
+    <link rel="preload" as="font" href="/font/woff2/PretendardVariable.woff2" crossorigin="anonymous" />
+    <link rel="stylesheet" as="style" href="/font/pretendardvariable.css" />
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body>
+    <div class="bg-amber-700">
+      <!-- 버튼 컴포넌트 -->
+      <button class="bg-(--color-primary) p-2.5 rounded-full">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+          <path d="M22.1666 15.1643H15.1666V22.1643H12.8333V15.1643H5.83325V12.831H12.8333V5.83099H15.1666V12.831H22.1666V15.1643Z" fill="white" />
+        </svg>
+      </button>
+      <button class="bg-white p-2.5 rounded-full">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+          <path d="M22.1666 15.1643H15.1666V22.1643H12.8333V15.1643H5.83325V12.831H12.8333V5.83099H15.1666V12.831H22.1666V15.1643Z" fill="black" />
+        </svg>
+      </button>
+    </div>
+    <hr />
+    <!-- 버튼 아이템 -->
+    <div>
+      <button class="inline-flex w-27 justify-center items-center rounded-xl gap-0.5 px-5 py-2.5 bg-(--color-primary)">
+        <span class="label-m">🎈</span><span class="label-m text-white">text</span>
+      </button>
+      <button class="inline-flex w-27 justify-center items-center rounded-xl gap-0.5 px-5 py-2.5 bg-(--color-primary)">
+        <span class="label-m">🎧</span><span class="label-m text-white">text</span>
+      </button>
+      <button class="inline-flex w-27 justify-center items-center rounded-xl gap-0.5 bg-(--color-primary) px-5 py-2.5">
+        <span class="label-m">⌨️</span><span class="label-m text-white">text</span>
+      </button>
+      <button class="inline-flex w-27 justify-center items-center rounded-xl gap-0.5 bg-(--color-primary) px-5 py-2.5">
+        <span class="label-m">🖱️</span><span class="label-m text-white">text</span>
+      </button>
+      <button class="inline-flex w-27 justify-center items-center rounded-xl gap-0.5 bg-(--color-primary) px-5 py-2.5">
+        <span class="label-m">💻</span><span class="label-m text-white">text</span>
+      </button>
+    </div>
+    <hr />
+    <!-- 컴포넌트 영역 -->
+    <div class="flex flex-col-reverse items-end gap-3">
+      <button class="peer bg-(--color-primary) p-2.5 rounded-full focus:animate-spin">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+          <path d="M22.1666 15.1643H15.1666V22.1643H12.8333V15.1643H5.83325V12.831H12.8333V5.83099H15.1666V12.831H22.1666V15.1643Z" fill="white" />
+        </svg>
+      </button>
+      <ul class="hidden peer-focus:inline-flex flex-col gap-1">
+        <li>
+          <button class="inline-flex w-27 justify-center items-center rounded-xl gap-0.5 px-5 py-2.5 bg-(--color-primary)">
+            <span class="label-m">🎈</span><span class="label-m text-white">text</span>
+          </button>
+        </li>
+        <li>
+          <button class="inline-flex w-27 justify-center items-center rounded-xl gap-0.5 px-5 py-2.5 bg-(--color-primary)">
+            <span class="label-m">🎧</span><span class="label-m text-white">text</span>
+          </button>
+        </li>
+        <li>
+          <button class="inline-flex w-27 justify-center items-center rounded-xl gap-0.5 bg-(--color-primary) px-5 py-2.5">
+            <span class="label-m">⌨️</span><span class="label-m text-white">text</span>
+          </button>
+        </li>
+        <li>
+          <button class="inline-flex w-27 justify-center items-center rounded-xl gap-0.5 bg-(--color-primary) px-5 py-2.5">
+            <span class="label-m">🖱️</span><span class="label-m text-white">text</span>
+          </button>
+        </li>
+        <li>
+          <button class="inline-flex w-27 justify-center items-center rounded-xl gap-0.5 bg-(--color-primary) px-5 py-2.5">
+            <span class="label-m">💻</span><span class="label-m text-white">text</span>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
