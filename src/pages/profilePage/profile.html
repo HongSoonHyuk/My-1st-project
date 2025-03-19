@@ -302,7 +302,7 @@
       </div>
     </section>
     <!--받은 매너 평가 상세 -->
-    <section class="flex flex-col gap-3 py-3.5 pl-[.625rem]">
+    <section class="flex flex-col gap-3 py-3.5 px-3.5">
       <!-- 1 -->
       <article
         class="inline-flex items-start gap-[5px] font-[Pretendard] text-xs text-[#000] leading-4"
@@ -363,7 +363,7 @@
       </a>
     </div>
     <!-- 후기 내용 상세 -->
-    <section class="flex font-[Pretendard] px-2.5 pt-3.5 pb-5 justify-between">
+    <section class="flex font-[Pretendard] px-3.5 pt-3.5 pb-5 justify-between">
       <div class="flex">
         <span
           class="inline-block w-7 h-7 rounded-[50%] bg-(--color-content-secondary)"
@@ -394,7 +394,7 @@
     </section>
     <!-- 푸터 메뉴 -->
     <ul
-      class="flex flex-col paragraph-m border border-(--color-content-secondary) gap-[1.125rem] pt-4 pl-[1.125rem] pr-3 pb-[5.4375rem]"
+      class="flex flex-col paragraph-m border border-(--color-content-secondary) gap-[1.125rem] py-4 pl-[1.125rem] pr-3"
     >
       <li><a href="/">보관 질문</a></li>
       <li><a href="/">설정</a></li>
@@ -406,5 +406,72 @@
         <a href="/" class="text-(--color-secondary)">kimchihi</a>
       </li>
     </ul>
+    <!-- 하단 바 -->
+    <div
+      class="px-3.5 pt-[8px] pb-[24px] bg-white flex justify-between items-center gap-10"
+    >
+      <a href="/">
+        <div tabindex="0" class="flex flex-col justify-center items-center">
+          <div class="w-5 h-5 relative">
+            <div
+              class="w-5 h-5 absolute bg-[url('./assets/home.svg')] hover:bg-[url('./assets/fullHome.svg')] bg-cover"
+            ></div>
+          </div>
+          <div class="justify-center text-black text-[9px] font-['Pretendard']">
+            홈
+          </div>
+        </div>
+      </a>
+      <a href="/">
+        <div tabindex="0" class="flex flex-col justify-center items-center">
+          <div class="w-5 h-5 relative">
+            <div
+              class="w-5 h-5 absolute bg-[url('./assets/life.svg')] hover:bg-[url('./assets/fullFile.svg')] bg-cover"
+            ></div>
+          </div>
+          <div
+            class="justify-center text-black text-[8.9px] font-['Pretendard']"
+          >
+            게시판
+          </div>
+        </div>
+      </a>
+      <a href="/">
+        <div tabindex="0" class="flex flex-col justify-center items-center">
+          <div class="w-5 h-5 relative">
+            <div
+              class="w-5 h-5 absolute bg-[url('./assets/map.svg')] hover:bg-[url('./assets/fullMap.svg')] bg-cover"
+            ></div>
+          </div>
+          <div class="justify-center text-black text-[9px] font-['Pretendard']">
+            내 근처
+          </div>
+        </div>
+      </a>
+      <a href="/">
+        <div tabindex="0" class="flex flex-col justify-center items-center">
+          <div class="w-5 h-5 relative">
+            <div
+              class="w-5 h-5 absolute bg-[url('./assets/chat.svg')] hover:bg-[url('./assets/fullChat.svg')] bg-cover"
+            ></div>
+          </div>
+          <div class="justify-center text-black text-[9px] font-['Pretendard']">
+            채팅
+          </div>
+        </div>
+      </a>
+      <a href="/">
+        <div tabindex="0" class="flex flex-col justify-center items-center">
+          <div class="w-5 h-5 relative">
+            <div
+              class="w-5 h-5 absolute bg-[url('./assets/fullMy.svg')] bg-cover"
+            ></div>
+          </div>
+          <div class="justify-center text-black text-[9px] font-['Pretendard']">
+            나의 이듬
+          </div>
+        </div>
+      </a>
+    </div>
   </body>
 </html>
