@@ -15,36 +15,59 @@
     <link rel="stylesheet" href="/src/pages/yerin/components/styles/" />
     <script type="module" src="/src/main.js"></script>
   </head>
+      
+      <div
+      class="w-[320px] h-[104px] grid gap-x-2 grid-cols-[3fr_1fr] relative isolate p-3"
+    >
+      <section class="w-full max-w-[227px] h-[80px]">
+        <!-- 카테고리 -->
+        <div
+          class="bg-[#C4C7D2] text-white font-bold text-xs rounded-sm w-[68px] h-4 grid place-items-center px-2"
+        >
+          category
+        </div>
 
-      <div class="bg-white w-[320px] h-[104px] grid gap-x-2 grid-cols-[4fr_1fr] m-5 p-3 relative isolate">
-        <section class="w-[227px]">
-          <div class="bg-[#C4C7D2] text-white text-xs rounded-sm w-[68px] h-4 grid place-items-center">category</div>
-          <h2 class="truncate font-bold text-xs pt-1">제목</h2>
-          <p class="truncate text-xs text-[#B1B4C3] pt-1">내용</p>
-          <div class="text-xs text-[#B1B4C3] pt-2"><span>북가좌동 </span><span> · </span><span>2일전</span></div>
-        </section>
-        <!-- relative grid grid-rows-[auto_1fr] items-end -->
-        <div class="relative flex flex-col items-center shrink-0">
-          <figure class="bg-[#D9D9D9] w-[62px] h-[62px] rounded-sm grid place-items-center">
-            <img src="" alt="" />
-          </figure>
+        <!-- 제목 & 내용 -->
+        <h2 class="truncate font-bold text-sm pt-1">제목</h2>
+        <p class="truncate text-xs text-[#B1B4C3] pt-2">내용</p>
 
-         <ul class="absolute bottom-0 right-0 flex gap-2 self-end text-[#B1B4C3] text-xs">
-          <li class="flex items-center gap-0.5">
-              <img src="/src/pages/yerin/assets/thumbsup.svg" alt="좋아요 아이콘" class="w-4 h-4">
-              <p>2</p>
-          </li>
-          <li class="flex items-center gap-0.5">
-              <img src="/src/pages/yerin/assets/speech.svg" alt="댓글 아이콘" class="w-4 h-4">
-              <p>1</p>
-          </li>
-        </ul>
+        <!-- 위치 & 날짜 -->
+        <div class="text-xs text-[#B1B4C3] pt-2 font-bold flex gap-1">
+          <span>위치</span><span>·</span><span>날짜</span><span>·</span
+          ><span>조회</span>
+        </div>
+      </section>
+
+      <!-- 프로필 이미지 & 좋아요/댓글 -->
+      <div class="relative flex flex-col items-center">
+        <figure
+          class="bg-[#D9D9D9] w-[56px] h-[56px] rounded-sm grid place-items-center"
+        >
+          <img src="" alt="" />
+        </figure>
+
+        <!-- 좋아요 & 댓글 -->
+        <div class="flex gap-2 text-[#B1B4C3] text-xs mt-1">
+          <button class="flex items-center gap-1">
+            <img
+              src="/src/assets/thumbsup.svg"
+              alt="좋아요 아이콘"
+              class="w-4 h-4"
+            />
+            <p class="text-xs">2</p>
+          </button>
+
+          <button class="flex items-center gap-1">
+            <img
+              src="/src/assets/speech.svg"
+              alt="댓글 아이콘"
+              class="w-4 h-4"
+            />
+            <p class="text-xs">1</p>
+          </button>
+        </div>
       </div>
-<br />
-
-
-
-
-    
+    </div>
+      
   </body>
 </html>

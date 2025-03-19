@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>q&a</title>
+    <link rel="icon" href="/vite.svg" />
+    <link
+      rel="preload"
+      as="font"
+      href="/font/woff2/PretendardVariable.woff2"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" as="style" href="/font/pretendardvariable.css" />
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body>
+    <!--상단 글쓰기 지우기,완료버튼 -->
+    <header class="grid grid-cols-3 items-center w-[320px]">
+      <button type="button" class="flex items-center pl-3 w-8">
+        <img src="/src/assets/close.svg" alt="삭제하기" class="wp-11 h-11" />
+      </button>
+
+      <div class="text-center">
+        <h1 class="font-bold text-[var(--text-m: 0.875rem)]">Q&A 글쓰기</h1>
+      </div>
+
+      <nav class="flex justify-self-end gap-2">
+        <button type="button" class="pr-2">
+          <img src="/src/assets/finish.svg" alt="완료" />
+        </button>
+      </nav>
+    </header>
+    <!-- frontend 상단-->
+    <div
+      class="grid grid-cols-2 py-3 px-3 w-[320px] border-b-1 border-gray-400"
+    >
+      <h2 class="text-[var(--text-m)] font-bold">FRONTEND</h2>
+      <button class="justify-self-end">
+        <img src="/src/assets/direction=right.svg" alt="" class="w-4 h-4" />
+      </button>
+    </div>
+
+    <!-- info -->
+    <div
+      class="bg-[#8db0f9] rounded-lg text-white mx-3 my-1 w-[294px] h-[58px] text-xs py-3 px-3"
+    >
+      <span class="font-bold">안내</span>
+      <span class=""
+        >중고거래 관련, 명예훼손, 광고/홍보 목적의 글은 올리실 수 없어요.</span
+      >
+      <a href="#" class="underline">Q&A글쓰기 운영정책</a>
+    </div>
+    <!-- 제목 -->
+    <input
+      type="text"
+      placeholder="제목"
+      class="w-[320px] font-bold border-none focus:outline-none placeholder-gray-400 px-5 py-2"
+    />
+    <!-- 내용쓰는 곳 -->
+    <textarea
+      placeholder="관심있는 분야에 대한 질문을 올려주세요. 장소 정보와 사진을 함께 올리면 친구들에게 더 도움이 돼요!"
+      class="w-[320px] text-xs border-none focus:outline-none placeholder-gray-400 px-5 py-2 resize-none h-20"
+    ></textarea>
+
+    <!-- 사진, 장소, 키보드 -->
+    <div class="w-[320px] grid grid-cols-[1fr_1fr_2fr]">
+      <div class="justify-self-center">
+        <button class="flex gap-1">
+          <img src="/src/assets/photo.svg" alt="사진" />
+          <p>사진</p>
+        </button>
+      </div>
+
+      <div class="justify-self-start">
+        <button class="flex gap-1">
+          <img src="/src/assets/map.svg" alt="장소" />
+          <p>장소</p>
+        </button>
+      </div>
+
+      <button class="justify-self-end pr-3">
+        <img src="/src/assets/keyboard.svg" alt="키보드" />
+      </button>
+    </div>
+  </body>
+</html>
