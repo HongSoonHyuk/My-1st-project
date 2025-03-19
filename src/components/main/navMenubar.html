@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>네비 메뉴바</title>
+    <link rel="icon" href="/vite.svg" />
+    <link rel="preload" as="font" href="/font/woff2/PretendardVariable.woff2" crossorigin="anonymous" />
+    <link rel="stylesheet" as="style" href="/font/pretendardvariable.css" />
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body>
+    <!-- 테스트 코드 -->
+    <div>
+      <ul class="flex items-center justify-center gap-2 bg-(--color-primary)">
+        <li class="h-[37px] min-w-[42px]">
+          <button class="w-full h-full focus:border-b-1 p-2">
+            <span class="label-m text-white">텍스트</span>
+          </button>
+        </li>
+        <li class="h-[37px] min-w-[42px]">
+          <button class="w-full h-full p-2 focus:border-b-1 border-(--color-tertiary)">
+            <span class="label-m text-white">텍스트</span>
+          </button>
+        </li>
+      </ul>
+    </div>
+    <br />
+    <!-- 컴포넌트 -->
+    <ul class="flex items-center justify-center gap-2 bg-(--color-primary)">
+      <li class="h-[37px] min-w-[42px]">
+        <button class="w-full h-full focus:border-b-1 p-2 border-(--color-tertiary)">
+          <span class="label-m text-white">선배님 스토리</span>
+        </button>
+      </li>
+      <li class="h-[37px] min-w-[42px]">
+        <button class="w-full h-full p-2 focus:border-b-1 border-(--color-tertiary)">
+          <span class="label-m text-white">기기 거래</span>
+        </button>
+      </li>
+      <li class="h-[37px] min-w-[42px]">
+        <button class="w-full h-full focus:border-b-1 p-2 border-(--color-tertiary)">
+          <span class="label-m text-white">질의 응답</span>
+        </button>
+      </li>
+      <li class="h-[37px] min-w-[42px]">
+        <button class="w-full h-full p-2 focus:border-b-1 border-(--color-tertiary)">
+          <span class="label-m text-white">함께 해요</span>
+        </button>
+      </li>
+    </ul>
+  </body>
+</html>
