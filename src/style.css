@@ -87,4 +87,54 @@
   .paragraph-underline {
     @apply text-[10px] text-(--color-content-primary) font-normal leading-[160%] font-sans;
   }
+  .category-label {
+    @apply flex justify-between p-3 rounded-lg bg-gray-300 w-full cursor-pointer;
+  }
+  /* 카테고리 카드 스타일링 */
+  .category-label {
+    @apply flex flex-col p-3 justify-center rounded-[8px] bg-[#a7a7a7] w-full h-[61px] cursor-pointer;
+  }
+
+  .category-checkbox:checked + .category-label {
+    @apply bg-[#373f67];
+  }
+
+  .category-subtitle {
+    @apply text-[#E9E9E9] text-[8px] font-['Pretendard'];
+  }
+
+  .category-title {
+    @apply text-black text-[16px] font-['Pretendard'] flex justify-between w-full;
+  }
+
+  .category-checkbox:checked + .category-label .category-title {
+    @apply text-white;
+  }
+
+  .icon-container {
+    @apply w-[18px] h-[18px] relative bg-[#919191] rounded-[50px];
+  }
+
+  .category-checkbox:checked + .category-label .icon-container {
+    @apply bg-white;
+  }
+
+  .plus-icon {
+    @apply w-[10px] h-[10px] left-[4px] top-[4px] absolute bg-[url('./assets/plus.svg')] bg-cover;
+  }
+
+  .category-checkbox:checked + .category-label .plus-icon {
+    @apply hidden;
+  }
+
+  .check-icon {
+    @apply w-[10px] h-[10px] left-[4px] top-[4px] absolute bg-[url('./assets/check.svg')] bg-cover hidden;
+  }
+
+  .category-checkbox:checked + .category-label .check-icon {
+    @apply block;
+  }
+}
+.phone-input:focus ~ .keyboard-container {
+  display: block;
 }

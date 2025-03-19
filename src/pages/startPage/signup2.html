@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>11조 위닝일레븐</title>
+    <link rel="icon" href="/vite.svg" />
+    <link
+      rel="preload"
+      as="font"
+      href="/font/woff2/PretendardVariable.woff2"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" as="style" href="/font/pretendardvariable.css" />
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body>
+    <div class="w-[320px] h-[693px] relative">
+      <!-- 상단바 -->
+      <div
+        class="px-[24px] pt-[8px] pb-[4px] bg-white inline-flex justify-end items-center gap-44"
+      >
+        <div
+          class="text-center justify-center text-black text-sm font-semibold font-['Pretendard']"
+        >
+          2:26
+        </div>
+        <div class="flex justify-center items-center">
+          <div class="w-6 h-4 relative">
+            <div
+              class="w-3.5 h-4 left-[10px] absolute bg-cover bg-[url('./assets/celluar.svg')]"
+            ></div>
+          </div>
+          <div class="flex justify-center items-center gap-0.5">
+            <div class="w-6 h-6 relative">
+              <div
+                class="w-6 h-6 absolute bg-cover bg-[url('./assets/lte.svg')]"
+              ></div>
+            </div>
+            <div class="w-6 h-5 relative">
+              <div
+                class="w-5 h-5 absolute bg-cover bg-[url('./assets/battery.svg')]"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="mt-[18px] pl-[12px] pr-[12px] py-[8px] bg-white flex justify-start items-center gap-1 w-full"
+      >
+      <!-- 뒤로가기 버튼 -->
+         <a
+          href="./start.html"
+          class="w-5 h-5 relative block"
+          aria-label="메인 페이지로 이동"
+        >
+          <div
+            class="w-5 h-5 top-[2px] absolute bg-[url('./assets/direction=left.svg')] bg-cover"
+          ></div>
+        </a>
+      </div>
+
+      <!-- 전화번호 입력 -->
+      <div class="px-4">
+        <div class="">
+          <input
+            type="tel"
+            pattern="[0-9]*"
+            maxlength="11"
+            placeholder="휴대폰 번호 ( - 없이 숫자만 입력)"
+            class="phone-input w-full pl-3 py-2 border text-sm border-gray-400 rounded-lg focus:outline-none focus:ring-1 focus:ring-blue-500"
+          />
+
+          <!-- 키보드 -->
+          <div
+            class="keyboard-container hidden absolute bottom-0 left-0 right-0"
+          >
+            <div class="bg-gray-200 rounded-t-lg p-2 select-none">
+             
+              <div class="flex justify-between mb-2">
+                <div
+                  class="w-[90px] h-12 bg-white rounded-lg border border-gray-300 flex items-center justify-center text-lg font-bold font-['Pretendard'] cursor-pointer hover:bg-gray-50 active:bg-gray-100 active:translate-y-0.5"
+                >
+                  1
+                </div>
+                <div
+                  class="w-[90px] h-12 bg-white rounded-lg border border-gray-300 flex items-center justify-center text-lg font-bold font-['Pretendard'] cursor-pointer hover:bg-gray-50 active:bg-gray-100 active:translate-y-0.5"
+                >
+                  2
+                </div>
+                <div
+                  class="w-[90px] h-12 bg-white rounded-lg border border-gray-300 flex items-center justify-center text-lg font-bold font-['Pretendard'] cursor-pointer hover:bg-gray-50 active:bg-gray-100 active:translate-y-0.5"
+                >
+                  3
+                </div>
+              </div>
+
+              <div class="flex justify-between mb-2">
+                <div
+                  class="w-[90px] h-12 bg-white rounded-lg border border-gray-300 flex items-center justify-center text-lg font-bold font-['Pretendard'] cursor-pointer hover:bg-gray-50 active:bg-gray-100 active:translate-y-0.5"
+                >
+                  4
+                </div>
+                <div
+                  class="w-[90px] h-12 bg-white rounded-lg border border-gray-300 flex items-center justify-center text-lg font-bold font-['Pretendard'] cursor-pointer hover:bg-gray-50 active:bg-gray-100 active:translate-y-0.5"
+                >
+                  5
+                </div>
+                <div
+                  class="w-[90px] h-12 bg-white rounded-lg border border-gray-300 flex items-center justify-center text-lg font-bold font-['Pretendard'] cursor-pointer hover:bg-gray-50 active:bg-gray-100 active:translate-y-0.5"
+                >
+                  6
+                </div>
+              </div>
+
+              
+              <div class="flex justify-between mb-2">
+                <div
+                  class="w-[90px] h-12 bg-white rounded-lg border border-gray-300 flex items-center justify-center text-lg font-bold font-['Pretendard'] cursor-pointer hover:bg-gray-50 active:bg-gray-100 active:translate-y-0.5"
+                >
+                  7
+                </div>
+                <div
+                  class="w-[90px] h-12 bg-white rounded-lg border border-gray-300 flex items-center justify-center text-lg font-bold font-['Pretendard'] cursor-pointer hover:bg-gray-50 active:bg-gray-100 active:translate-y-0.5"
+                >
+                  8
+                </div>
+                <div
+                  class="w-[90px] h-12 bg-white rounded-lg border border-gray-300 flex items-center justify-center text-lg font-bold font-['Pretendard'] cursor-pointer hover:bg-gray-50 active:bg-gray-100 active:translate-y-0.5"
+                >
+                  9
+                </div>
+              </div>
+
+              
+              <div class="flex justify-between mb-2">
+                <div
+                  class="w-[90px] h-12 rounded-lg border-none flex items-center justify-center text-lg font-bold font-['Pretendard'] cursor-pointer hover:bg-gray-50 active:bg-gray-100 active:translate-y-0.5"
+                >
+                  +*#
+                </div>
+                <div
+                  class="w-[90px] h-12 bg-white rounded-lg border border-gray-300 flex items-center justify-center text-lg font-bold font-['Pretendard'] cursor-pointer hover:bg-gray-50 active:bg-gray-100 active:translate-y-0.5"
+                >
+                  0
+                </div>
+                <div
+                  class="flex w-[90px] h-12 rounded-lg border-none items-center justify-center text-lg font-bold font-['Pretendard'] cursor-pointer hover:bg-gray-50 active:bg-gray-100 active:translate-y-0.5"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2M3 12l6.414 6.414a2 2 0 001.414.586H19a2 2 0 002-2V7a2 2 0 00-2-2h-8.172a2 2 0 00-1.414.586L3 12z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 다시받기 버튼 -->
+        <button
+          type="button"
+          class="w-full mt-4 py-2 border text-sm border-gray-400 rounded-lg text-black font-['Pretendard'] font-medium"
+        >
+          인증문자 다시 받기(04분 57초)
+        </button>
+         <!-- 전화번호 입력 -->
+      <div class=" mt-3 py-2">
+        <div class="">
+          <input
+            type="tel"
+            pattern="[0-9]*"
+            maxlength="11"
+            placeholder="인증번호 입력"
+            class="phone-input w-full pl-3 py-2 border text-sm border-gray-400 rounded-lg focus:outline-none focus:ring-1 focus:ring-blue-500"
+          />
+
+          <!-- 키보드 -->
+          <div
+            class="keyboard-container hidden absolute bottom-0 left-0 right-0"
+          >
+            <div class="bg-gray-200 rounded-t-lg p-2 select-none">
+              
+              <div class="flex justify-between mb-2">
+                <div
+                  class="w-[90px] h-12 bg-white rounded-lg border border-gray-300 flex items-center justify-center text-lg font-bold font-['Pretendard'] cursor-pointer hover:bg-gray-50 active:bg-gray-100 active:translate-y-0.5"
+                >
+                  1
+                </div>
+                <div
+                  class="w-[90px] h-12 bg-white rounded-lg border border-gray-300 flex items-center justify-center text-lg font-bold font-['Pretendard'] cursor-pointer hover:bg-gray-50 active:bg-gray-100 active:translate-y-0.5"
+                >
+                  2
+                </div>
+                <div
+                  class="w-[90px] h-12 bg-white rounded-lg border border-gray-300 flex items-center justify-center text-lg font-bold font-['Pretendard'] cursor-pointer hover:bg-gray-50 active:bg-gray-100 active:translate-y-0.5"
+                >
+                  3
+                </div>
+              </div>
+
+          
+              <div class="flex justify-between mb-2">
+                <div
+                  class="w-[90px] h-12 bg-white rounded-lg border border-gray-300 flex items-center justify-center text-lg font-bold font-['Pretendard'] cursor-pointer hover:bg-gray-50 active:bg-gray-100 active:translate-y-0.5"
+                >
+                  4
+                </div>
+                <div
+                  class="w-[90px] h-12 bg-white rounded-lg border border-gray-300 flex items-center justify-center text-lg font-bold font-['Pretendard'] cursor-pointer hover:bg-gray-50 active:bg-gray-100 active:translate-y-0.5"
+                >
+                  5
+                </div>
+                <div
+                  class="w-[90px] h-12 bg-white rounded-lg border border-gray-300 flex items-center justify-center text-lg font-bold font-['Pretendard'] cursor-pointer hover:bg-gray-50 active:bg-gray-100 active:translate-y-0.5"
+                >
+                  6
+                </div>
+              </div>
+
+             
+              <div class="flex justify-between mb-2">
+                <div
+                  class="w-[90px] h-12 bg-white rounded-lg border border-gray-300 flex items-center justify-center text-lg font-bold font-['Pretendard'] cursor-pointer hover:bg-gray-50 active:bg-gray-100 active:translate-y-0.5"
+                >
+                  7
+                </div>
+                <div
+                  class="w-[90px] h-12 bg-white rounded-lg border border-gray-300 flex items-center justify-center text-lg font-bold font-['Pretendard'] cursor-pointer hover:bg-gray-50 active:bg-gray-100 active:translate-y-0.5"
+                >
+                  8
+                </div>
+                <div
+                  class="w-[90px] h-12 bg-white rounded-lg border border-gray-300 flex items-center justify-center text-lg font-bold font-['Pretendard'] cursor-pointer hover:bg-gray-50 active:bg-gray-100 active:translate-y-0.5"
+                >
+                  9
+                </div>
+              </div>
+
+              
+              <div class="flex justify-between mb-2">
+                <div
+                  class="w-[90px] h-12 rounded-lg border-none flex items-center justify-center text-lg font-bold font-['Pretendard'] cursor-pointer hover:bg-gray-50 active:bg-gray-100 active:translate-y-0.5"
+                >
+                  +*#
+                </div>
+                <div
+                  class="w-[90px] h-12 bg-white rounded-lg border border-gray-300 flex items-center justify-center text-lg font-bold font-['Pretendard'] cursor-pointer hover:bg-gray-50 active:bg-gray-100 active:translate-y-0.5"
+                >
+                  0
+                </div>
+                <div
+                  class="flex w-[90px] h-12 rounded-lg border-none items-center justify-center text-lg font-bold font-['Pretendard'] cursor-pointer hover:bg-gray-50 active:bg-gray-100 active:translate-y-0.5"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2M3 12l6.414 6.414a2 2 0 001.414.586H19a2 2 0 002-2V7a2 2 0 00-2-2h-8.172a2 2 0 00-1.414.586L3 12z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 시작버튼 -->
+           <button
+          type="button"
+          class="w-full mt-4 py-2 border text-sm border-gray-400 bg-neutral-400 rounded-lg text-white font-['Pretendard'] font-medium"
+        >
+          동의하고 시작하기
+        </button>
+        </div>
+      </div>
+      
+      <!-- 맨아래 p태그 -->
+      <p class="flex justify-center items-center mt-1 text-xs text-neutral-400">
+        <a href="/" class="underline">인증번호가 오지 않나요?</a>
+      </p>
+    </div>
+  </body>
+</html>
