@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>exchange</title>
+    <link rel="icon" href="/vite.svg" />
+    <link rel="preload" as="font" href="/font/woff2/PretendardVariable.woff2" crossorigin="anonymous" />
+    <link rel="stylesheet" as="style" href="/font/pretendardvariable.css" />
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body class="w-[320px] relative">
+    <div class="sticky top-0 bg-white z-1">
+      <!-- 셀룰러 -->
+      <div class="px-[24px] pt-[8px] pb-[4px] bg-white flex justify-between items-center gap-44">
+        <div class="text-center justify-center text-black text-sm font-semibold font-['Pretendard'] leading-tight">2:26</div>
+        <div class="flex justify-center items-center">
+          <div class="w-6 h-4 relative">
+            <div class="w-3.5 h-4 left-[10px] absolute bg-cover bg-[url('./assets/celluar.svg')]"></div>
+          </div>
+          <div class="flex justify-center items-center gap-0.5">
+            <div class="w-6 h-6 relative">
+              <div class="w-6 h-6 absolute bg-cover bg-[url('./assets/lte.svg')]"></div>
+            </div>
+            <div class="w-6 h-5 relative">
+              <div class="w-5 h-5 absolute bg-cover bg-[url('./assets/battery.svg')]"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 지역 메뉴 -->
+      <nav class="w-auto h-10 flex justify-between px-5 py-1.5">
+        <div class="inline-flex gap-1.5 items-center">
+          <span class="label-l whitespace-nowrap">남가좌제2동</span>
+          <button>
+            <img src="/src/assets/down.svg" alt="지역보기버튼" />
+          </button>
+        </div>
+        <ul class="flex items-center gap-2">
+          <li>
+            <button><img class="w-[26px] h-[26px]" src="/src/assets/search.svg" alt="검색버튼" /></button>
+          </li>
+          <li>
+            <button><img class="w-[26px] h-[26px]" src="/src/assets/hamburger.svg" alt="메뉴보기버튼" /></button>
+          </li>
+          <li>
+            <button><img class="w-[26px] h-[26px]" src="/src/assets/alrambell.svg" alt="알림보기버튼" /></button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- 네비 아이템 -->
+    <ul class="flex justify-center gap-2 bg-(--color-primary)">
+      <li class="h-[37px]">
+        <a href="/src/pages/mainpage/mainPage.html">
+          <button class="h-full focus:border-b-1 p-2 border-(--color-tertiary)">
+            <span class="label-m text-white whitespace-nowrap">선배님 스토리</span>
+          </button>
+        </a>
+      </li>
+      <li class="h-[37px]">
+        <a href="/src/pages/mainpage/exchangePage.html">
+          <button class="h-full focus:border-b-1 p-2 border-(--color-tertiary)">
+            <span class="label-m text-white whitespace-nowrap">기기 거래</span>
+          </button>
+        </a>
+      </li>
+      <li class="h-[37px]">
+        <button class="h-full focus:border-b-1 p-2 border-(--color-tertiary)">
+          <span class="label-m text-white whitespace-nowrap">질의 응답</span>
+        </button>
+      </li>
+      <li class="h-[37px]">
+        <button class="h-full p-2 focus:border-b-1 border-(--color-tertiary)">
+          <span class="label-m text-white whitespace-nowrap">함께 해요</span>
+        </button>
+      </li>
+    </ul>
+    <section>
+      <!-- 리스트 아이템  -->
+      <ul>
+        <li class="relative overflow-clip p-3">
+          <a>
+            <figure class="flex items-center gap-3">
+              <img class="w-22.5 h-22.5 border rounded-2xl" src="/img/whatNono.webp" alt="대체 텍스트" />
+              <div>
+                <figcaption class="paragraph-m">제목을 넣어주세요</figcaption>
+                <p class="paragraph-s text-(--color-content-tertiary)"><span>남가좌동</span>•<span>1일전</span></p>
+                <div class="inline-flex gap-1.5 my-auto items-center">
+                  <div class="inline-flex min-w-7 min-h-5 px-1 py-0.5 rounded-sm bg-(--color-tertiary)">
+                    <span class="label-s text-white">예약중</span>
+                  </div>
+                  <span class="label-m">150,000원</span>
+                </div>
+              </div>
+            </figure>
+            <div class="absolute bottom-1 right-4 inline-flex items-center gap-0.5">
+              <img class="w-3.5 h-3.5" src="/src/assets/heart.svg" alt="하트아이콘" />
+              <span class="paragraph-s">11</span>
+            </div>
+          </a>
+        </li>
+        <li class="relative overflow-clip p-3">
+          <a>
+            <figure class="flex items-center gap-3">
+              <img class="w-22.5 h-22.5 border rounded-2xl" src="/img/whatNono.webp" alt="대체 텍스트" />
+              <div>
+                <figcaption class="paragraph-m">제목을 넣어주세요</figcaption>
+                <p class="paragraph-s text-(--color-content-tertiary)"><span>남가좌동</span>•<span>1일전</span></p>
+                <div class="inline-flex gap-1.5 my-auto items-center">
+                  <div class="inline-flex min-w-7 min-h-5 px-1 py-0.5 rounded-sm bg-(--color-tertiary)">
+                    <span class="label-s text-white">예약중</span>
+                  </div>
+                  <span class="label-m">150,000원</span>
+                </div>
+              </div>
+            </figure>
+            <div class="absolute bottom-1 right-4 inline-flex items-center gap-0.5">
+              <img class="w-3.5 h-3.5" src="/src/assets/heart.svg" alt="하트아이콘" />
+              <span class="paragraph-s">11</span>
+            </div>
+          </a>
+        </li>
+        <li class="relative overflow-clip p-3">
+          <a>
+            <figure class="flex items-center gap-3">
+              <img class="w-22.5 h-22.5 border rounded-2xl" src="/img/whatNono.webp" alt="대체 텍스트" />
+              <div>
+                <figcaption class="paragraph-m">제목을 넣어주세요</figcaption>
+                <p class="paragraph-s text-(--color-content-tertiary)"><span>남가좌동</span>•<span>1일전</span></p>
+                <div class="inline-flex gap-1.5 my-auto items-center">
+                  <div class="inline-flex min-w-7 min-h-5 px-1 py-0.5 rounded-sm bg-(--color-tertiary)">
+                    <span class="label-s text-white">예약중</span>
+                  </div>
+                  <span class="label-m">150,000원</span>
+                </div>
+              </div>
+            </figure>
+            <div class="absolute bottom-1 right-4 inline-flex items-center gap-0.5">
+              <img class="w-3.5 h-3.5" src="/src/assets/heart.svg" alt="하트아이콘" />
+              <span class="paragraph-s">11</span>
+            </div>
+          </a>
+        </li>
+        <li class="relative overflow-clip p-3">
+          <a>
+            <figure class="flex items-center gap-3">
+              <img class="w-22.5 h-22.5 border rounded-2xl" src="/img/whatNono.webp" alt="대체 텍스트" />
+              <div>
+                <figcaption class="paragraph-m">제목을 넣어주세요</figcaption>
+                <p class="paragraph-s text-(--color-content-tertiary)"><span>남가좌동</span>•<span>1일전</span></p>
+                <div class="inline-flex gap-1.5 my-auto items-center">
+                  <div class="inline-flex min-w-7 min-h-5 px-1 py-0.5 rounded-sm bg-(--color-tertiary)">
+                    <span class="label-s text-white">예약중</span>
+                  </div>
+                  <span class="label-m">150,000원</span>
+                </div>
+              </div>
+            </figure>
+            <div class="absolute bottom-1 right-4 inline-flex items-center gap-0.5">
+              <img class="w-3.5 h-3.5" src="/src/assets/heart.svg" alt="하트아이콘" />
+              <span class="paragraph-s">11</span>
+            </div>
+          </a>
+        </li>
+        <li class="relative overflow-clip p-3">
+          <a>
+            <figure class="flex items-center gap-3">
+              <img class="w-22.5 h-22.5 border rounded-2xl" src="/img/whatNono.webp" alt="대체 텍스트" />
+              <div>
+                <figcaption class="paragraph-m">제목을 넣어주세요</figcaption>
+                <p class="paragraph-s text-(--color-content-tertiary)"><span>남가좌동</span>•<span>1일전</span></p>
+                <div class="inline-flex gap-1.5 my-auto items-center">
+                  <div class="inline-flex min-w-7 min-h-5 px-1 py-0.5 rounded-sm bg-(--color-tertiary)">
+                    <span class="label-s text-white">예약중</span>
+                  </div>
+                  <span class="label-m">150,000원</span>
+                </div>
+              </div>
+            </figure>
+            <div class="absolute bottom-1 right-4 inline-flex items-center gap-0.5">
+              <img class="w-3.5 h-3.5" src="/src/assets/heart.svg" alt="하트아이콘" />
+              <span class="paragraph-s">11</span>
+            </div>
+          </a>
+        </li>
+        <li class="relative overflow-clip p-3">
+          <a>
+            <figure class="flex items-center gap-3">
+              <img class="w-22.5 h-22.5 border rounded-2xl" src="/img/whatNono.webp" alt="대체 텍스트" />
+              <div>
+                <figcaption class="paragraph-m">제목을 넣어주세요</figcaption>
+                <p class="paragraph-s text-(--color-content-tertiary)"><span>남가좌동</span>•<span>1일전</span></p>
+                <div class="inline-flex gap-1.5 my-auto items-center">
+                  <div class="inline-flex min-w-7 min-h-5 px-1 py-0.5 rounded-sm bg-(--color-tertiary)">
+                    <span class="label-s text-white">예약중</span>
+                  </div>
+                  <span class="label-m">150,000원</span>
+                </div>
+              </div>
+            </figure>
+            <div class="absolute bottom-1 right-4 inline-flex items-center gap-0.5">
+              <img class="w-3.5 h-3.5" src="/src/assets/heart.svg" alt="하트아이콘" />
+              <span class="paragraph-s">11</span>
+            </div>
+          </a>
+        </li>
+        <li class="relative overflow-clip p-3">
+          <a>
+            <figure class="flex items-center gap-3">
+              <img class="w-22.5 h-22.5 border rounded-2xl" src="/img/whatNono.webp" alt="대체 텍스트" />
+              <div>
+                <figcaption class="paragraph-m">제목을 넣어주세요</figcaption>
+                <p class="paragraph-s text-(--color-content-tertiary)"><span>남가좌동</span>•<span>1일전</span></p>
+                <div class="inline-flex gap-1.5 my-auto items-center">
+                  <div class="inline-flex min-w-7 min-h-5 px-1 py-0.5 rounded-sm bg-(--color-tertiary)">
+                    <span class="label-s text-white">예약중</span>
+                  </div>
+                  <span class="label-m">150,000원</span>
+                </div>
+              </div>
+            </figure>
+            <div class="absolute bottom-1 right-4 inline-flex items-center gap-0.5">
+              <img class="w-3.5 h-3.5" src="/src/assets/heart.svg" alt="하트아이콘" />
+              <span class="paragraph-s">11</span>
+            </div>
+          </a>
+        </li>
+        <li class="relative overflow-clip p-3">
+          <a>
+            <figure class="flex items-center gap-3">
+              <img class="w-22.5 h-22.5 border rounded-2xl" src="/img/whatNono.webp" alt="대체 텍스트" />
+              <div>
+                <figcaption class="paragraph-m">제목을 넣어주세요</figcaption>
+                <p class="paragraph-s text-(--color-content-tertiary)"><span>남가좌동</span>•<span>1일전</span></p>
+                <div class="inline-flex gap-1.5 my-auto items-center">
+                  <div class="inline-flex min-w-7 min-h-5 px-1 py-0.5 rounded-sm bg-(--color-tertiary)">
+                    <span class="label-s text-white">예약중</span>
+                  </div>
+                  <span class="label-m">150,000원</span>
+                </div>
+              </div>
+            </figure>
+            <div class="absolute bottom-1 right-4 inline-flex items-center gap-0.5">
+              <img class="w-3.5 h-3.5" src="/src/assets/heart.svg" alt="하트아이콘" />
+              <span class="paragraph-s">11</span>
+            </div>
+          </a>
+        </li>
+        <li class="relative overflow-clip p-3">
+          <a>
+            <figure class="flex items-center gap-3">
+              <img class="w-22.5 h-22.5 border rounded-2xl" src="/img/whatNono.webp" alt="대체 텍스트" />
+              <div>
+                <figcaption class="paragraph-m">제목을 넣어주세요</figcaption>
+                <p class="paragraph-s text-(--color-content-tertiary)"><span>남가좌동</span>•<span>1일전</span></p>
+                <div class="inline-flex gap-1.5 my-auto items-center">
+                  <div class="inline-flex min-w-7 min-h-5 px-1 py-0.5 rounded-sm bg-(--color-tertiary)">
+                    <span class="label-s text-white">예약중</span>
+                  </div>
+                  <span class="label-m">150,000원</span>
+                </div>
+              </div>
+            </figure>
+            <div class="absolute bottom-1 right-4 inline-flex items-center gap-0.5">
+              <img class="w-3.5 h-3.5" src="/src/assets/heart.svg" alt="하트아이콘" />
+              <span class="paragraph-s">11</span>
+            </div>
+          </a>
+        </li>
+      </ul>
+      <!-- 플러스 버튼 -->
+      <div class="flex flex-col-reverse items-end gap-3 sticky bottom-18 right-3 z-10">
+        <button class="peer bg-(--color-primary) p-2.5 rounded-full focus:animate-spin">
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+            <path d="M22.1666 15.1643H15.1666V22.1643H12.8333V15.1643H5.83325V12.831H12.8333V5.83099H15.1666V12.831H22.1666V15.1643Z" fill="white" />
+          </svg>
+        </button>
+        <ul class="hidden peer-focus:inline-flex flex-col gap-1">
+          <li>
+            <button class="inline-flex w-27 justify-center items-center rounded-xl gap-0.5 px-5 py-2.5 bg-(--color-primary)">
+              <span class="label-m">🎈</span><span class="label-m text-white">text</span>
+            </button>
+          </li>
+          <li>
+            <button class="inline-flex w-27 justify-center items-center rounded-xl gap-0.5 px-5 py-2.5 bg-(--color-primary)">
+              <span class="label-m">🎧</span><span class="label-m text-white">text</span>
+            </button>
+          </li>
+          <li>
+            <button class="inline-flex w-27 justify-center items-center rounded-xl gap-0.5 bg-(--color-primary) px-5 py-2.5">
+              <span class="label-m">⌨️</span><span class="label-m text-white">text</span>
+            </button>
+          </li>
+          <li>
+            <button class="inline-flex w-27 justify-center items-center rounded-xl gap-0.5 bg-(--color-primary) px-5 py-2.5">
+              <span class="label-m">🖱️</span><span class="label-m text-white">text</span>
+            </button>
+          </li>
+          <li>
+            <button class="inline-flex w-27 justify-center items-center rounded-xl gap-0.5 bg-(--color-primary) px-5 py-2.5">
+              <span class="label-m">💻</span><span class="label-m text-white">text</span>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- 네비 아이템 바 -->
+    <nav class="sticky bottom-0 px-[12px] pt-[8px] pb-[24px] bg-white flex justify-center items-center gap-10">
+      <a href="/">
+        <div tabindex="0" class="flex flex-col justify-center items-center">
+          <div class="w-5 h-5 relative">
+            <div class="w-5 h-5 absolute bg-[url('./assets/home.svg')] hover:bg-[url('./assets/fullHome.svg')] bg-cover"></div>
+          </div>
+          <div class="justify-center text-black text-[9px] font-['Pretendard']">홈</div>
+        </div>
+      </a>
+      <a href="/">
+        <div tabindex="0" class="flex flex-col justify-center items-center">
+          <div class="w-5 h-5 relative">
+            <div class="w-5 h-5 absolute bg-[url('./assets/file.svg')] hover:bg-[url('./assets/fullFile.svg')] bg-cover"></div>
+          </div>
+          <div class="justify-center text-black text-[8.9px] font-['Pretendard']">게시판</div>
+        </div>
+      </a>
+      <a href="/">
+        <div tabindex="0" class="flex flex-col justify-center items-center">
+          <div class="w-5 h-5 relative">
+            <div class="w-5 h-5 absolute bg-[url('./assets/map.svg')] hover:bg-[url('./assets/fullMap.svg')] bg-cover"></div>
+          </div>
+          <div class="justify-center text-black text-[9px] font-['Pretendard']">내 근처</div>
+        </div>
+      </a>
+      <a href="/">
+        <div tabindex="0" class="flex flex-col justify-center items-center">
+          <div class="w-5 h-5 relative">
+            <div class="w-5 h-5 absolute bg-[url('./assets/chat.svg')] hover:bg-[url('./assets/fullChat.svg')] bg-cover"></div>
+          </div>
+          <div class="justify-center text-black text-[9px] font-['Pretendard']">채팅</div>
+        </div>
+      </a>
+      <a href="/">
+        <div tabindex="0" class="flex flex-col justify-center items-center">
+          <div class="w-5 h-5 relative">
+            <div class="w-5 h-5 absolute bg-[url('./assets/my.svg')] hover:bg-[url('./assets/fullMy.svg')] bg-cover"></div>
+          </div>
+          <div class="justify-center text-black text-[9px] font-['Pretendard']">나의 이듬</div>
+        </div>
+      </a>
+    </nav>
+  </body>
+</html>
