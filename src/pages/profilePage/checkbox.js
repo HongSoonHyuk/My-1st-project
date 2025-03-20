@@ -1,5 +1,6 @@
 const allAgree = document.querySelector("#allAgree");
 const agree = document.querySelectorAll("ul input");
+const resetButton = document.querySelector("#reset");
 const submitButton = document.querySelector("#save");
 
 allAgree.addEventListener("click", (e) => {
@@ -9,6 +10,10 @@ allAgree.addEventListener("click", (e) => {
 for (const agree of agrees) {
   agree.addEventListener("click", updateDisplay);
 }
+
+resetButton.addEventListener("click", () => {
+  submitButton.disabled = true;
+});
 
 function toggleSubmitButton() {
   if (allAgree.checked) {
