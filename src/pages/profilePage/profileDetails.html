@@ -13,6 +13,7 @@
     />
     <link rel="stylesheet" as="style" href="/font/pretendardvariable.css" />
     <script type="module" src="/src/main.js"></script>
+    <script type="module" src="/src/pages/profilePage/checkbox.js"></script>
   </head>
   <body>
     <!-- 타임 셀룰러 -->
@@ -458,117 +459,134 @@
     <!-- 동의 주의사항 -->
     <footer>
       <!-- 전체동의 -->
-      <section>
-        <!-- 체크박스 -->
-        <div
-          class="bg-white p-4 flex justify-between items-center label-m border-b-[0.3px] border-[#919191]"
-        >
-          <!-- 텍스트 -->
-          <p class="flex gap-3">
-            <input
-              type="checkbox"
-              id="agree"
-              class="w-4 h-4 appearance-none bg-[url(./assets/state=Default.svg)] checked:bg-[url(./assets/state=focus.svg)]"
-            />
-            <label for="agree">아래 내용에 전체 동의합니다.</label>
-          </p>
-          <p class="text-[#E11900] paragraph-s">필수동의</p>
-        </div>
-      </section>
-      <!-- 동의 목록들 -->
-      <section class="p-4 space-y-[18px]">
-        <!-- 필수1 -->
-        <article>
-          <!-- 체크박스 -->
-          <div class="bg-white label-s">
-            <!-- 체크박스와 제목 -->
-            <div class="flex items-center gap-3 mb-[9px]">
-              <input
-                type="checkbox"
-                id="agree"
-                class="w-4 h-4 flex-shrink-0 appearance-none bg-[url(./assets/state=Default.svg)] checked:bg-[url(./assets/state=focus.svg)]"
-              />
-              <label for="agree"> [ 필수 ] 개인 정보 수집 및 이용 동의 </label>
-            </div>
-
-            <!-- 설명 텍스트 -->
-            <div class="pl-7">
-              <p class="paragraph-s text-(--color-content-secondary)">
-                입력한 별명, 프로필 사진, 하는 일, 프로필 키워드, 성별, 연령,
-                회사, 학교, 자격은 엔터이듬 서비스 내 프로필 페이지, 답변자 정보
-                영역, 엔터이듬 홈 및 서비스 내 프로필 공개를 목적으로 합니다.
-                <span class="text-(--color-secondary) label-s">
-                  수집된 정보는 언제든지 직접 삭제할 수 있고, 탈퇴 시에는 바로
-                  파기됩니다.
-                </span>
-              </p>
-            </div>
-          </div>
-        </article>
-        <!-- 필수2 -->
-        <article>
-          <div class="bg-white flex justify-between items-center gap-3 label-s">
+      <form>
+        <fieldset>
+          <legend class="sr-only">필수 동의란</legend>
+          <div
+            class="bg-white p-4 flex justify-between items-center label-m border-b-[0.3px] border-[#919191]"
+          >
+            <!-- 텍스트 -->
             <p class="flex gap-3">
               <input
                 type="checkbox"
-                id="agree"
+                id="allAgree"
                 class="w-4 h-4 appearance-none bg-[url(./assets/state=Default.svg)] checked:bg-[url(./assets/state=focus.svg)]"
               />
-              <label for="agree"> [ 필수 ] 프로필 정보 노출 영역 확인 </label>
+              <label for="allAgree">아래 내용에 전체 동의합니다.</label>
             </p>
-            <a href="/" class="flex text-(--color-content-secondary)"
-              >자세히
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                viewBox="0 0 16 16"
-                fill="none"
+            <p class="text-[#E11900] paragraph-s">필수동의</p>
+          </div>
+          <!-- 동의 목록들 -->
+          <section class="p-4 space-y-[18px]">
+            <!-- 필수1 -->
+            <article>
+              <!-- 체크박스 -->
+              <div class="bg-white label-s">
+                <!-- 체크박스와 제목 -->
+                <div class="flex items-center gap-3 mb-[9px]">
+                  <input
+                    required
+                    type="checkbox"
+                    id="agrees"
+                    class="w-4 h-4 flex-shrink-0 appearance-none bg-[url(./assets/state=Default.svg)] checked:bg-[url(./assets/state=focus.svg)]"
+                  />
+                  <label for="agrees">
+                    [ 필수 ] 개인 정보 수집 및 이용 동의
+                  </label>
+                </div>
+
+                <!-- 설명 텍스트 -->
+                <div class="pl-7">
+                  <p class="paragraph-s text-(--color-content-secondary)">
+                    입력한 별명, 프로필 사진, 하는 일, 프로필 키워드, 성별,
+                    연령, 회사, 학교, 자격은 엔터이듬 서비스 내 프로필 페이지,
+                    답변자 정보 영역, 엔터이듬 홈 및 서비스 내 프로필 공개를
+                    목적으로 합니다.
+                    <span class="text-(--color-secondary) label-s">
+                      수집된 정보는 언제든지 직접 삭제할 수 있고, 탈퇴 시에는
+                      바로 파기됩니다.
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </article>
+            <!-- 필수2 -->
+            <article>
+              <div
+                class="bg-white flex justify-between items-center gap-3 label-s"
               >
-                <path
-                  d="M6.1937 10.5867L8.78037 8.00003L6.1937 5.41337C6.13198 5.35165 6.08302 5.27837 6.04962 5.19773C6.01622 5.11709 5.99902 5.03065 5.99902 4.94337C5.99902 4.85608 6.01622 4.76965 6.04962 4.689C6.08302 4.60836 6.13198 4.53509 6.1937 4.47337C6.25543 4.41165 6.3287 4.36269 6.40934 4.32928C6.48998 4.29588 6.57642 4.27869 6.6637 4.27869C6.75099 4.27869 6.83742 4.29588 6.91807 4.32928C6.99871 4.36269 7.07198 4.41165 7.1337 4.47337L10.1937 7.53337C10.4537 7.79337 10.4537 8.21337 10.1937 8.47337L7.1337 11.5334C7.07203 11.5952 6.99877 11.6442 6.91812 11.6777C6.83747 11.7111 6.75102 11.7283 6.6637 11.7283C6.57639 11.7283 6.48994 11.7111 6.40929 11.6777C6.32864 11.6442 6.25538 11.5952 6.1937 11.5334C5.94037 11.2734 5.9337 10.8467 6.1937 10.5867Z"
-                  fill="#919191"
+                <p class="flex gap-3">
+                  <input
+                    required
+                    type="checkbox"
+                    id="agrees"
+                    class="w-4 h-4 appearance-none bg-[url(./assets/state=Default.svg)] checked:bg-[url(./assets/state=focus.svg)]"
+                  />
+                  <label for="agrees">
+                    [ 필수 ] 프로필 정보 노출 영역 확인
+                  </label>
+                </p>
+                <a href="/" class="flex text-(--color-content-secondary)"
+                  >자세히
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                  >
+                    <path
+                      d="M6.1937 10.5867L8.78037 8.00003L6.1937 5.41337C6.13198 5.35165 6.08302 5.27837 6.04962 5.19773C6.01622 5.11709 5.99902 5.03065 5.99902 4.94337C5.99902 4.85608 6.01622 4.76965 6.04962 4.689C6.08302 4.60836 6.13198 4.53509 6.1937 4.47337C6.25543 4.41165 6.3287 4.36269 6.40934 4.32928C6.48998 4.29588 6.57642 4.27869 6.6637 4.27869C6.75099 4.27869 6.83742 4.29588 6.91807 4.32928C6.99871 4.36269 7.07198 4.41165 7.1337 4.47337L10.1937 7.53337C10.4537 7.79337 10.4537 8.21337 10.1937 8.47337L7.1337 11.5334C7.07203 11.5952 6.99877 11.6442 6.91812 11.6777C6.83747 11.7111 6.75102 11.7283 6.6637 11.7283C6.57639 11.7283 6.48994 11.7111 6.40929 11.6777C6.32864 11.6442 6.25538 11.5952 6.1937 11.5334C5.94037 11.2734 5.9337 10.8467 6.1937 10.5867Z"
+                      fill="#919191"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </article>
+            <!-- 필수3 -->
+            <article>
+              <div class="bg-white flex items-center gap-3 label-s">
+                <input
+                  required
+                  type="checkbox"
+                  id="agrees"
+                  class="w-4 h-4 flex-shrink-0 appearance-none bg-[url(./assets/state=Default.svg)] checked:bg-[url(./assets/state=focus.svg)]"
                 />
-              </svg>
-            </a>
-          </div>
-        </article>
-        <!-- 필수3 -->
-        <article>
-          <div class="bg-white flex items-center gap-3 label-s">
-            <input
-              type="checkbox"
-              id="agree"
-              class="w-4 h-4 flex-shrink-0 appearance-none bg-[url(./assets/state=Default.svg)] checked:bg-[url(./assets/state=focus.svg)]"
-            />
-            <label for="agree">
-              [ 필수 ] 사실과 다른 정보를 기재하여 발생한 문제에 대해서는 본인이
-              일체의 책임을 부담하겠습니다.</label
-            >
-          </div>
-        </article>
-      </section>
-      <!-- 취소 버튼 -->
-      <section class="grid grid-cols-2 gap-[9px] px-4 pt-3 pb-[34px]">
-        <button
-          type="button"
-          class="flex w-full justify-center gap-1 items-center font-[Pretendard] font-semibold text-sm leading-[21px] bg-[#D8D9E1] border-[#D3D3D3] border px-[34px] py-2 rounded-md"
-        >
-          취소
-        </button>
-        <!-- 저장 버튼 -->
-        <button
-          type="button"
-          class="flex w-full justify-center gap-1 items-center font-[Pretendard] font-semibold text-sm leading-[21px] bg-[#D8D9E1] border-[#D3D3D3] border px-[34px] py-2 rounded-md"
-        >
-          저장
-        </button>
-        <p
-          class="paragraph-s text-(--color-content-secondary) text-center col-span-2 mt-[18px]"
-        >
-          정보 초기화 및 이용 동의 철회
-        </p>
-      </section>
+                <label for="agrees">
+                  [ 필수 ] 사실과 다른 정보를 기재하여 발생한 문제에 대해서는
+                  본인이 일체의 책임을 부담하겠습니다.</label
+                >
+              </div>
+            </article>
+          </section>
+        </fieldset>
+        <!-- 체크박스 -->
+        <!-- 취소&저장 버튼 -->
+        <section class="grid grid-cols-2 gap-[9px] px-4 pt-3 pb-[34px]">
+          <!-- 취소 -->
+          <button
+            type="reset"
+            id="reset"
+            class="flex w-full justify-center gap-1 items-center label-m bg-[#D8D9E1] border-[#D3D3D3] border px-[34px] py-2 rounded-md"
+          >
+            취소
+          </button>
+          <!-- 저장 버튼 -->
+          <button
+            type="submit"
+            id="save"
+            disabled
+            class="flex w-full justify-center gap-1 items-center label-m text-white bg-(--color-secondary) border-[#D3D3D3] border px-[34px] py-2 rounded-md disabled:bg-[#D8D9E1] disabled:text-(--color-content-primary)"
+          >
+            저장
+          </button>
+          <p
+            class="paragraph-s text-(--color-content-secondary) text-center col-span-2 mt-[18px]"
+          >
+            정보 초기화 및 이용 동의 철회
+          </p>
+        </section>
+      </form>
     </footer>
 
     <!-- 하단 바 -->
