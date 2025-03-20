@@ -10,43 +10,45 @@
     <script type="module" src="/src/main.js"></script>
   </head>
   <body class="w-[320px] relative">
-    <!-- 셀룰러 -->
-    <div class="px-[24px] pt-[8px] pb-[4px] bg-white flex justify-between items-center gap-44">
-      <div class="text-center justify-center text-black text-sm font-semibold font-['Pretendard'] leading-tight">2:26</div>
-      <div class="flex justify-center items-center">
-        <div class="w-6 h-4 relative">
-          <div class="w-3.5 h-4 left-[10px] absolute bg-cover bg-[url('./assets/celluar.svg')]"></div>
-        </div>
-        <div class="flex justify-center items-center gap-0.5">
-          <div class="w-6 h-6 relative">
-            <div class="w-6 h-6 absolute bg-cover bg-[url('./assets/lte.svg')]"></div>
+    <div class="sticky top-0 bg-white z-1">
+      <!-- 셀룰러 -->
+      <div class="px-[24px] pt-[8px] pb-[4px] bg-white flex justify-between items-center gap-44">
+        <div class="text-center justify-center text-black text-sm font-semibold font-['Pretendard'] leading-tight">2:26</div>
+        <div class="flex justify-center items-center">
+          <div class="w-6 h-4 relative">
+            <div class="w-3.5 h-4 left-[10px] absolute bg-cover bg-[url('./assets/celluar.svg')]"></div>
           </div>
-          <div class="w-6 h-5 relative">
-            <div class="w-5 h-5 absolute bg-cover bg-[url('./assets/battery.svg')]"></div>
+          <div class="flex justify-center items-center gap-0.5">
+            <div class="w-6 h-6 relative">
+              <div class="w-6 h-6 absolute bg-cover bg-[url('./assets/lte.svg')]"></div>
+            </div>
+            <div class="w-6 h-5 relative">
+              <div class="w-5 h-5 absolute bg-cover bg-[url('./assets/battery.svg')]"></div>
+            </div>
           </div>
         </div>
       </div>
+      <!-- 지역 메뉴 -->
+      <nav class="w-auto h-10 flex justify-between px-5 py-1.5">
+        <div class="inline-flex gap-1.5 items-center">
+          <span class="label-l whitespace-nowrap">남가좌제2동</span>
+          <button>
+            <img src="/src/assets/down.svg" alt="지역보기버튼" />
+          </button>
+        </div>
+        <ul class="flex items-center gap-2">
+          <li>
+            <button><img class="w-[26px] h-[26px]" src="/src/assets/search.svg" alt="검색버튼" /></button>
+          </li>
+          <li>
+            <button><img class="w-[26px] h-[26px]" src="/src/assets/hamburger.svg" alt="메뉴보기버튼" /></button>
+          </li>
+          <li>
+            <button><img class="w-[26px] h-[26px]" src="/src/assets/alrambell.svg" alt="알림보기버튼" /></button>
+          </li>
+        </ul>
+      </nav>
     </div>
-    <!-- 지역 메뉴 -->
-    <nav class="w-auto h-10 flex justify-between px-5 py-1.5">
-      <div class="inline-flex gap-1.5 items-center">
-        <span class="label-l whitespace-nowrap">남가좌제2동</span>
-        <button>
-          <img src="/src/assets/down.svg" alt="지역보기버튼" />
-        </button>
-      </div>
-      <ul class="flex items-center gap-2">
-        <li>
-          <button><img class="w-[26px] h-[26px]" src="/src/assets/search.svg" alt="검색버튼" /></button>
-        </li>
-        <li>
-          <button><img class="w-[26px] h-[26px]" src="/src/assets/hamburger.svg" alt="메뉴보기버튼" /></button>
-        </li>
-        <li>
-          <button><img class="w-[26px] h-[26px]" src="/src/assets/alrambell.svg" alt="알림보기버튼" /></button>
-        </li>
-      </ul>
-    </nav>
     <!-- 사진 영역 -->
     <div class="h-58 bg-(--color-content-tertiary) relative px-5 py-5">
       <div class="w-37 h-37">
