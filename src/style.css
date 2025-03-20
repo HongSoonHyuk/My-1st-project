@@ -32,6 +32,17 @@
   --breakpoint-*: initial;
   --breakpoint-sm: 37.5rem;
   --breakpoint-md: 71rem;
+
+  --animate-spin: spin 1s linear;
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(90deg);
+    }
+  }
 }
 
 @layer components {
