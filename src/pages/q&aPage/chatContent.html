@@ -93,7 +93,9 @@
     </div>
 
     <!-- 약속잡기, 송금하기 버튼 -->
-    <div class="flex w-full h-[41px] gap-1 pt-2 pl-3 pb-2">
+    <div
+      class="flex w-full h-[41px] gap-1 pt-2 pl-3 pb-2 border-b border-gray-300"
+    >
       <button
         class="border rounded-lg border-gray-400 flex items-center gap-1 px-2 py-1.5 text-[10.503px]"
       >
@@ -115,7 +117,7 @@
 
     <!-- 안내 -->
     <div
-      class="bg-[#8db0f9] rounded-lg px-4 py-3 text-white m-2 gap-2 text-[10.503px]"
+      class="bg-[#8db0f9] rounded-lg px-5 py-3 text-white mx-3 my-2 text-[10.503px]"
     >
       <span class="font-bold">님은 우수판매자예요.</span>
       <span class="">개인정보유도와 명예훼손 내용은 차단될 수 있어요.</span>
@@ -131,65 +133,63 @@
       >
     </div>
 
-    <!-- 채팅 전송 -->
-    <div class="w-[320px] flex justify-end p-1">
-      <div class="grid grid-cols-[1fr_auto] gap-1 max-w-[250px]">
-        <p class="text-xs text-[var(--color-content-tertiary)] place-self-end">
-          오후 4:30분
-        </p>
-        <div class="bg-[#8db0f9] px-3 py-2 rounded-2xl max-w-[238px]">
-          <p class="text-white text-m">가격 네고 가능한가요?</p>
-        </div>
+    <!-- 텍스트 전송 -->
+    <div
+      class="grid grid-cols-1 justify-self-end gap-1 max-w-[300px] px-2 pt-1"
+    >
+      <div
+        class="bg-[#719cf7] px-3 py-2 rounded-2xl max-w-[250px] break-words inline-block"
+      >
+        <p class="text-white text-[14px]">가격 네고 가능한가요?</p>
       </div>
     </div>
-    <div class="w-[320px] flex justify-end p-1">
-      <div class="grid grid-cols-[1fr_auto] gap-1 max-w-[250px]">
-        <p class="text-xs text-[var(--color-content-tertiary)] place-self-end">
-          오후 4:32분
-        </p>
-        <div class="bg-[#8db0f9] px-3 py-2 rounded-2xl max-w-[238px]">
-          <p class="text-white text-m">목요일 거래 가능할까요?</p>
-        </div>
-      </div>
-    </div>
-    <div class="w-[320px] flex justify-end p-1">
-      <div class="grid grid-cols-[1fr_auto] gap-1 max-w-[250px]">
-        <p class="text-xs text-[var(--color-content-tertiary)] place-self-end">
-          오후 4:40분
-        </p>
-        <div class="bg-[#8db0f9] px-3 py-2 rounded-2xl max-w-[238px]">
-          <p class="text-white text-m">판매 안하시나요?ㅠㅠ</p>
-        </div>
+    <div class="grid grid-cols-[1fr_auto] gap-1 w-full pt-1 px-2">
+      <p
+        class="text-[10.503px] text-[var(--color-content-tertiary)] place-self-end w-[55px] text-center"
+      >
+        오후 4:30분
+      </p>
+      <div
+        class="bg-[#719cf7] px-3 py-2 rounded-2xl max-w-[250px] break-words inline-block"
+      >
+        <p class="text-white text-[14px]">목요일 거래 가능할까요?</p>
       </div>
     </div>
 
     <!-- 날짜 -->
-    <div class="w-full h-[32px] grid grid-cols-1 m-3 pt-1">
+    <div class="w-full h-[32px] grid grid-cols-1 m-3 p-2">
       <time
-        datetime="2025.03.19"
+        datetime="2025.03.20"
         class="text-[10.503px] text-[var(--color-content-tertiary)] justify-self-center pt-2"
-        >2025년 3월 19일</time
+        >2025년 3월 20일</time
       >
     </div>
 
     <!-- 수신 채팅 -->
-    <div class="w-[320px] m-2">
-      <div class="grid grid-cols-[auto_1fr] gap-1 max-w-[250px]">
-        <div class="bg-[#EBECF0] px-3 py-2 rounded-2xl max-w-[238px]">
-          <p class="text-black text-m">
-            죄송해요 제가 핸드폰을 바꿔서 방금 봤어요ㅜㅜ 판애 아직
-            안됐습니다..!
-          </p>
-        </div>
-        <p class="text-xs text-[var(--color-content-tertiary)] self-end w-20">
-          오후 4:30분
-        </p>
+    <div class="grid grid-cols-[auto_1fr] gap-1 w-full pt-1 px-4">
+      <div
+        class="bg-[#EBECF0] px-3 py-2 rounded-2xl max-w-[250px] break-words inline-block"
+      >
+        <p class="text-black text-[14px]">죄송해요ㅠㅠ</p>
       </div>
     </div>
 
+    <div class="grid grid-cols-[auto_1fr] gap-1 w-full pt-1 px-4">
+      <div
+        class="bg-[#EBECF0] px-3 py-2 rounded-2xl max-w-[250px] break-words inline-block"
+      >
+        <p class="text-black text-[14px]">
+          제가 핸드폰을 바꿔서 방금 봤어요ㅜㅜ 판매 아직 안됐습니다..!
+        </p>
+      </div>
+      <p class="text-[10.503px] text-[var(--color-content-tertiary)] self-end">
+        오후 4:30분
+      </p>
+    </div>
+
     <!-- 메세지 보내기 -->
-    <div class="flex w-full px-1 py-2 items-center">
-      <button class="p-1 cursor-pointer">
+    <div class="flex w-full px-1 py-3 items-center">
+      <button class="p-1 ml-2 cursor-pointer">
         <svg
           width="20"
           height="20"
