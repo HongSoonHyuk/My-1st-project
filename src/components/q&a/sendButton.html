@@ -15,56 +15,6 @@
     <script type="module" src="/src/main.js"></script>
   </head>
   <body>
-    <!-- 상단 버튼 - 다른 파트에 있음 -->
-    <!-- 카테고리 -->
-    <p
-      class="bg-[#C4C7D2] text-white text-[10.503px] rounded-sm w-[48px] h-[20px] mx-3 grid place-items-center"
-    >
-      Q&A
-    </p>
-    <!-- 프로필, 닉네임, 위치 등 -->
-    <div
-      class="grid grid-cols-[auto_1fr] items-center gap-2.5 w-full mx-3 my-3"
-    >
-      <!-- 프로필 이미지 -->
-      <div
-        class="bg-[var(--color-content-secondary)] w-[30px] h-[30px] rounded-full overflow-hidden"
-      >
-        <img src="/" alt="" class="w-full h-full object-cover" />
-      </div>
-
-      <section class="flex flex-col min-w-0 w-[120px]">
-        <div class="flex gap-2">
-          <h2 class="text-[10.503px]">닉네임</h2>
-        </div>
-
-        <p
-          class="truncate text-ellipsis whitespace-nowrap overflow-hidden text-[10.503px] text-[var(--color-content-secondary)]"
-        >
-          위치
-        </p>
-      </section>
-    </div>
-
-    <!-- Q. 제목, 내용, 사진 -->
-    <div class="grid grid-rows-[auto_auto_1fr] w-full p-3">
-      <div class="mb-3">
-        <div>
-          <h2 class="font-bold">
-            <span class="pr-1 text-[18.662px]">Q.</span>
-            혹시 홍대나 연희동 주변에 프론트 스터디 하시는 분
-          </h2>
-        </div>
-        <p class="text-[14px] pt-1">계신가요? 있으면 참가하고 싶어서요!</p>
-      </div>
-
-      <img
-        src=""
-        alt=""
-        class="bg-[var(--color-content-secondary)] w-[294px] h-[367px] mb-1 rounded-xl overflow-hidden"
-      />
-    </div>
-
     <!-- 위치, 장소, 댓글 입력창, 이모티콘 버튼 -->
     <div class="flex w-full px-3 mt-2 items-center gap-1">
       <button class="p-1 cursor-pointer">
@@ -97,7 +47,7 @@
       </button>
 
       <div
-        class="bg-gray-200 rounded-3xl w-auto h-[38px] flex items-center px-1"
+        class="bg-gray-200 rounded-3xl w-full h-[38px] flex items-center px-1"
       >
         <input
           type="text"
@@ -127,88 +77,67 @@
       </div>
     </div>
 
-    <!-- 배지 -->
-    <article
-    class="bg-[var(--color-primary)] w-[300px] h-auto p-5 mt-20 rounded-xl m-3 flex justify-between items-center"
-  >
-    <div class="flex flex-col">
-      <header class="grid grid-rows-2 w-full">
-        <div class="grid grid-cols-[auto_1fr] gap-1 items-center">
+    <br />
+    <!-- 메세지 보내기 -->
+    <div class="flex w-full px-1 py-2 items-center">
+      <button class="p-1 cursor-pointer">
+        <svg
+          width="20"
+          height="20"
+          viewBox="0 0 20 20"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M15.8334 10.8317H10.8334V15.8317H9.16675V10.8317H4.16675V9.16504H9.16675V4.16504H10.8334V9.16504H15.8334V10.8317Z"
+            fill="#919191"
+          />
+        </svg>
+      </button>
+
+      <div
+        class="bg-gray-200 rounded-3xl w-full h-[38px] flex items-center px-2"
+      >
+        <input
+          type="text"
+          placeholder="댓글을 입력해주세요."
+          class="text-[14px] bg-transparent flex-1 focus:outline-none focus:ring-0 placeholder-gray-400 p-2"
+        />
+        <button class="p-1 cursor-pointer focus:outline-none focus:ring-0">
           <svg
-            width="13"
-            height="13"
+            width="20"
+            height="20"
             viewBox="0 0 20 20"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
-              d="M4.99984 2.5C5.22085 2.5 5.43281 2.5878 5.58909 2.74408C5.74537 2.90036 5.83317 3.11232 5.83317 3.33333V4.06667C6.7165 3.7 7.9165 3.33333 9.1665 3.33333C11.6665 3.33333 11.6665 5 13.3332 5C15.8332 5 16.6665 3.33333 16.6665 3.33333V10C16.6665 10 15.8332 11.6667 13.3332 11.6667C10.8332 11.6667 10.8332 10 9.1665 10C6.6665 10 5.83317 11.6667 5.83317 11.6667V17.5H4.1665V3.33333C4.1665 3.11232 4.2543 2.90036 4.41058 2.74408C4.56686 2.5878 4.77882 2.5 4.99984 2.5Z"
-              fill="white"
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M9.99984 2.29163C7.95546 2.29163 5.99482 3.10375 4.54922 4.54934C3.10363 5.99494 2.2915 7.95558 2.2915 9.99996C2.2915 12.0443 3.10363 14.005 4.54922 15.4506C5.99482 16.8962 7.95546 17.7083 9.99984 17.7083C12.0442 17.7083 14.0049 16.8962 15.4505 15.4506C16.896 14.005 17.7082 12.0443 17.7082 9.99996C17.7082 7.95558 16.896 5.99494 15.4505 4.54934C14.0049 3.10375 12.0442 2.29163 9.99984 2.29163ZM1.0415 9.99996C1.0415 5.05246 5.05234 1.04163 9.99984 1.04163C14.9473 1.04163 18.9582 5.05246 18.9582 9.99996C18.9582 14.9475 14.9473 18.9583 9.99984 18.9583C5.05234 18.9583 1.0415 14.9475 1.0415 9.99996ZM6.99734 12.9608C7.04627 12.8948 7.10774 12.8391 7.17821 12.7969C7.24869 12.7547 7.32679 12.7268 7.40806 12.7148C7.48933 12.7028 7.57216 12.707 7.65183 12.727C7.73149 12.747 7.80642 12.7826 7.87234 12.8316C8.479 13.2816 9.2115 13.5416 9.99984 13.5416C10.7882 13.5416 11.5207 13.2808 12.1273 12.8316C12.193 12.7805 12.2683 12.743 12.3487 12.7214C12.4291 12.6997 12.513 12.6944 12.5955 12.7056C12.678 12.7168 12.7575 12.7444 12.8291 12.7868C12.9008 12.8292 12.9633 12.8854 13.013 12.9523C13.0626 13.0191 13.0984 13.0952 13.1182 13.1761C13.138 13.257 13.1415 13.341 13.1284 13.4232C13.1153 13.5054 13.0859 13.5842 13.0419 13.6549C12.9979 13.7256 12.9403 13.7868 12.8723 13.835C12.0429 14.4551 11.0354 14.7906 9.99984 14.7916C8.96426 14.7906 7.95673 14.4551 7.12734 13.835C6.99419 13.7363 6.9057 13.5887 6.88132 13.4248C6.85694 13.2609 6.89867 13.094 6.99734 12.9608Z"
+              fill="#919191"
+            />
+            <path
+              d="M13.3332 8.75C13.3332 9.44 12.9598 10 12.4998 10C12.0398 10 11.6665 9.44 11.6665 8.75C11.6665 8.06 12.0398 7.5 12.4998 7.5C12.9598 7.5 13.3332 8.06 13.3332 8.75ZM8.33317 8.75C8.33317 9.44 7.95984 10 7.49984 10C7.03984 10 6.6665 9.44 6.6665 8.75C6.6665 8.06 7.03984 7.5 7.49984 7.5C7.95984 7.5 8.33317 8.06 8.33317 8.75Z"
+              fill="#919191"
             />
           </svg>
-          <h2 class="text-[var(--color-background)] text-[10.503px]">
-            5개의 친구질문 글에 댓글 남기기
-          </h2>
-        </div>
-        <p class="text-[var(--color-content-tertiary)] text-[10.503px] mt-1">
-          미션 완료 시 '우수답변가' 배지를 받아요
-        </p>
-      </header>
-
-      <div class="flex justify-start pt-3 gap-1 w-[190px] pb-3">
-        <div
-          class="w-[38px] h-[3px] max-w-[200px] bg-gray-400 rounded-full overflow-hidden"
-        >
-          <div
-            class="w-[50%] h-full bg-[var(--color-secondary)] rounded-full"
-          ></div>
-        </div>
-        <div
-          class="w-[38px] h-[3px] max-w-[200px] bg-gray-400 rounded-full overflow-hidden"
-        >
-          <div
-            class="w-[0%] h-full bg-[var(--color-secondary)] rounded-full"
-          ></div>
-        </div>
-        <div
-          class="w-[38px] h-[3px] max-w-[200px] bg-gray-400 rounded-full overflow-hidden"
-        >
-          <div
-            class="w-[0%] h-full bg-[var(--color-secondary)] rounded-full"
-          ></div>
-        </div>
-        <div
-          class="w-[38px] h-[3px] max-w-[200px] bg-gray-400 rounded-full overflow-hidden"
-        >
-          <div
-            class="w-[0%] h-full bg-[var(--color-secondary)] rounded-full"
-          ></div>
-        </div>
-        <div
-          class="w-[38px] h-[3px] max-w-[200px] bg-gray-400 rounded-full overflow-hidden"
-        >
-          <div
-            class="w-[0%] h-full bg-[var(--color-secondary)] rounded-full"
-          ></div>
-        </div>
+        </button>
       </div>
-    </div>
-
-    <div class="flex flex-col self-start pt-1">
-      <p
-        class="bg-[var(--color-background)] w-[53px] h-[53px] rounded-xl"
-      ></p>
-      <img src="" alt="" />
-    </div>
-  </article>
-
-    </article>
-
-    <div
-      class="text-xs text-[var(--color-content-tertiary)] text-center w-full mt-30 mb-30"
-    >
-      <p class="">아직 댓글이 없어요.</p>
-      <p class="">가장 먼저 댓글을 남겨보세요.</p>
+      <button class="p-1 cursor-pointer">
+        <svg
+          width="18"
+          height="18"
+          viewBox="0 0 18 18"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M2.43653 1.68746C1.81746 1.39174 1.13731 1.95746 1.3141 2.62024L2.6101 7.46289C2.64258 7.58459 2.7101 7.69408 2.80427 7.77774C2.89845 7.8614 3.01513 7.91555 3.13981 7.93346L9.49381 8.84117C9.67767 8.86689 9.67767 9.13303 9.49381 9.15939L3.14046 10.0665C3.01577 10.0844 2.89909 10.1385 2.80492 10.2222C2.71074 10.3058 2.64322 10.4153 2.61074 10.537L1.3141 15.3822C1.13731 16.0444 1.81746 16.6101 2.43653 16.315L16.2567 9.72639C16.8667 9.43581 16.8667 8.56667 16.2567 8.27546L2.43653 1.68746Z"
+            fill="#919191"
+          />
+        </svg>
+      </button>
     </div>
   </body>
 </html>
