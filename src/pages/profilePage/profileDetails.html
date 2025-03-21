@@ -28,18 +28,18 @@
       <div class="flex justify-center items-center">
         <div class="w-6 h-4 relative">
           <div
-            class="w-3.5 h-4 left-[10px] absolute bg-cover bg-[url('./assets/celluar.svg')]"
+            class="w-3.5 h-4 left-[10px] absolute bg-cover bg-[url('../../assets/celluar.svg')]"
           ></div>
         </div>
         <div class="flex justify-center items-center gap-0.5">
           <div class="w-6 h-6 relative">
             <div
-              class="w-6 h-6 absolute bg-cover bg-[url('./assets/lte.svg')]"
+              class="w-6 h-6 absolute bg-cover bg-[url('../../assets/lte.svg')]"
             ></div>
           </div>
           <div class="w-6 h-5 relative">
             <div
-              class="w-5 h-5 absolute bg-cover bg-[url('./assets/battery.svg')]"
+              class="w-5 h-5 absolute bg-cover bg-[url('../../assets/battery.svg')]"
             ></div>
           </div>
         </div>
@@ -50,10 +50,14 @@
       class="bg-white p-4 flex justify-between items-center label-m border-b-[0.3px] border-[#919191]"
     >
       <!-- 텍스트 -->
-      <h2>기본정보</h2>
+      <h1>기본정보</h1>
       <!-- 아이콘 -->
-      <a href="/">
+      <a
+        href="/"
+        class="focus:outline-none focus-visible:ring-2 focus-visible:ring-(--color-tertiary) focus-visible:rounded-[2px]"
+      >
         <svg
+          aria-hidden="true"
           width="16"
           height="16"
           viewBox="0 0 20 20"
@@ -73,10 +77,10 @@
       <div class="space-y-[30px] bg-white pb-2">
         <!-- 하는 일 -->
         <section class="space-y-2 px-3">
-          <h3 class="label-m">하는 일</h3>
+          <h2 class="label-m">하는 일</h2>
           <button
             type="button"
-            class="flex w-full justify-center gap-[7px] items-center cursor-pointer place-items-center border border-[#D3D3D3] rounded-lg py-2.5"
+            class="flex w-full justify-center gap-[7px] items-center cursor-pointer place-items-center border border-[#D3D3D3] rounded-lg py-2.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-(--color-tertiary) focus-visible:rounded-2"
           >
             <svg
               aria-hidden="true"
@@ -106,11 +110,10 @@
         </section>
         <!-- 프로필 키워드 -->
         <section class="space-y-2 px-3">
-          <h3 class="label-m">프로필 키워드</h3>
-
+          <h2 class="label-m">프로필 키워드</h2>
           <button
             type="button"
-            class="flex w-full justify-center place-items-center border border-[#D3D3D3] rounded-lg py-2.5 gap-[7px] items-center cursor-pointer"
+            class="flex w-full justify-center place-items-center border border-[#D3D3D3] rounded-lg py-2.5 gap-[7px] items-center cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-(--color-tertiary) focus-visible:rounded-2"
           >
             <svg
               aria-hidden="true"
@@ -143,7 +146,7 @@
           <fieldset>
             <legend class="sr-only">성별 공개 여부</legend>
             <section class="px-3">
-              <h3 class="label-m mb-[3px]">성별</h3>
+              <h2 class="label-m mb-[3px]">성별</h2>
               <p class="paragraph-s text-(--color-content-secondary) mb-2">
                 정보 공개 시, 내 답변 프로필 카드에 정보가 노출됩니다.
               </p>
@@ -155,15 +158,15 @@
                 <div class="inline-flex box-border">
                   <input
                     type="radio"
-                    id="unopen"
+                    id="gender-unopen"
                     name="choice"
-                    class="appearance-none peer/unopen focus-visible::ring-1.5 focus-visible::ring-(--color-content-primary)"
+                    class="appearance-none peer/gender-unopen"
                     checked
                   />
 
                   <label
-                    for="unopen"
-                    class="flex items-center justify-center gap-2 text-white bg-[#9DA1B4] rounded-md py-1.5 px-4 cursor-pointer w-full text-center peer-checked/unopen:bg-white peer-checked/unopen:text-[#5A85EE] peer-checked/unopen:border peer-checked/unopen:border-[#5A85EE] peer-focus-visible/unopen:ring-1 peer-focus-visible/unopen:ring-(--color-content-primary)"
+                    for="gender-unopen"
+                    class="flex items-center justify-center gap-2 text-white bg-[#9DA1B4] rounded-md py-1.5 px-4 cursor-pointer w-full text-center peer-checked/gender-unopen:bg-white peer-checked/gender-unopen:text-[#5A85EE] peer-checked/gender-unopen:border peer-checked/gender-unopen:border-[#5A85EE] peer-focus-visible/gender-unopen:ring-1 peer-focus-visible/gender-unopen:ring-(--color-tertiary)"
                   >
                     <svg
                       aria-hidden="true"
@@ -186,14 +189,14 @@
                 <div class="inline-flex">
                   <input
                     type="radio"
-                    id="open"
+                    id="gender-open"
                     name="choice"
-                    class="appearance-none peer/open focus-visible:ring-1.5 focus-visible:ring-(--color-content-primary)"
+                    class="appearance-none peer/gender-open"
                   />
 
                   <label
-                    for="open"
-                    class="flex items-center justify-center gap-2 text-white bg-[#9DA1B4] rounded-md py-1.5 px-4 cursor-pointer w-full text-center peer-checked/open:bg-white peer-checked/open:text-[#5A85EE] peer-checked/open:border peer-checked/open:border-[#5A85EE] peer-focus-visible/open:ring-1 peer-focus-visible/open:ring-(--color-content-primary)"
+                    for="gender-open"
+                    class="flex items-center justify-center gap-2 text-white bg-[#9DA1B4] rounded-md py-1.5 px-4 cursor-pointer w-full text-center peer-checked/gender-open:bg-white peer-checked/gender-open:text-[#5A85EE] peer-checked/gender-open:border peer-checked/gender-open:border-[#5A85EE] peer-focus-visible/gender-open:ring-1 peer-focus-visible/gender-open:ring-(--color-tertiary)"
                   >
                     <svg
                       aria-hidden="true"
@@ -232,14 +235,14 @@
                 <div class="inline-flex box-border">
                   <input
                     type="radio"
-                    id="unopen"
+                    id="age-unopen"
                     name="choice"
-                    class="appearance-none peer/unopen focus-visible::ring-1.5 focus-visible::ring-(--color-content-primary)"
+                    class="appearance-none peer/age-unopen"
                   />
 
                   <label
-                    for="unopen"
-                    class="flex items-center justify-center gap-2 text-white bg-[#9DA1B4] rounded-md py-1.5 px-4 cursor-pointer w-full text-center peer-checked/unopen:bg-white peer-checked/unopen:text-[#5A85EE] peer-checked/unopen:border peer-checked/unopen:border-[#5A85EE] peer-focus-visible/unopen:ring-1 peer-focus-visible/unopen:ring-(--color-content-primary)"
+                    for="age-unopen"
+                    class="flex items-center justify-center gap-2 text-white bg-[#9DA1B4] rounded-md py-1.5 px-4 cursor-pointer w-full text-center peer-checked/age-unopen:bg-white peer-checked/age-unopen:text-[#5A85EE] peer-checked/age-unopen:border peer-checked/age-unopen:border-[#5A85EE] peer-focus-visible/age-unopen:ring-1 peer-focus-visible/age-unopen:ring-(--color-tertiary)"
                   >
                     <svg
                       aria-hidden="true"
@@ -262,15 +265,15 @@
                 <div class="inline-flex">
                   <input
                     type="radio"
-                    id="open"
+                    id="age-open"
                     name="choice"
-                    class="appearance-none peer/open focus-visible:ring-1.5 focus-visible:ring-(--color-content-primary)"
+                    class="appearance-none peer/age-open"
                     checked
                   />
 
                   <label
-                    for="open"
-                    class="flex items-center justify-center gap-2 text-white bg-[#9DA1B4] rounded-md py-1.5 px-4 cursor-pointer w-full text-center peer-checked/open:bg-white peer-checked/open:text-[#5A85EE] peer-checked/open:border peer-checked/open:border-[#5A85EE] peer-focus-visible/open:ring-1 peer-focus-visible/open:ring-(--color-content-primary)"
+                    for="age-open"
+                    class="flex items-center justify-center gap-2 text-white bg-[#9DA1B4] rounded-md py-1.5 px-4 cursor-pointer w-full text-center peer-checked/age-open:bg-white peer-checked/age-open:text-[#5A85EE] peer-checked/age-open:border peer-checked/age-open:border-[#5A85EE] peer-focus-visible/age-open:ring-1 peer-focus-visible/age-open:ring-(--color-tertiary)"
                   >
                     <svg
                       aria-hidden="true"
@@ -294,12 +297,12 @@
         </form>
         <!-- 회사 -->
         <section class="space-y-2 px-3">
-          <h3 class="label-m">회사</h3>
+          <h2 class="label-m">회사</h2>
           <!-- 검색하기 -->
           <div class="grid grid-cols-2 gap-1.5">
             <button
               type="button"
-              class="flex w-full gap-[4px] items-center justify-center label-m bg-white border-[#D3D3D3] border px-[34px] py-2 rounded-md cursor-pointer"
+              class="flex w-full gap-[4px] items-center justify-center label-m bg-white border-[#D3D3D3] border px-[34px] py-2 rounded-md cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-(--color-tertiary) focus-visible:rounded-2"
             >
               <svg
                 aria-hidden="true"
@@ -328,7 +331,7 @@
             <!-- 직접입력 -->
             <button
               type="button"
-              class="flex w-full justify-center gap-[4px] items-center label-m bg-white border-[#D3D3D3] border px-[34px] py-2 rounded-md cursor-pointer"
+              class="flex w-full justify-center gap-[4px] items-center label-m bg-white border-[#D3D3D3] border px-[34px] py-2 rounded-md cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-(--color-tertiary) focus-visible:rounded-2"
             >
               <svg
                 aria-hidden="true"
@@ -350,12 +353,12 @@
         </section>
         <!-- 학교 -->
         <section class="space-y-2 px-3">
-          <h3 class="label-m">학교</h3>
+          <h2 class="label-m">학교</h2>
           <!-- 검색하기 -->
           <div class="grid grid-cols-2 gap-1.5">
             <button
               type="button"
-              class="flex items-center gap-[4px] w-full justify-center label-m bg-white border-[#D3D3D3] border px-[34px] py-2 rounded-md cursor-pointer"
+              class="flex items-center gap-[4px] w-full justify-center label-m bg-white border-[#D3D3D3] border px-[34px] py-2 rounded-md cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-(--color-tertiary) focus-visible:rounded-2"
             >
               <svg
                 aria-hidden="true"
@@ -384,7 +387,7 @@
             <!-- 직접입력 -->
             <button
               type="button"
-              class="flex w-full justify-center gap-[4px] items-center label-m bg-white border-[#D3D3D3] border px-[34px] py-2 rounded-md cursor-pointer"
+              class="flex w-full justify-center gap-[4px] items-center label-m bg-white border-[#D3D3D3] border px-[34px] py-2 rounded-md cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-(--color-tertiary) focus-visible:rounded-2"
             >
               <svg
                 aria-hidden="true"
@@ -405,11 +408,11 @@
         </section>
         <!-- 자격 -->
         <section class="space-y-2 px-3">
-          <h3 class="label-m">자격</h3>
+          <h2 class="label-m">자격</h2>
           <!-- 직접입력 -->
           <button
             type="button"
-            class="flex w-full justify-center gap-1 items-center label-m bg-white border-[#D3D3D3] border px-[34px] py-2 rounded-md cursor-pointer"
+            class="flex w-full justify-center gap-1 items-center label-m bg-white border-[#D3D3D3] border px-[34px] py-2 rounded-md cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-(--color-tertiary) focus-visible:rounded-2"
           >
             <svg
               aria-hidden="true"
@@ -430,8 +433,11 @@
         <!-- 취득자격 -->
         <section class="space-y-2 px-3 grid">
           <div class="flex items-center gap-0.5">
-            <h3 class="label-m">취득 자격</h3>
-            <button type="button" class="cursor-pointer">
+            <h2 class="label-m">취득 자격</h2>
+            <button
+              type="button"
+              class="cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-(--color-tertiary) focus-visible:rounded-[2px]"
+            >
               <span class="sr-only">취득자격 등록 가능 확인하기</span>
               <svg
                 aria-hidden="true"
@@ -451,7 +457,7 @@
           </div>
           <button
             type="button"
-            class="place-items-center bg-[#E9E9E9] py-9 pt-6 pb-7 rounded-[10px] w-full cursor-pointer"
+            class="place-items-center bg-[#E9E9E9] py-9 pt-6 pb-7 rounded-[10px] w-full cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-(--color-tertiary) focus-visible:rounded-[10px]"
           >
             <svg
               aria-hidden="true"
@@ -490,7 +496,7 @@
               <input
                 type="checkbox"
                 id="allAgree"
-                class="w-4 h-4 appearance-none bg-[url(./assets/state=Default.svg)] checked:bg-[url(./assets/state=focus.svg)]"
+                class="w-4 h-4 appearance-none bg-[url(../../assets/state=Default.svg)] checked:bg-[url(../../assets/state=focus.svg)] focus-visible:ring-2 focus-visible:ring-(--color-tertiary) focus-visible:rounded-[2px] focus-visible:ring-offset-1"
               />
               <label for="allAgree">아래 내용에 전체 동의합니다.</label>
             </p>
@@ -508,7 +514,7 @@
                     required
                     type="checkbox"
                     id="agrees"
-                    class="w-4 h-4 flex-shrink-0 appearance-none bg-[url(./assets/state=Default.svg)] checked:bg-[url(./assets/state=focus.svg)]"
+                    class="w-4 h-4 flex-shrink-0 appearance-none bg-[url(../../assets/state=Default.svg)] checked:bg-[url(../../assets/state=focus.svg)] focus:outline-none focus-visible:ring-2 focus-visible:ring-(--color-tertiary) focus-visible:rounded-[2px] focus-visible:ring-offset-1"
                   />
                   <label for="agrees">
                     [ 필수 ] 개인 정보 수집 및 이용 동의
@@ -540,15 +546,18 @@
                     required
                     type="checkbox"
                     id="agrees"
-                    class="w-4 h-4 appearance-none bg-[url(./assets/state=Default.svg)] checked:bg-[url(./assets/state=focus.svg)]"
+                    class="w-4 h-4 appearance-none bg-[url(../../assets/state=Default.svg)] checked:bg-[url(../../assets/state=focus.svg)] focus:outline-none focus-visible:ring-2 focus-visible:ring-(--color-tertiary) focus-visible:rounded-[2px] focus-visible:ring-offset-1"
                   />
                   <label for="agrees">
                     [ 필수 ] 프로필 정보 노출 영역 확인
                   </label>
                 </p>
-                <a href="/" class="flex text-(--color-content-secondary)"
+                <a
+                  href="/"
+                  class="flex items-end text-(--color-content-secondary) focus:outline-none focus-visible:ring-2 focus-visible:ring-(--color-tertiary) focus-visible:rounded-[2px]"
                   >자세히
                   <svg
+                    aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"
                     height="16"
@@ -570,7 +579,7 @@
                   required
                   type="checkbox"
                   id="agrees"
-                  class="w-4 h-4 flex-shrink-0 appearance-none bg-[url(./assets/state=Default.svg)] checked:bg-[url(./assets/state=focus.svg)]"
+                  class="w-4 h-4 flex-shrink-0 appearance-none bg-[url(../../assets/state=Default.svg)] checked:bg-[url(../../assets/state=focus.svg)] focus:outline-none focus-visible:ring-2 focus-visible:ring-(--color-tertiary) focus-visible:rounded-[2px] focus-visible:ring-offset-1"
                 />
                 <label for="agrees">
                   [ 필수 ] 사실과 다른 정보를 기재하여 발생한 문제에 대해서는
@@ -587,7 +596,7 @@
           <button
             type="reset"
             id="reset"
-            class="flex w-full justify-center gap-1 items-center label-m bg-[#D8D9E1] border-[#D3D3D3] border px-[34px] py-2 rounded-md"
+            class="flex w-full justify-center gap-1 items-center label-m bg-[#D8D9E1] border-[#D3D3D3] border px-[34px] py-2 rounded-md cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-(--color-tertiary) focus-visible:rounded-2"
           >
             취소
           </button>
@@ -596,7 +605,7 @@
             type="submit"
             id="save"
             disabled
-            class="flex w-full justify-center gap-1 items-center label-m text-white bg-(--color-secondary) border-[#D3D3D3] border px-[34px] py-2 rounded-md disabled:bg-[#D8D9E1] disabled:text-(--color-content-primary)"
+            class="flex w-full justify-center gap-1 items-center label-m text-white bg-(--color-secondary) border-[#D3D3D3] border px-[34px] py-2 rounded-md disabled:bg-[#D8D9E1] disabled:text-(--color-content-primary) cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-(--color-tertiary) focus-visible:rounded-2"
           >
             저장
           </button>
@@ -617,7 +626,7 @@
         <div tabindex="0" class="flex flex-col justify-center items-center">
           <div class="w-5 h-5 relative">
             <div
-              class="w-5 h-5 absolute bg-[url('./assets/home.svg')] hover:bg-[url('./assets/fullHome.svg')] bg-cover"
+              class="w-5 h-5 absolute bg-[url('../../assets/home.svg')] hover:bg-[url('../../assets/fullHome.svg')] bg-cover"
             ></div>
           </div>
           <div class="justify-center text-black text-[9px] font-['Pretendard']">
@@ -629,7 +638,7 @@
         <div tabindex="0" class="flex flex-col justify-center items-center">
           <div class="w-5 h-5 relative">
             <div
-              class="w-5 h-5 absolute bg-[url('./assets/life.svg')] hover:bg-[url('./assets/fullFile.svg')] bg-cover"
+              class="w-5 h-5 absolute bg-[url('../../assets/life.svg')] hover:bg-[url('../../assets/fullFile.svg')] bg-cover"
             ></div>
           </div>
           <div
@@ -643,7 +652,7 @@
         <div tabindex="0" class="flex flex-col justify-center items-center">
           <div class="w-5 h-5 relative">
             <div
-              class="w-5 h-5 absolute bg-[url('./assets/map.svg')] hover:bg-[url('./assets/fullMap.svg')] bg-cover"
+              class="w-5 h-5 absolute bg-[url('../../assets/map.svg')] hover:bg-[url('../../assets/fullMap.svg')] bg-cover"
             ></div>
           </div>
           <div class="justify-center text-black text-[9px] font-['Pretendard']">
@@ -655,7 +664,7 @@
         <div tabindex="0" class="flex flex-col justify-center items-center">
           <div class="w-5 h-5 relative">
             <div
-              class="w-5 h-5 absolute bg-[url('./assets/chat.svg')] hover:bg-[url('./assets/fullChat.svg')] bg-cover"
+              class="w-5 h-5 absolute bg-[url('../../assets/chat.svg')] hover:bg-[url('../../assets/fullChat.svg')] bg-cover"
             ></div>
           </div>
           <div class="justify-center text-black text-[9px] font-['Pretendard']">
@@ -667,7 +676,7 @@
         <div tabindex="0" class="flex flex-col justify-center items-center">
           <div class="w-5 h-5 relative">
             <div
-              class="w-5 h-5 absolute bg-[url('./assets/fullMy.svg')] bg-cover"
+              class="w-5 h-5 absolute bg-[url('../../assets/fullMy.svg')] bg-cover"
             ></div>
           </div>
           <div class="justify-center text-black text-[9px] font-['Pretendard']">

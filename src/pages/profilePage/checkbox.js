@@ -1,41 +1,31 @@
 const allAgree = document.querySelector("#allAgree");
-const agree = document.querySelectorAll("ul input");
+const agrees = document.querySelectorAll("input[type='checkbox'][id='agrees']");
 const resetButton = document.querySelector("#reset");
 const submitButton = document.querySelector("#save");
 
-allAgree.addEventListener("click", (e) => {
-  e.preventDefault();
+allAgree.addEventListener("change", (e) => {
+  const isChecked = e.target.checked;
+  agrees.forEach((agree) => {
+    agree.checked = isChecked;
+  });
+  toggleSubmitButton();
 });
 
-for (const agree of agrees) {
-  agree.addEventListener("click", updateDisplay);
+agrees.forEach((agree) => {
+  agree.addEventListener("change", updateDisplay);
+});
+
+function updateDisplay() {
+  const checkedCount = [...agrees].filter((agree) => agree.checked).length;
+  allAgree.checked = checkedCount === agrees.length;
+  allAgree.indeterminate = checkedCount > 0 && checkedCount < agrees.length;
+  toggleSubmitButton();
+}
+
+function toggleSubmitButton() {
+  submitButton.disabled = ![...agrees].every((agree) => agree.checked);
 }
 
 resetButton.addEventListener("click", () => {
   submitButton.disabled = true;
 });
-
-function toggleSubmitButton() {
-  if (allAgree.checked) {
-    submitButton.disabled = false;
-  } else {
-    submitButton.disabled = true;
-  }
-}
-
-function updateDisplay() {
-  const checkedCount = [...agrees].filter((agree) => agree.checked).length;
-
-  if (checkedCount === 0) {
-    allAgree.checked = false;
-    allAgree.indeterminate = false;
-  } else if (checkedCount < agrees.length) {
-    allAgree.checked = false;
-    allAgree.indeterminate = true;
-  } else {
-    allAgree.checked = true;
-    allAgree.indeterminate = false;
-  }
-
-  toggleSubmitButton();
-}
