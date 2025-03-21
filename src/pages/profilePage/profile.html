@@ -45,15 +45,15 @@
       </div>
     </div>
     <!-- 헤더 -->
-    <div class="px-[31px] pt-[42px] pb-[18px]">
+    <header class="px-[31px] pt-[42px] pb-[18px]">
       <!-- 프로필 -->
-      <div class="flex flex-col items-center mb-[15px]">
+      <section class="flex flex-col items-center mb-[15px]">
         <div
           class="bg-[url('./assets/profile.png')] bg-center rounded-[50%] w-[68px] h-[66px] relative mb-[9px]"
         >
           <button
             type="button"
-            class="bg-white shadow-[4px_4px_4px_0_rgba(0,0,0,0.15)] rounded-[50%] w-3.5 h-3.5 absolute right-1.5 bottom-1.5"
+            class="cursor-pointer bg-white shadow-[4px_4px_4px_0_rgba(0,0,0,0.15)] rounded-[50%] w-3.5 h-3.5 absolute right-1.5 bottom-1.5"
           >
             <svg
               width="14"
@@ -81,13 +81,13 @@
         <p class="label-s font-normal text-[#919191]">
           답변<span class="ml-1">35</span>
         </p>
-      </div>
-
+      </section>
       <!-- 프로필 아래 -->
-      <div class="flex justify-between">
+      <section class="flex justify-between">
         <!-- 나의 Q&A -->
-        <div class="text-center">
+        <div class="text-center" tabindex="0">
           <svg
+            aria-hidden="true"
             class="inline-block mb-[7px]"
             width="30"
             height="30"
@@ -113,8 +113,9 @@
           <p class="label-s">나의 Q&A</p>
         </div>
         <!-- 나의 프로필 -->
-        <div class="text-center">
+        <div class="text-center" tabindex="0">
           <svg
+            aria-hidden="true"
             class="inline-block mb-[7px]"
             width="30"
             height="30"
@@ -133,8 +134,9 @@
           <p class="label-s">나의 프로필</p>
         </div>
         <!-- 내소식 -->
-        <div class="text-center">
+        <div class="text-center" tabindex="0">
           <svg
+            aria-hidden="true"
             class="inline-block mb-[7px]"
             xmlns="http://www.w3.org/2000/svg"
             width="30"
@@ -149,329 +151,367 @@
           </svg>
           <p class="label-s">내소식</p>
         </div>
-      </div>
-    </div>
+      </section>
+    </header>
     <!-- 메인 -->
-    <!-- 열정온도 -->
-    <section class="font-sans p-4 grid grid-cols-1">
-      <div class="text-[.75rem] flex gap-0.5 items-center">
-        <p>열정온도</p>
-        <img
-          class="w-3.5 h-3.5"
-          src="/src/assets/information.svg"
-          alt="자세히 보기"
-        />
-      </div>
-      <!-- 온도표시 -->
-      <div class="grid grid-cols-1 mt-[-5px] items-center">
-        <div class="flex justify-between items-center w-full">
-          <div class="w-[80%] mb-1.5">
-            <p
-              class="paragraph-s text-content-secondary flex flex-col items-center"
-            >
-              첫 온도 36.5°C
-              <svg
-                class="inline-block"
-                xmlns="http://www.w3.org/2000/svg"
-                width="8"
-                height="5"
-                viewBox="0 0 8 5"
-                fill="none"
+    <main class="font-sans">
+      <!-- 열정온도 -->
+      <section class="p-3">
+        <h3 class="text-[.75rem] flex gap-0.5 items-center">
+          <p class="text-[12px]">열정온도</p>
+          <button type="button" class="cursor-pointer">
+            <img
+              class="w-3.5 h-3.5 mb-0.5"
+              src="/src/assets/information.svg"
+              alt="열정온도 자세히 보기"
+            />
+          </button>
+        </h3>
+        <!-- 온도표시 -->
+        <article class="mt-[-5px]">
+          <div class="flex justify-between items-center w-full">
+            <div class="w-[80%] mb-1.5">
+              <p
+                class="paragraph-s text-content-secondary flex flex-col items-center"
               >
-                <path
-                  d="M4.40665 4.59968C4.17434 4.82322 3.80691 4.82322 3.5746 4.59968L0.386933 1.53235C-0.00226879 1.15784 0.262833 0.5 0.802958 0.5L7.17829 0.5C7.71842 0.5 7.98352 1.15784 7.59432 1.53235L4.40665 4.59968Z"
-                  fill="#919191"
-                />
-              </svg>
+                첫 온도 36.5°C
+                <svg
+                  aria-hidden="true"
+                  class="inline-block"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="8"
+                  height="5"
+                  viewBox="0 0 8 5"
+                  fill="none"
+                >
+                  <path
+                    d="M4.40665 4.59968C4.17434 4.82322 3.80691 4.82322 3.5746 4.59968L0.386933 1.53235C-0.00226879 1.15784 0.262833 0.5 0.802958 0.5L7.17829 0.5C7.71842 0.5 7.98352 1.15784 7.59432 1.53235L4.40665 4.59968Z"
+                    fill="#919191"
+                  />
+                </svg>
+              </p>
+            </div>
+            <p class="text-secondary label-m">
+              41.2°C
+              <img
+                class="inline-block ml-1 mb-1"
+                src="/src/assets/smile.png"
+                alt="열정온도 상태-좋음"
+              />
             </p>
           </div>
-          <p class="text-secondary label-m">
-            41.2°C
-            <img
-              class="inline-block ml-1 mb-1"
-              src="/src/assets/smile.png"
-              alt="열정온도 상태-좋음"
-            />
-          </p>
-        </div>
 
-        <!-- 상태 바 -->
-        <div
-          class="bg-(--color-content-secondary) w-full h-2 rounded-[10px] overflow-hidden"
-        >
-          <div class="bg-(--color-primary) h-full w-[40%]"></div>
-        </div>
-      </div>
-    </section>
-    <!-- 좋아요와 응답률 -->
-    <section class="px-5 py-4 flex justify-between">
-      <!-- 받은 좋아요 -->
-      <figure
-        class="inline-flex items-start bg-white gap-[5px] font-[Pretendard] text-xs text-[#000] leading-4"
-      >
-        <img src="/src/assets/heart.svg" alt="/" class="w-4 h-4" />
-
-        <figcaption>
-          <p class="">받은 좋아요<span class="ml-[5px] label-s">100%</span></p>
-
-          <p class="text-[#919191]">11개 중 11명이 만족</p>
-        </figcaption>
-      </figure>
-      <!-- 응답률 -->
-      <figure
-        class="inline-flex items-start bg-white gap-[5px] font-[Pretendard] text-xs text-[#000] leading-4"
-      >
-        <img src="/src/assets/speech.svg" alt="/" class="w-4 h-4" />
-
-        <figcaption>
-          <p class="">응답률<span class="ml-[5px] label-s">-%</span></p>
-
-          <p class="text-[#919191] w-30 h-[2.125rem]">
-            표시될만큼 충분히 채팅하지 않았어요.
-          </p>
-        </figcaption>
-      </figure>
-    </section>
-    <!-- 컨텐츠 -->
-    <section>
-      <!-- 활동배지 -->
-      <div
-        class="bg-white p-4 flex justify-between items-center text-[.875rem] text-[#000] font-semibold font-[Pretendard] leading-[21px] border-b-[0.3px] border-[#919191]"
-      >
-        <!-- 텍스트 -->
-        <p>활동배지 10개</p>
-        <!-- 아이콘 -->
-        <a href="/">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="17"
-            viewBox="0 0 16 17"
-            fill="none"
-          >
-            <path
-              d="M6.1937 11.0867L8.78037 8.5L6.1937 5.91334C6.13198 5.85162 6.08302 5.77834 6.04962 5.6977C6.01622 5.61706 5.99902 5.53062 5.99902 5.44334C5.99902 5.35605 6.01622 5.26962 6.04962 5.18897C6.08302 5.10833 6.13198 5.03506 6.1937 4.97334C6.25543 4.91162 6.3287 4.86266 6.40934 4.82925C6.48998 4.79585 6.57642 4.77866 6.6637 4.77866C6.75099 4.77866 6.83742 4.79585 6.91807 4.82925C6.99871 4.86266 7.07198 4.91162 7.1337 4.97334L10.1937 8.03334C10.4537 8.29334 10.4537 8.71334 10.1937 8.97334L7.1337 12.0333C7.07203 12.0951 6.99877 12.1442 6.91812 12.1776C6.83747 12.2111 6.75102 12.2283 6.6637 12.2283C6.57639 12.2283 6.48994 12.2111 6.40929 12.1776C6.32864 12.1442 6.25538 12.0951 6.1937 12.0333C5.94037 11.7733 5.9337 11.3467 6.1937 11.0867Z"
-              fill="black"
-            />
-          </svg>
-        </a>
-      </div>
-      <!-- 판매상품 -->
-      <div
-        class="p-4 bg-white flex justify-between items-center text-[.875rem] text-[#000] font-semibold font-[Pretendard] leading-[21px] border-b-[0.3px] border-[#919191]"
-      >
-        <!-- 텍스트 -->
-        <p>판매상품 3개</p>
-        <!-- 아이콘 -->
-        <a href="/">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="17"
-            viewBox="0 0 16 17"
-            fill="none"
-          >
-            <path
-              d="M6.1937 11.0867L8.78037 8.5L6.1937 5.91334C6.13198 5.85162 6.08302 5.77834 6.04962 5.6977C6.01622 5.61706 5.99902 5.53062 5.99902 5.44334C5.99902 5.35605 6.01622 5.26962 6.04962 5.18897C6.08302 5.10833 6.13198 5.03506 6.1937 4.97334C6.25543 4.91162 6.3287 4.86266 6.40934 4.82925C6.48998 4.79585 6.57642 4.77866 6.6637 4.77866C6.75099 4.77866 6.83742 4.79585 6.91807 4.82925C6.99871 4.86266 7.07198 4.91162 7.1337 4.97334L10.1937 8.03334C10.4537 8.29334 10.4537 8.71334 10.1937 8.97334L7.1337 12.0333C7.07203 12.0951 6.99877 12.1442 6.91812 12.1776C6.83747 12.2111 6.75102 12.2283 6.6637 12.2283C6.57639 12.2283 6.48994 12.2111 6.40929 12.1776C6.32864 12.1442 6.25538 12.0951 6.1937 12.0333C5.94037 11.7733 5.9337 11.3467 6.1937 11.0867Z"
-              fill="black"
-            />
-          </svg>
-        </a>
-      </div>
-      <!-- 받은 매너 평가-->
-      <div
-        class="p-4 bg-white flex justify-between items-center text-[.875rem] text-[#000] font-semibold font-[Pretendard] leading-[21px] border-b-[0.3px] border-[#919191]"
-      >
-        <!-- 텍스트 -->
-        <p>받은 매너 평가</p>
-        <!-- 아이콘 -->
-        <a href="/">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="17"
-            viewBox="0 0 16 17"
-            fill="none"
-          >
-            <path
-              d="M6.1937 11.0867L8.78037 8.5L6.1937 5.91334C6.13198 5.85162 6.08302 5.77834 6.04962 5.6977C6.01622 5.61706 5.99902 5.53062 5.99902 5.44334C5.99902 5.35605 6.01622 5.26962 6.04962 5.18897C6.08302 5.10833 6.13198 5.03506 6.1937 4.97334C6.25543 4.91162 6.3287 4.86266 6.40934 4.82925C6.48998 4.79585 6.57642 4.77866 6.6637 4.77866C6.75099 4.77866 6.83742 4.79585 6.91807 4.82925C6.99871 4.86266 7.07198 4.91162 7.1337 4.97334L10.1937 8.03334C10.4537 8.29334 10.4537 8.71334 10.1937 8.97334L7.1337 12.0333C7.07203 12.0951 6.99877 12.1442 6.91812 12.1776C6.83747 12.2111 6.75102 12.2283 6.6637 12.2283C6.57639 12.2283 6.48994 12.2111 6.40929 12.1776C6.32864 12.1442 6.25538 12.0951 6.1937 12.0333C5.94037 11.7733 5.9337 11.3467 6.1937 11.0867Z"
-              fill="black"
-            />
-          </svg>
-        </a>
-      </div>
-    </section>
-    <!--받은 매너 평가 상세 -->
-    <section class="flex flex-col gap-3 py-3.5 px-3.5">
-      <!-- 1 -->
-      <article
-        class="inline-flex items-start gap-[5px] font-[Pretendard] text-xs text-[#000] leading-4"
-      >
-        <img src="/src/assets/people.svg" alt="/" class="w-4 h-4" />
-
-        <p class="font-semibold">10</p>
-
-        <p class="bg-[#719CF7] p-2 rounded-b-lg rounded-tr-lg">
-          시간 약속을 잘 지켜요.
-        </p>
-      </article>
-      <!-- 2 -->
-      <article
-        class="inline-flex items-start gap-[5px] font-[Pretendard] text-xs text-[#000] leading-4"
-      >
-        <img src="/src/assets/people.svg" alt="/" class="w-4 h-4" />
-
-        <p class="font-semibold mr-1.5">9</p>
-
-        <p class="bg-[#719CF7] p-2 rounded-b-lg rounded-tr-lg">
-          친절하고 매너가 좋아요.
-        </p>
-      </article>
-      <!-- 3 -->
-      <article
-        class="inline-flex items-start gap-[5px] font-[Pretendard] text-xs text-[#000] leading-4"
-      >
-        <img src="/src/assets/people.svg" alt="/" class="w-4 h-4" />
-
-        <p class="font-semibold mr-1.5">8</p>
-
-        <p class="bg-[#719CF7] p-2 rounded-b-lg rounded-tr-lg">
-          제가 있는 곳까지 와서 거래했어요.
-        </p>
-      </article>
-    </section>
-    <!-- 받은 거래 후기-->
-    <div
-      class="p-4 bg-white flex justify-between items-center text-[.875rem] text-[#000] font-semibold font-[Pretendard] leading-[21px] border-b-[0.3px] border-t-[0.3px] border-[#919191]"
-    >
-      <!-- 텍스트 -->
-      <p>받은 거래 후기 1</p>
-      <!-- 아이콘 -->
-      <a href="/">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="16"
-          height="17"
-          viewBox="0 0 16 17"
-          fill="none"
-        >
-          <path
-            d="M6.1937 11.0867L8.78037 8.5L6.1937 5.91334C6.13198 5.85162 6.08302 5.77834 6.04962 5.6977C6.01622 5.61706 5.99902 5.53062 5.99902 5.44334C5.99902 5.35605 6.01622 5.26962 6.04962 5.18897C6.08302 5.10833 6.13198 5.03506 6.1937 4.97334C6.25543 4.91162 6.3287 4.86266 6.40934 4.82925C6.48998 4.79585 6.57642 4.77866 6.6637 4.77866C6.75099 4.77866 6.83742 4.79585 6.91807 4.82925C6.99871 4.86266 7.07198 4.91162 7.1337 4.97334L10.1937 8.03334C10.4537 8.29334 10.4537 8.71334 10.1937 8.97334L7.1337 12.0333C7.07203 12.0951 6.99877 12.1442 6.91812 12.1776C6.83747 12.2111 6.75102 12.2283 6.6637 12.2283C6.57639 12.2283 6.48994 12.2111 6.40929 12.1776C6.32864 12.1442 6.25538 12.0951 6.1937 12.0333C5.94037 11.7733 5.9337 11.3467 6.1937 11.0867Z"
-            fill="black"
-          />
-        </svg>
-      </a>
-    </div>
-    <!-- 후기 내용 상세 -->
-    <section class="flex font-[Pretendard] px-3.5 pt-3.5 pb-5 justify-between">
-      <div class="flex">
-        <span
-          class="inline-block w-7 h-7 rounded-[50%] bg-(--color-content-secondary)"
-        ></span>
-        <!-- 텍스트 -->
-        <article class="flex-col ml-[9px]">
-          <p class="label-s">으갸갸갹</p>
-          <p class="paragraph-s text-(--color-content-secondary)">
-            구매자 • 인천광역시 계양구 • 4개월 전
-          </p>
-          <p class="paragraph-m">감사감사 감사합니다</p>
-        </article>
-      </div>
-      <p class="sr-only">자세히보기</p>
-      <svg
-        class=""
-        xmlns="http://www.w3.org/2000/svg"
-        width="20"
-        height="21"
-        viewBox="0 0 20 21"
-        fill="none"
-      >
-        <path
-          d="M9.99967 6.92965C10.9163 6.92965 11.6663 6.17965 11.6663 5.26298C11.6663 4.34631 10.9163 3.59631 9.99967 3.59631C9.08301 3.59631 8.33301 4.34631 8.33301 5.26298C8.33301 6.17965 9.08301 6.92965 9.99967 6.92965ZM9.99967 8.59631C9.08301 8.59631 8.33301 9.34631 8.33301 10.263C8.33301 11.1796 9.08301 11.9296 9.99967 11.9296C10.9163 11.9296 11.6663 11.1796 11.6663 10.263C11.6663 9.34631 10.9163 8.59631 9.99967 8.59631ZM9.99967 13.5963C9.08301 13.5963 8.33301 14.3463 8.33301 15.263C8.33301 16.1796 9.08301 16.9296 9.99967 16.9296C10.9163 16.9296 11.6663 16.1796 11.6663 15.263C11.6663 14.3463 10.9163 13.5963 9.99967 13.5963Z"
-          fill="#919191"
-        />
-      </svg>
-    </section>
-    <!-- 푸터 메뉴 -->
-    <ul
-      class="flex flex-col paragraph-m border border-(--color-content-secondary) gap-[1.125rem] py-4 pl-[1.125rem] pr-3"
-    >
-      <li><a href="/">보관 질문</a></li>
-      <li><a href="/">설정</a></li>
-      <li><a href="/">지식 iN 공식 블로그</a></li>
-      <li><a href="/">서비스 정보</a></li>
-      <li><a href="/">공지사항</a></li>
-      <li class="flex justify-between">
-        <a href="/">로그아웃</a>
-        <a href="/" class="text-(--color-secondary)">kimchihi</a>
-      </li>
-    </ul>
-    <!-- 하단 바 -->
-    <div
-      class="px-3.5 pt-[8px] pb-[24px] bg-white flex justify-between items-center gap-10"
-    >
-      <a href="/">
-        <div tabindex="0" class="flex flex-col justify-center items-center">
-          <div class="w-5 h-5 relative">
-            <div
-              class="w-5 h-5 absolute bg-[url('./assets/home.svg')] hover:bg-[url('./assets/fullHome.svg')] bg-cover"
-            ></div>
-          </div>
-          <div class="justify-center text-black text-[9px] font-['Pretendard']">
-            홈
-          </div>
-        </div>
-      </a>
-      <a href="/">
-        <div tabindex="0" class="flex flex-col justify-center items-center">
-          <div class="w-5 h-5 relative">
-            <div
-              class="w-5 h-5 absolute bg-[url('./assets/life.svg')] hover:bg-[url('./assets/fullFile.svg')] bg-cover"
-            ></div>
-          </div>
+          <!-- 상태 바 -->
           <div
-            class="justify-center text-black text-[8.9px] font-['Pretendard']"
+            class="bg-(--color-content-secondary) w-full h-2 rounded-[10px] overflow-hidden"
           >
-            게시판
+            <div class="bg-(--color-primary) h-full w-[40%]"></div>
           </div>
+        </article>
+      </section>
+      <!-- 좋아요와 응답률 -->
+      <section class="py-4 px-5 flex justify-between">
+        <!-- 받은 좋아요 -->
+        <figure class="inline-flex items-start bg-white gap-[5px] paragraph-s">
+          <img
+            src="/src/assets/heart.svg"
+            alt="/"
+            class="w-4 h-4"
+            aria-hidden="true"
+          />
+
+          <figcaption>
+            <p class="">
+              받은 좋아요<span class="ml-[5px] label-s">100%</span>
+            </p>
+
+            <p class="text-[#919191]">11개 중 11명이 만족</p>
+          </figcaption>
+        </figure>
+        <!-- 응답률 -->
+        <figure class="inline-flex items-start bg-white gap-[5px] paragraph-s">
+          <img
+            src="/src/assets/speech.svg"
+            alt="/"
+            class="w-4 h-4"
+            aria-hidden="true"
+          />
+
+          <figcaption>
+            <p class="">응답률<span class="ml-[5px] label-s">-%</span></p>
+
+            <p class="text-[#919191] w-30 h-[2.125rem]">
+              표시될만큼 충분히 채팅하지 않았어요.
+            </p>
+          </figcaption>
+        </figure>
+      </section>
+      <!-- 컨텐츠 -->
+      <section>
+        <!-- 활동배지 -->
+        <article
+          class="bg-white px-[18px] py-4 flex justify-between items-center text-[.875rem] text-[#000] font-semibold font-[Pretendard] leading-[21px] border-b-[0.3px] border-[#919191]"
+        >
+          <!-- 텍스트 -->
+          <p>활동배지 10개</p>
+          <!-- 아이콘 -->
+          <a href="/" aria-label="나의 활동 배지 확인하기">
+            <svg
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="17"
+              viewBox="0 0 16 17"
+              fill="none"
+            >
+              <path
+                d="M6.1937 11.0867L8.78037 8.5L6.1937 5.91334C6.13198 5.85162 6.08302 5.77834 6.04962 5.6977C6.01622 5.61706 5.99902 5.53062 5.99902 5.44334C5.99902 5.35605 6.01622 5.26962 6.04962 5.18897C6.08302 5.10833 6.13198 5.03506 6.1937 4.97334C6.25543 4.91162 6.3287 4.86266 6.40934 4.82925C6.48998 4.79585 6.57642 4.77866 6.6637 4.77866C6.75099 4.77866 6.83742 4.79585 6.91807 4.82925C6.99871 4.86266 7.07198 4.91162 7.1337 4.97334L10.1937 8.03334C10.4537 8.29334 10.4537 8.71334 10.1937 8.97334L7.1337 12.0333C7.07203 12.0951 6.99877 12.1442 6.91812 12.1776C6.83747 12.2111 6.75102 12.2283 6.6637 12.2283C6.57639 12.2283 6.48994 12.2111 6.40929 12.1776C6.32864 12.1442 6.25538 12.0951 6.1937 12.0333C5.94037 11.7733 5.9337 11.3467 6.1937 11.0867Z"
+                fill="black"
+              />
+            </svg>
+          </a>
+        </article>
+        <!-- 판매상품 -->
+        <article
+          class="p-4 bg-white flex justify-between items-center text-[.875rem] text-[#000] font-semibold font-[Pretendard] leading-[21px] border-b-[0.3px] border-[#919191]"
+        >
+          <!-- 텍스트 -->
+          <p>판매상품 3개</p>
+          <!-- 아이콘 -->
+          <a href="/" aria-label="판매했던 상품 확인하기">
+            <svg
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="17"
+              viewBox="0 0 16 17"
+              fill="none"
+            >
+              <path
+                d="M6.1937 11.0867L8.78037 8.5L6.1937 5.91334C6.13198 5.85162 6.08302 5.77834 6.04962 5.6977C6.01622 5.61706 5.99902 5.53062 5.99902 5.44334C5.99902 5.35605 6.01622 5.26962 6.04962 5.18897C6.08302 5.10833 6.13198 5.03506 6.1937 4.97334C6.25543 4.91162 6.3287 4.86266 6.40934 4.82925C6.48998 4.79585 6.57642 4.77866 6.6637 4.77866C6.75099 4.77866 6.83742 4.79585 6.91807 4.82925C6.99871 4.86266 7.07198 4.91162 7.1337 4.97334L10.1937 8.03334C10.4537 8.29334 10.4537 8.71334 10.1937 8.97334L7.1337 12.0333C7.07203 12.0951 6.99877 12.1442 6.91812 12.1776C6.83747 12.2111 6.75102 12.2283 6.6637 12.2283C6.57639 12.2283 6.48994 12.2111 6.40929 12.1776C6.32864 12.1442 6.25538 12.0951 6.1937 12.0333C5.94037 11.7733 5.9337 11.3467 6.1937 11.0867Z"
+                fill="black"
+              />
+            </svg>
+          </a>
+        </article>
+        <!-- 받은 매너 평가-->
+        <article
+          class="p-4 bg-white flex justify-between items-center text-[.875rem] text-[#000] font-semibold font-[Pretendard] leading-[21px] border-b-[0.3px] border-[#919191]"
+        >
+          <!-- 텍스트 -->
+          <p>받은 매너 평가</p>
+          <!-- 아이콘 -->
+          <a href="/" aria-label="받은 매너 평가 확인하기 ">
+            <svg
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="17"
+              viewBox="0 0 16 17"
+              fill="none"
+            >
+              <path
+                d="M6.1937 11.0867L8.78037 8.5L6.1937 5.91334C6.13198 5.85162 6.08302 5.77834 6.04962 5.6977C6.01622 5.61706 5.99902 5.53062 5.99902 5.44334C5.99902 5.35605 6.01622 5.26962 6.04962 5.18897C6.08302 5.10833 6.13198 5.03506 6.1937 4.97334C6.25543 4.91162 6.3287 4.86266 6.40934 4.82925C6.48998 4.79585 6.57642 4.77866 6.6637 4.77866C6.75099 4.77866 6.83742 4.79585 6.91807 4.82925C6.99871 4.86266 7.07198 4.91162 7.1337 4.97334L10.1937 8.03334C10.4537 8.29334 10.4537 8.71334 10.1937 8.97334L7.1337 12.0333C7.07203 12.0951 6.99877 12.1442 6.91812 12.1776C6.83747 12.2111 6.75102 12.2283 6.6637 12.2283C6.57639 12.2283 6.48994 12.2111 6.40929 12.1776C6.32864 12.1442 6.25538 12.0951 6.1937 12.0333C5.94037 11.7733 5.9337 11.3467 6.1937 11.0867Z"
+                fill="black"
+              />
+            </svg>
+          </a>
+        </article>
+      </section>
+      <!--받은 매너 평가 상세 -->
+      <section class="flex flex-col gap-3 py-3.5 px-3.5">
+        <!-- 1 -->
+        <article class="inline-flex items-start gap-[5px] paragraph-m">
+          <img
+            src="/src/assets/people.svg"
+            alt="첫 번째 매너 평가"
+            class="w-4 h-4"
+          />
+
+          <p class="label-m">10</p>
+
+          <p class="bg-[#719CF7] p-2 rounded-b-lg rounded-tr-lg">
+            시간 약속을 잘 지켜요.
+          </p>
+        </article>
+        <!-- 2 -->
+        <article class="inline-flex items-start gap-[5px] paragraph-m">
+          <img
+            src="/src/assets/people.svg"
+            alt="두 번째 매너 평가"
+            class="w-4 h-4"
+          />
+
+          <p class="label-m mr-1.5">9</p>
+
+          <p class="bg-[#719CF7] p-2 rounded-b-lg rounded-tr-lg">
+            친절하고 매너가 좋아요.
+          </p>
+        </article>
+        <!-- 3 -->
+        <article class="inline-flex items-start gap-[5px] paragraph-m">
+          <img
+            src="/src/assets/people.svg"
+            alt="세 번째 매너 평가"
+            class="w-4 h-4"
+          />
+
+          <p class="label-m mr-1.5">8</p>
+
+          <p class="bg-[#719CF7] p-2 rounded-b-lg rounded-tr-lg">
+            제가 있는 곳까지 와서 거래했어요.
+          </p>
+        </article>
+      </section>
+      <!-- 받은 거래 후기-->
+      <setion
+        class="p-4 bg-white flex justify-between items-center text-[.875rem] text-[#000] font-semibold font-[Pretendard] leading-[21px] border-b-[0.3px] border-t-[0.3px] border-[#919191]"
+      >
+        <!-- 텍스트 -->
+        <p>받은 거래 후기 1</p>
+        <!-- 아이콘 -->
+        <a href="/" aria-label="받은 거래 후기 보러가기">
+          <svg
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="17"
+            viewBox="0 0 16 17"
+            fill="none"
+          >
+            <path
+              d="M6.1937 11.0867L8.78037 8.5L6.1937 5.91334C6.13198 5.85162 6.08302 5.77834 6.04962 5.6977C6.01622 5.61706 5.99902 5.53062 5.99902 5.44334C5.99902 5.35605 6.01622 5.26962 6.04962 5.18897C6.08302 5.10833 6.13198 5.03506 6.1937 4.97334C6.25543 4.91162 6.3287 4.86266 6.40934 4.82925C6.48998 4.79585 6.57642 4.77866 6.6637 4.77866C6.75099 4.77866 6.83742 4.79585 6.91807 4.82925C6.99871 4.86266 7.07198 4.91162 7.1337 4.97334L10.1937 8.03334C10.4537 8.29334 10.4537 8.71334 10.1937 8.97334L7.1337 12.0333C7.07203 12.0951 6.99877 12.1442 6.91812 12.1776C6.83747 12.2111 6.75102 12.2283 6.6637 12.2283C6.57639 12.2283 6.48994 12.2111 6.40929 12.1776C6.32864 12.1442 6.25538 12.0951 6.1937 12.0333C5.94037 11.7733 5.9337 11.3467 6.1937 11.0867Z"
+              fill="black"
+            />
+          </svg>
+        </a>
+      </setion>
+      <!-- 후기 내용 상세 -->
+      <section
+        class="flex font-[Pretendard] px-3.5 pt-3.5 pb-5 justify-between items-start"
+      >
+        <div class="flex">
+          <span
+            class="inline-block w-7 h-7 rounded-[50%] bg-(--color-content-secondary)"
+          ></span>
+          <!-- 텍스트 -->
+          <article class="flex-col ml-[9px]">
+            <p class="label-s">으갸갸갹</p>
+            <p class="paragraph-s text-(--color-content-secondary)">
+              구매자 • 인천광역시 계양구 • 4개월 전
+            </p>
+            <p class="paragraph-m">감사감사 감사합니다</p>
+          </article>
         </div>
-      </a>
-      <a href="/">
-        <div tabindex="0" class="flex flex-col justify-center items-center">
-          <div class="w-5 h-5 relative">
+        <button type="button" class="cursor-pointer">
+          <p class="sr-only">거래후기 설정 메뉴</p>
+          <svg
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="21"
+            viewBox="0 0 20 21"
+            fill="none"
+          >
+            <path
+              d="M9.99967 6.92965C10.9163 6.92965 11.6663 6.17965 11.6663 5.26298C11.6663 4.34631 10.9163 3.59631 9.99967 3.59631C9.08301 3.59631 8.33301 4.34631 8.33301 5.26298C8.33301 6.17965 9.08301 6.92965 9.99967 6.92965ZM9.99967 8.59631C9.08301 8.59631 8.33301 9.34631 8.33301 10.263C8.33301 11.1796 9.08301 11.9296 9.99967 11.9296C10.9163 11.9296 11.6663 11.1796 11.6663 10.263C11.6663 9.34631 10.9163 8.59631 9.99967 8.59631ZM9.99967 13.5963C9.08301 13.5963 8.33301 14.3463 8.33301 15.263C8.33301 16.1796 9.08301 16.9296 9.99967 16.9296C10.9163 16.9296 11.6663 16.1796 11.6663 15.263C11.6663 14.3463 10.9163 13.5963 9.99967 13.5963Z"
+              fill="#919191"
+            />
+          </svg>
+        </button>
+      </section>
+    </main>
+    <!-- 푸터-->
+    <footer>
+      <!-- 기타사항들 -->
+      <ul
+        class="flex flex-col paragraph-m border border-(--color-content-secondary) gap-[1.125rem] py-4 pl-[1.125rem] pr-3"
+      >
+        <li><a href="/">보관 질문</a></li>
+        <li><a href="/">설정</a></li>
+        <li><a href="/">지식 iN 공식 블로그</a></li>
+        <li><a href="/">서비스 정보</a></li>
+        <li><a href="/">공지사항</a></li>
+        <li class="flex justify-between">
+          <a href="/">로그아웃</a>
+          <p class="text-(--color-secondary)">kimchihi</p>
+        </li>
+      </ul>
+      <!-- 하단 바 -->
+      <div
+        class="px-3.5 pt-[8px] pb-[24px] bg-white flex justify-between items-center gap-10"
+      >
+        <a href="/">
+          <div tabindex="0" class="flex flex-col justify-center items-center">
+            <div class="w-5 h-5 relative">
+              <div
+                class="w-5 h-5 absolute bg-[url('./assets/home.svg')] hover:bg-[url('./assets/fullHome.svg')] bg-cover"
+              ></div>
+            </div>
             <div
-              class="w-5 h-5 absolute bg-[url('./assets/map.svg')] hover:bg-[url('./assets/fullMap.svg')] bg-cover"
-            ></div>
+              class="justify-center text-black text-[9px] font-['Pretendard']"
+            >
+              홈
+            </div>
           </div>
-          <div class="justify-center text-black text-[9px] font-['Pretendard']">
-            내 근처
-          </div>
-        </div>
-      </a>
-      <a href="/">
-        <div tabindex="0" class="flex flex-col justify-center items-center">
-          <div class="w-5 h-5 relative">
+        </a>
+        <a href="/">
+          <div tabindex="0" class="flex flex-col justify-center items-center">
+            <div class="w-5 h-5 relative">
+              <div
+                class="w-5 h-5 absolute bg-[url('./assets/life.svg')] hover:bg-[url('./assets/fullFile.svg')] bg-cover"
+              ></div>
+            </div>
             <div
-              class="w-5 h-5 absolute bg-[url('./assets/chat.svg')] hover:bg-[url('./assets/fullChat.svg')] bg-cover"
-            ></div>
+              class="justify-center text-black text-[8.9px] font-['Pretendard']"
+            >
+              게시판
+            </div>
           </div>
-          <div class="justify-center text-black text-[9px] font-['Pretendard']">
-            채팅
-          </div>
-        </div>
-      </a>
-      <a href="/">
-        <div tabindex="0" class="flex flex-col justify-center items-center">
-          <div class="w-5 h-5 relative">
+        </a>
+        <a href="/">
+          <div tabindex="0" class="flex flex-col justify-center items-center">
+            <div class="w-5 h-5 relative">
+              <div
+                class="w-5 h-5 absolute bg-[url('./assets/map.svg')] hover:bg-[url('./assets/fullMap.svg')] bg-cover"
+              ></div>
+            </div>
             <div
-              class="w-5 h-5 absolute bg-[url('./assets/fullMy.svg')] bg-cover"
-            ></div>
+              class="justify-center text-black text-[9px] font-['Pretendard']"
+            >
+              내 근처
+            </div>
           </div>
-          <div class="justify-center text-black text-[9px] font-['Pretendard']">
-            나의 이듬
+        </a>
+        <a href="/">
+          <div tabindex="0" class="flex flex-col justify-center items-center">
+            <div class="w-5 h-5 relative">
+              <div
+                class="w-5 h-5 absolute bg-[url('./assets/chat.svg')] hover:bg-[url('./assets/fullChat.svg')] bg-cover"
+              ></div>
+            </div>
+            <div
+              class="justify-center text-black text-[9px] font-['Pretendard']"
+            >
+              채팅
+            </div>
           </div>
-        </div>
-      </a>
-    </div>
+        </a>
+        <a href="/">
+          <div tabindex="0" class="flex flex-col justify-center items-center">
+            <div class="w-5 h-5 relative">
+              <div
+                class="w-5 h-5 absolute bg-[url('./assets/fullMy.svg')] bg-cover"
+              ></div>
+            </div>
+            <div
+              class="justify-center text-black text-[9px] font-['Pretendard']"
+            >
+              나의 이듬
+            </div>
+          </div>
+        </a>
+      </div>
+    </footer>
   </body>
 </html>
