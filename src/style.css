@@ -1,4 +1,151 @@
 @import "tailwindcss";
 
 @theme {
+  /* font */
+  --font-sans: "pretendard" sans-serif;
+
+  --text-xxxl: 2.7625rem;
+  --text-xxl: 2.075rem;
+  --text-xl: 1.5562rem;
+  --text-l: 1.1687rem;
+  --text-m: 0.875rem;
+  --text-s: 0.6563rem;
+  --text-underline: 0.625rem;
+
+  /* spacing */
+  --spacing-52: 3.25rem;
+  --spacing-60: 3.75rem;
+
+  /* Foundation 색상 */
+  --color-primary: #373f67;
+  --color-secondary: #5a88ee;
+  --color-tertiary: #719cf7;
+  --color-negative: #ef4444;
+  --color-background: #ffffff;
+
+  /* Contents 색상 */
+  --color-content-primary: #000000;
+  --color-content-secondary: #919191;
+  --color-content-tertiary: #9da1b4;
+
+  /* media 중단점 */
+  --breakpoint-*: initial;
+  --breakpoint-sm: 37.5rem;
+  --breakpoint-md: 71rem;
+
+  --animate-spin: spin 1s linear;
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(90deg);
+    }
+  }
+}
+
+@layer components {
+  /* 헤딩 스타일  */
+  .headding-xxxl {
+    @apply text-[44.2px] text-(--color-content-primary) font-bold leading-[140%] font-sans;
+  }
+  .headding-xxl {
+    @apply text-[33.2px] text-(--color-content-primary) font-bold leading-[140%] font-sans;
+  }
+  .headding-xl {
+    @apply text-[24.9px] text-(--color-content-primary) font-bold leading-[140%] font-sans;
+  }
+  .headding-l {
+    @apply text-[18.7px] text-(--color-content-primary) font-bold leading-[140%] font-sans;
+  }
+  .headding-m {
+    @apply text-[14px] text-(--color-content-primary) font-bold leading-[140%] font-sans;
+  }
+  .headding-s {
+    @apply text-[10.5px] text-(--color-content-primary) font-bold leading-[140%] font-sans;
+  }
+
+  /* 라벨 스타일 */
+  .label-xxl {
+    @apply text-[33.2px] text-(--color-content-primary) font-semibold leading-[150%] font-sans;
+  }
+  .label-xl {
+    @apply text-[24.9px] text-(--color-content-primary) font-semibold leading-[150%] font-sans;
+  }
+  .label-l {
+    @apply text-[18.7px] text-(--color-content-primary) font-semibold leading-[150%] font-sans;
+  }
+  .label-m {
+    @apply text-[14px] text-(--color-content-primary) font-semibold leading-[150%] font-sans;
+  }
+  .label-s {
+    @apply text-[10.5px] text-(--color-content-primary) font-semibold leading-[150%] font-sans;
+  }
+
+  .paragraph-xl {
+    @apply text-[24.9px] text-(--color-content-primary) font-normal leading-[160%] font-sans;
+  }
+  .paragraph-l {
+    @apply text-[24.9px] text-(--color-content-primary) font-normal leading-[160%] font-sans;
+  }
+  .paragraph-m {
+    @apply text-[14px] text-(--color-content-primary) font-normal leading-[160%] font-sans;
+  }
+  .paragraph-s {
+    @apply text-[10.5px] text-(--color-content-primary) font-normal leading-[160%] font-sans;
+  }
+  .paragraph-underline {
+    @apply text-[10px] text-(--color-content-primary) font-normal leading-[160%] font-sans;
+  }
+  .category-label {
+    @apply flex justify-between p-3 rounded-lg bg-gray-300 w-full cursor-pointer;
+  }
+  /* 카테고리 카드 스타일링 */
+  .category-label {
+    @apply flex flex-col p-3 justify-center rounded-[8px] bg-[#a7a7a7] w-full h-[61px] cursor-pointer;
+  }
+
+  .category-checkbox:checked + .category-label {
+    @apply bg-[#373f67];
+  }
+
+  .category-subtitle {
+    @apply text-[#E9E9E9] text-[8px] font-['Pretendard'];
+  }
+
+  .category-title {
+    @apply text-black text-[16px] font-['Pretendard'] flex justify-between w-full;
+  }
+
+  .category-checkbox:checked + .category-label .category-title {
+    @apply text-white;
+  }
+
+  .icon-container {
+    @apply w-[18px] h-[18px] relative bg-[#919191] rounded-[50px];
+  }
+
+  .category-checkbox:checked + .category-label .icon-container {
+    @apply bg-white;
+  }
+
+  .plus-icon {
+    @apply w-[10px] h-[10px] left-[4px] top-[4px] absolute bg-[url('./assets/plus.svg')] bg-cover;
+  }
+
+  .category-checkbox:checked + .category-label .plus-icon {
+    @apply hidden;
+  }
+
+  .check-icon {
+    @apply w-[10px] h-[10px] left-[4px] top-[4px] absolute bg-[url('./assets/check.svg')] bg-cover hidden;
+  }
+
+  .category-checkbox:checked + .category-label .check-icon {
+    @apply block;
+  }
+}
+.phone-input:focus ~ .keyboard-container {
+  display: block;
 }

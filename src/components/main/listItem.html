@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>11조 위닝일레븐</title>
+    <link rel="icon" href="/vite.svg" />
+    <link rel="preload" as="font" href="/font/woff2/PretendardVariable.woff2" crossorigin="anonymous" />
+    <link rel="stylesheet" as="style" href="/font/pretendardvariable.css" />
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body>
+    <!-- 부킹 -->
+    <div class="inline-flex px-1 py-0.5 text-center items-center rounded-sm bg-(--color-tertiary)">
+      <span class="label-s text-white">텍스트</span>
+    </div>
+    <div class="inline-flex px-1 py-0.5 text-center rounded-sm bg-(--color-content-tertiary)">
+      <span class="label-s text-white">텍스트</span>
+    </div>
+    <hr />
+    <!-- 부킹 + 넘버 -->
+    <div class="items-center">
+      <div class="inline-flex px-1 py-0.5 rounded-sm bg-(--color-tertiary)">
+        <span class="label-s text-white">텍스트</span>
+      </div>
+      <span class="label-m">150,000원</span>
+    </div>
+    <div class="items-center">
+      <div class="inline-flex min-w-7 min-h-5 px-1 py-0.5 rounded-sm bg-(--color-content-tertiary)">
+        <span class="label-s text-white">텍스트</span>
+      </div>
+      <span class="label-m">150,000원</span>
+    </div>
+    <hr />
+    <!-- 하트 + 넘버 -->
+    <div class="inline-flex items-center gap-0.5">
+      <img class="w-3.5 h-3.5" src="/src/assets/heart.svg" alt="하트아이콘" />
+      <span class="paragraph-s">11</span>
+    </div>
+    <!-- 컴포넌트 -->
+    <ul>
+      <li class="relative overflow-clip p-3">
+        <a>
+          <figure class="flex items-center gap-3">
+            <img class="w-22.5 h-22.5 border rounded-2xl" src="/img/whatNono.webp" alt="대체 텍스트" />
+            <div>
+              <figcaption class="paragraph-m">제목을 넣어주세요</figcaption>
+              <p class="paragraph-s text-(--color-content-tertiary)"><span>남가좌동</span>•<span>1일전</span></p>
+              <div class="inline-flex gap-1.5 my-auto items-center">
+                <div class="inline-flex min-w-7 min-h-5 px-1 py-0.5 rounded-sm bg-(--color-tertiary)">
+                  <span class="label-s text-white">텍스트</span>
+                </div>
+                <span class="label-m">150,000원</span>
+              </div>
+            </div>
+          </figure>
+          <div class="absolute bottom-1 right-4 inline-flex items-center gap-0.5">
+            <img class="w-3.5 h-3.5" src="/src/assets/heart.svg" alt="하트아이콘" />
+            <span class="paragraph-s">11</span>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </body>
+</html>

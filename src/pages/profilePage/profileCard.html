@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>위닝일레븐 프로필 카드</title>
+    <link rel="icon" href="/vite.svg" />
+    <link
+      rel="preload"
+      as="font"
+      href="/font/woff2/PretendardVariable.woff2"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" as="style" href="/font/pretendardvariable.css" />
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body>
+    <!-- 타임 셀룰러 -->
+    <div
+      class="px-[24px] pt-[8px] pb-[4px] bg-white flex justify-between items-center gap-44"
+    >
+      <div
+        class="text-center justify-center text-black text-sm font-semibold font-['Pretendard'] leading-tight"
+      >
+        2:26
+      </div>
+      <div class="flex justify-center items-center">
+        <div class="w-6 h-4 relative">
+          <div
+            class="w-3.5 h-4 left-[10px] absolute bg-cover bg-[url('./assets/celluar.svg')]"
+          ></div>
+        </div>
+        <div class="flex justify-center items-center gap-0.5">
+          <div class="w-6 h-6 relative">
+            <div
+              class="w-6 h-6 absolute bg-cover bg-[url('./assets/lte.svg')]"
+            ></div>
+          </div>
+          <div class="w-6 h-5 relative">
+            <div
+              class="w-5 h-5 absolute bg-cover bg-[url('./assets/battery.svg')]"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 프로필 컨텐츠 -->
+    <header
+      class="bg-white p-4 flex justify-between items-center label-m border-b-[0.3px] border-[#919191]"
+    >
+      <!-- 텍스트 -->
+      <h1>프로필수정</h1>
+      <!-- 아이콘 -->
+      <a
+        href="/"
+        class="focus:outline-none focus-visible:ring-2 focus-visible:ring-(--color-tertiary) focus-visible:rounded-[2px]"
+      >
+        <svg
+          aria-hidden="true"
+          width="16"
+          height="16"
+          viewBox="0 0 20 20"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M5.18748 4.00916C5.03031 3.85737 4.81981 3.77337 4.60131 3.77527C4.38281 3.77717 4.1738 3.86481 4.0193 4.01932C3.86479 4.17382 3.77715 4.38283 3.77525 4.60133C3.77335 4.81983 3.85735 5.03033 4.00915 5.1875L8.82165 10L4.00831 14.8125C3.92872 14.8894 3.86524 14.9813 3.82156 15.083C3.77789 15.1847 3.7549 15.294 3.75394 15.4047C3.75298 15.5153 3.77406 15.625 3.81596 15.7275C3.85786 15.8299 3.91974 15.9229 3.99798 16.0012C4.07623 16.0794 4.16927 16.1413 4.27168 16.1832C4.3741 16.2251 4.48383 16.2462 4.59448 16.2452C4.70513 16.2442 4.81448 16.2213 4.91615 16.1776C5.01782 16.1339 5.10977 16.0704 5.18665 15.9908L9.99998 11.1783L14.8125 15.9908C14.9696 16.1426 15.1802 16.2266 15.3986 16.2247C15.6171 16.2228 15.8262 16.1352 15.9807 15.9807C16.1352 15.8262 16.2228 15.6172 16.2247 15.3987C16.2266 15.1802 16.1426 14.9697 15.9908 14.8125L11.1783 10L15.9908 5.1875C16.1426 5.03033 16.2266 4.81983 16.2247 4.60133C16.2228 4.38283 16.1352 4.17382 15.9807 4.01932C15.8262 3.86481 15.6171 3.77717 15.3986 3.77527C15.1802 3.77337 14.9696 3.85737 14.8125 4.00916L9.99998 8.82166L5.18748 4.00916Z"
+            fill="black"
+          />
+        </svg>
+      </a>
+    </header>
+    <!-- 메인 -->
+    <main class="px-3 bg-(--color-content-secondary)">
+      <!-- 프로필카드 -->
+      <section>
+        <div class="label-m flex gap-0.5 items-center pt-[7px]">
+          <h2 class="">프로필카드</h2>
+          <button
+            type="button"
+            aria-label="프로필카드 상세히 보기"
+            class="cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:rounded-[2px]"
+          >
+            <svg
+              aria-hidden="true"
+              class="mb-0.5"
+              width="14"
+              height="14"
+              viewBox="0 0 20 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M10.2498 6.07499C10.4165 5.92499 10.6165 5.83332 10.8332 5.83332C11.0582 5.83332 11.2498 5.92499 11.4248 6.07499C11.5832 6.24999 11.6665 6.44999 11.6665 6.66666C11.6665 6.89166 11.5832 7.08332 11.4248 7.25832C11.2498 7.41666 11.0582 7.49999 10.8332 7.49999C10.6165 7.49999 10.4165 7.41666 10.2498 7.25832C10.0915 7.08332 9.99984 6.89166 9.99984 6.66666C9.99984 6.44999 10.0915 6.24999 10.2498 6.07499ZM8.1665 9.97499C8.1665 9.97499 9.97484 8.54166 10.6332 8.48332C11.2498 8.43332 11.1248 9.14166 11.0665 9.50832L11.0582 9.55832C10.9415 9.99999 10.7998 10.5333 10.6582 11.0417C10.3415 12.2 10.0332 13.3333 10.1082 13.5417C10.1915 13.825 10.7082 13.4667 11.0832 13.2167C11.1332 13.1833 11.1748 13.15 11.2165 13.125C11.2165 13.125 11.2832 13.0583 11.3498 13.15C11.3665 13.175 11.3832 13.2 11.3998 13.2167C11.4748 13.3333 11.5165 13.375 11.4165 13.4417L11.3832 13.4583C11.1998 13.5833 10.4165 14.1333 10.0998 14.3333C9.75817 14.5583 8.44984 15.3083 8.64984 13.85C8.82484 12.825 9.05817 11.9417 9.2415 11.25C9.58317 9.99999 9.73317 9.43332 8.9665 9.92499C8.65817 10.1083 8.47484 10.225 8.3665 10.3C8.27484 10.3667 8.2665 10.3667 8.20817 10.2583L8.18317 10.2083L8.1415 10.1417C8.08317 10.0583 8.08317 10.05 8.1665 9.97499ZM18.3332 9.99999C18.3332 14.5833 14.5832 18.3333 9.99984 18.3333C5.4165 18.3333 1.6665 14.5833 1.6665 9.99999C1.6665 5.41666 5.4165 1.66666 9.99984 1.66666C14.5832 1.66666 18.3332 5.41666 18.3332 9.99999ZM16.6665 9.99999C16.6665 6.31666 13.6832 3.33332 9.99984 3.33332C6.3165 3.33332 3.33317 6.31666 3.33317 9.99999C3.33317 13.6833 6.3165 16.6667 9.99984 16.6667C13.6832 16.6667 16.6665 13.6833 16.6665 9.99999Z"
+                fill="black"
+              />
+            </svg>
+          </button>
+        </div>
+        <!-- 카드 이름 -->
+        <article
+          class="mt-[13px] bg-white rounded-lg flex items-center p-3 justify-between"
+        >
+          <div class="font-[Pretendard]">
+            <p class="label-m mb-1">EUID***</p>
+            <p
+              class="text-(--color-secondary) paragraph-s bg-white px-1 py-0 border border-(--color-secondary) rounded-[50px] w-max"
+            >
+              4기
+            </p>
+          </div>
+          <div
+            class="bg-[url('./assets/profile.png')] bg-center bg-cover rounded-[50%] w-[50px] h-[50px]"
+          ></div>
+        </article>
+      </section>
+      <!-- 기본정보 메뉴 -->
+      <section class="mt-[13px] bg-white rounded-t-lg">
+        <!-- 컨텐츠 메뉴 상단 -->
+        <div
+          class="flex justify-between p-3 items-center border-b border-content-secondary"
+        >
+          <h3 class="label-m">기본정보</h3>
+          <a
+            href="/"
+            class="text-(--color-secondary) label-s focus:outline-none focus-visible:ring-2 focus-visible:ring-(--color-tertiary) focus-visible:rounded-[2px]"
+            >수정하기</a
+          >
+        </div>
+        <!-- 컨텐츠 메뉴 하단 -->
+        <ul class="label-m px-[13px] py-2.5 space-y-[1.0625rem]">
+          <li class="flex items-center justify-between">
+            프로필 사진
+            <span
+              class="block bg-[url('../../assets/profile.png')] bg-center bg-cover rounded-[50%] w-6 h-6"
+            ></span>
+          </li>
+          <li class="flex items-center justify-between">
+            이름(별명)
+            <span class="label-s">EUID***</span>
+          </li>
+          <!-- 미입력 -->
+          <li class="flex items-center justify-between">
+            하는일
+            <span class="label-s text-(--color-content-secondary)">미입력</span>
+          </li>
+          <li class="flex items-center justify-between">
+            프로필 키워드
+            <span class="label-s text-(--color-content-secondary)">미입력</span>
+          </li>
+          <li class="flex items-center justify-between">
+            성별
+            <span class="label-s text-(--color-content-secondary)">미입력</span>
+          </li>
+          <li class="flex items-center justify-between">
+            연령
+            <span class="label-s text-(--color-content-secondary)">미입력</span>
+          </li>
+          <li class="flex items-center justify-between">
+            회사
+            <span class="label-s text-(--color-content-secondary)">미입력</span>
+          </li>
+          <li class="flex items-center justify-between">
+            학교
+            <span class="label-s text-(--color-content-secondary)">미입력</span>
+          </li>
+          <li class="flex items-center justify-between">
+            자격
+            <span class="label-s text-(--color-content-secondary)">미입력</span>
+          </li>
+        </ul>
+      </section>
+      <!-- 추가정보 메뉴 -->
+      <section class="mt-[13px] bg-white rounded-t-lg">
+        <!-- 컨텐츠 메뉴 상단 -->
+        <div
+          class="flex justify-between p-3 items-center border-b border-content-secondary"
+        >
+          <h3 class="label-m">추가정보</h3>
+          <a
+            href="/"
+            class="text-(--color-secondary) label-s focus:outline-none focus-visible:ring-2 focus-visible:ring-(--color-tertiary) focus-visible:rounded-[2px]"
+            >수정하기</a
+          >
+        </div>
+        <!-- 컨텐츠 메뉴 하단 -->
+        <ul class="label-m px-[13px] py-2.5 space-y-[1.0625rem] pb-[32px]">
+          <li class="flex items-center justify-between">
+            소개
+            <span class="label-s text-(--color-content-secondary)">미입력</span>
+          </li>
+          <li class="flex items-center justify-between">
+            연관 링크
+            <span class="label-s text-(--color-content-secondary)">미입력</span>
+          </li>
+          <!-- 미입력 -->
+          <li class="flex items-center justify-between">
+            활동 분야
+            <span class="label-s text-(--color-content-secondary)">미입력</span>
+          </li>
+          <li class="flex items-center justify-between">
+            업체 정보
+            <span class="label-s text-(--color-content-secondary)">미입력</span>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <!-- 하단 바 -->
+    <footer>
+      <div
+        class="px-3.5 pt-[8px] pb-[24px] bg-white flex justify-between items-center gap-10"
+      >
+        <a href="/">
+          <div tabindex="0" class="flex flex-col justify-center items-center">
+            <div class="w-5 h-5 relative">
+              <div
+                class="w-5 h-5 absolute bg-[url('./assets/home.svg')] hover:bg-[url('./assets/fullHome.svg')] bg-cover"
+              ></div>
+            </div>
+            <div
+              class="justify-center text-black text-[9px] font-['Pretendard']"
+            >
+              홈
+            </div>
+          </div>
+        </a>
+        <a href="/">
+          <div tabindex="0" class="flex flex-col justify-center items-center">
+            <div class="w-5 h-5 relative">
+              <div
+                class="w-5 h-5 absolute bg-[url('./assets/life.svg')] hover:bg-[url('./assets/fullFile.svg')] bg-cover"
+              ></div>
+            </div>
+            <div
+              class="justify-center text-black text-[8.9px] font-['Pretendard']"
+            >
+              게시판
+            </div>
+          </div>
+        </a>
+        <a href="/">
+          <div tabindex="0" class="flex flex-col justify-center items-center">
+            <div class="w-5 h-5 relative">
+              <div
+                class="w-5 h-5 absolute bg-[url('./assets/map.svg')] hover:bg-[url('./assets/fullMap.svg')] bg-cover"
+              ></div>
+            </div>
+            <div
+              class="justify-center text-black text-[9px] font-['Pretendard']"
+            >
+              내 근처
+            </div>
+          </div>
+        </a>
+        <a href="/">
+          <div tabindex="0" class="flex flex-col justify-center items-center">
+            <div class="w-5 h-5 relative">
+              <div
+                class="w-5 h-5 absolute bg-[url('./assets/chat.svg')] hover:bg-[url('./assets/fullChat.svg')] bg-cover"
+              ></div>
+            </div>
+            <div
+              class="justify-center text-black text-[9px] font-['Pretendard']"
+            >
+              채팅
+            </div>
+          </div>
+        </a>
+        <a href="/">
+          <div tabindex="0" class="flex flex-col justify-center items-center">
+            <div class="w-5 h-5 relative">
+              <div
+                class="w-5 h-5 absolute bg-[url('./assets/fullMy.svg')] bg-cover"
+              ></div>
+            </div>
+            <div
+              class="justify-center text-black text-[9px] font-['Pretendard']"
+            >
+              나의 이듬
+            </div>
+          </div>
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
