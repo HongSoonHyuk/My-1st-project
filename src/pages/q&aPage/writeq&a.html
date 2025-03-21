@@ -17,8 +17,13 @@
   <body>
     <!--상단 글쓰기 지우기,완료버튼 nav-->
     <header class="grid grid-cols-[auto_1fr_auto] items-center w-full">
-      <button type="button" class="flex items-center pl-3 w-8">
+      <button
+        aria-label="그만하기 버튼"
+        type="button"
+        class="flex items-center pl-3 w-8"
+      >
         <svg
+          aria-hidden="true"
           width="22"
           height="22"
           viewBox="0 0 20 20"
@@ -38,8 +43,9 @@
 
       <nav class="flex gap-2 pt-1">
         <a href="/">
-          <button type="button" class="pr-2">
+          <button aria-label="완료 버튼" type="button" class="pr-2">
             <svg
+              aria-hidden="true"
               width="25"
               height="21"
               viewBox="0 0 24 13"
@@ -62,8 +68,9 @@
     >
       <h2 class="text-[14px] font-bold text-start-center">FRONTEND</h2>
       <a href="/">
-        <button class="p-1 cursor-pointer">
+        <button aria-label="더보기 버튼" class="p-1 cursor-pointer">
           <svg
+            aria-hidden="true"
             width="16"
             height="16"
             viewBox="0 0 20 20"
@@ -110,8 +117,12 @@
     <div class="grid grid-cols-[auto_auto_1fr]">
       <div class="justify-self-center py-2 px-3">
         <a href="/">
-          <button class="flex items-center cursor-pointer gap-1">
+          <button
+            aria-label="사진 아이콘"
+            class="flex items-center cursor-pointer gap-1"
+          >
             <svg
+              aria-hidden="true"
               width="16"
               height="16"
               viewBox="0 0 20 20"
@@ -130,8 +141,12 @@
 
       <div class="justify-self-center py-2 px-3">
         <a href="/">
-          <button class="flex gap-1 cursor-pointer items-center">
+          <button
+            aria-label="위치 아이콘"
+            class="flex gap-1 cursor-pointer items-center"
+          >
             <svg
+              aria-hidden="true"
               width="16"
               height="16"
               viewBox="0 0 20 20"
@@ -148,9 +163,13 @@
         </a>
       </div>
 
-      <button class="justify-self-end cursor-pointer py-2 px-4">
+      <button
+        aria-label="키보트 버튼"
+        class="justify-self-end cursor-pointer py-2 px-4"
+      >
         <a href="/">
           <svg
+            aria-hidden="true"
             width="20"
             height="20"
             viewBox="0 0 20 20"

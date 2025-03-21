@@ -17,8 +17,13 @@
   <body>
     <!-- 상단바 -->
     <header class="grid grid-cols-3 items-center w-full h-[40px]">
-      <button type="button" class="flex items-center pl-2 w-8 cursor-pointer">
+      <button
+        aria-label="되로가기 버튼"
+        type="button"
+        class="flex items-center pl-2 w-8 cursor-pointer"
+      >
         <svg
+          aria-hidden="true"
           width="20"
           height="20"
           viewBox="0 0 20 20"
@@ -40,8 +45,9 @@
       </div>
 
       <nav class="flex justify-self-end gap-2">
-        <button type="button" class="cursor-pointer">
+        <button aria-label="통화하기 버튼" type="button" class="cursor-pointer">
           <svg
+            aria-hidden="true"
             width="20"
             height="20"
             viewBox="0 0 20 20"
@@ -54,8 +60,13 @@
             />
           </svg>
         </button>
-        <button type="button" class="pr-2 cursor-pointer">
+        <button
+          aria-label="더보기 버튼"
+          type="button"
+          class="pr-2 cursor-pointer"
+        >
           <svg
+            aria-hidden="true"
             width="20"
             height="20"
             viewBox="0 0 20 20"
@@ -138,7 +149,7 @@
       class="grid grid-cols-1 justify-self-end gap-1 max-w-[300px] px-2 pt-1"
     >
       <div
-        class="bg-[#719cf7] px-3 py-2 rounded-2xl max-w-[250px] break-words inline-block"
+        class="bg-[#719cf7] px-3 py-2 rounded-2xl max-w-[250px] break-normal whitespace-normal inline-block"
       >
         <p class="text-white text-[14px]">가격 네고 가능한가요?</p>
       </div>
@@ -150,9 +161,9 @@
         오후 4:30분
       </p>
       <div
-        class="bg-[#719cf7] px-3 py-2 rounded-2xl max-w-[250px] break-words inline-block"
+        class="bg-[#719cf7] px-3 py-2 rounded-2xl max-w-[250px] break-normal whitespace-normal inline-block"
       >
-        <p class="text-white text-[14px]">목요일 거래 가능할까요?</p>
+        <p class="text-white text-[14px]">목요일 거래가능할까요???</p>
       </div>
     </div>
 
@@ -168,7 +179,7 @@
     <!-- 수신 채팅 -->
     <div class="grid grid-cols-[auto_1fr] gap-1 w-full pt-1 px-4">
       <div
-        class="bg-[#EBECF0] px-3 py-2 rounded-2xl max-w-[250px] break-words inline-block"
+        class="bg-[#EBECF0] px-3 py-2 rounded-2xl max-w-[250px] break-normal whitespace-normal inline-block"
       >
         <p class="text-black text-[14px]">죄송해요ㅠㅠ</p>
       </div>
@@ -176,7 +187,7 @@
 
     <div class="grid grid-cols-[auto_1fr] gap-1 w-full pt-1 px-4">
       <div
-        class="bg-[#EBECF0] px-3 py-2 rounded-2xl max-w-[250px] break-words inline-block"
+        class="bg-[#EBECF0] px-3 py-2 rounded-2xl max-w-[250px] break-normal whitespace-normal inline-block"
       >
         <p class="text-black text-[14px]">
           제가 핸드폰을 바꿔서 방금 봤어요ㅜㅜ 판매 아직 안됐습니다..!
@@ -189,8 +200,9 @@
 
     <!-- 메세지 보내기 -->
     <div class="flex w-full px-1 py-3 items-center">
-      <button class="p-1 ml-2 cursor-pointer">
+      <button aria-label="더보기 플러스 버튼" class="p-1 ml-2 cursor-pointer">
         <svg
+          aria-hidden="true"
           width="20"
           height="20"
           viewBox="0 0 20 20"
@@ -212,8 +224,12 @@
           placeholder="메세지 보내기"
           class="text-[14px] bg-transparent flex-1 focus:outline-none focus:ring-0 placeholder-gray-400 p-2"
         />
-        <button class="p-1 cursor-pointer focus:outline-none focus:ring-0">
+        <button
+          aria-label="이모티콘 버튼"
+          class="p-1 cursor-pointer focus:outline-none focus:ring-0"
+        >
           <svg
+            aria-hidden="true"
             width="20"
             height="20"
             viewBox="0 0 20 20"
@@ -233,8 +249,9 @@
           </svg>
         </button>
       </div>
-      <button class="p-1 cursor-pointer">
+      <button aria-label="보내기 버튼" class="p-1 cursor-pointer">
         <svg
+          aria-hidden="true"
           width="18"
           height="18"
           viewBox="0 0 18 18"
