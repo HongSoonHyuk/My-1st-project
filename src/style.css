@@ -149,3 +149,17 @@
 .phone-input:focus ~ .keyboard-container {
   display: block;
 }
+
+.layout {
+  width: 340px;
+  height: 694px;
+  margin: 10vh auto;
+  border: 10px double black;
+  border-radius: 25px;
+  position: relative;
+  overflow: auto;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
