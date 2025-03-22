@@ -145,8 +145,9 @@
   .category-checkbox:checked + .category-label .check-icon {
     @apply block;
   }
+
   .layout {
-    @apply w-[340px] h-[694px] mx-auto my-[10vh] p-2.5 border-[10px] border-double border-black rounded-[25px] relative overflow-auto;
+    @apply w-[340px] h-[694px] mx-auto my-[10vh] border-[10px] border-double border-black rounded-[25px] relative overflow-auto;
   }
 }
 .phone-input:focus ~ .keyboard-container {
