@@ -609,6 +609,27 @@
           >
             저장
           </button>
+          <!-- 모달창 -->
+          <div
+            id="save-popup"
+            class="hidden fixed inset-0 flex items-center justify-center"
+          >
+            <div
+              class="w-[225px] h-[171px] space-y-5 justify-center items-center rounded-[20px] bg-white shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] pt-5 pb-[18px] px-[18px] text-center"
+            >
+              <p class="paragraph-m">저장 완료!</p>
+              <p class="paragraph-s text-(--color-content-secondary)">
+                내 질문&답변의 프로필 카드, 프로필 홈에서 변경된 프로필 정보를
+                확인 할 수 있어요.
+              </p>
+              <button
+                type="button"
+                class="w-full py-2 rounded-lg bg-(--color-primary) text-white label-m"
+              >
+                확인
+              </button>
+            </div>
+          </div>
           <p
             class="paragraph-s text-(--color-content-secondary) text-center col-span-2 mt-[18px]"
           >
@@ -617,7 +638,6 @@
         </section>
       </form>
     </footer>
-
     <!-- 하단 바 -->
     <section
       class="px-3.5 pt-[8px] pb-[24px] bg-white flex justify-between items-center gap-10"

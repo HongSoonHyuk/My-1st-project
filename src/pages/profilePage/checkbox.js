@@ -2,6 +2,8 @@ const allAgree = document.querySelector("#allAgree");
 const agrees = document.querySelectorAll("input[type='checkbox'][id='agrees']");
 const resetButton = document.querySelector("#reset");
 const submitButton = document.querySelector("#save");
+const savePopup = document.querySelector("#save-popup");
+const closeButton = savePopup.querySelector("button");
 
 allAgree.addEventListener("change", (e) => {
   const isChecked = e.target.checked;
@@ -28,4 +30,25 @@ function toggleSubmitButton() {
 
 resetButton.addEventListener("click", () => {
   submitButton.disabled = true;
+});
+
+submitButton.addEventListener("click", (e) => {
+  e.preventDefault(); // 기본 동작 방지
+  savePopup.classList.remove("hidden"); // 모달 보이기
+});
+
+closeButton.addEventListener("click", () => {
+  savePopup.classList.add("hidden");
+});
+
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") {
+    savePopup.classList.add("hidden");
+  }
+});
+
+document.addEventListener("click", (e) => {
+  if (!savePopup.contains(e.target) && e.target !== submitButton) {
+    savePopup.classList.add("hidden");
+  }
 });
