@@ -16,7 +16,36 @@
   </head>
   <body>
     <!-- 상단바 -->
-    <header class="grid grid-cols-3 items-center w-full h-[40px]">
+    <div
+      class="px-[24px] pt-[8px] pb-[4px] bg-white inline-flex justify-end items-center gap-44"
+    >
+      <div
+        class="text-center justify-center text-black text-sm font-semibold font-['Pretendard']"
+      >
+        2:26
+      </div>
+      <div class="flex justify-center items-center">
+        <div class="w-6 h-4 relative">
+          <div
+            class="w-3.5 h-4 left-[10px] absolute bg-cover bg-[url('./assets/celluar.svg')]"
+          ></div>
+        </div>
+        <div class="flex justify-center items-center gap-0.5">
+          <div class="w-6 h-6 relative">
+            <div
+              class="w-6 h-6 absolute bg-cover bg-[url('./assets/lte.svg')]"
+            ></div>
+          </div>
+          <div class="w-6 h-5 relative">
+            <div
+              class="w-5 h-5 absolute bg-cover bg-[url('./assets/battery.svg')]"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 상단바 -->
+    <header class="grid grid-cols-3 items-center w-[320px] h-[40px]">
       <button
         aria-label="되로가기 버튼"
         type="button"
@@ -63,7 +92,7 @@
         <button
           aria-label="더보기 버튼"
           type="button"
-          class="pr-2 cursor-pointer"
+          class="pr-1 cursor-pointer"
         >
           <svg
             aria-hidden="true"
@@ -83,7 +112,7 @@
     </header>
 
     <!-- 판매중 -->
-    <div class="w-full pl-3 pt-3">
+    <div class="w-[320px] pl-3 pt-3">
       <div class="grid grid-cols-[auto_1fr] items-center gap-2.5">
         <!-- 프로필 이미지 -->
         <div
@@ -105,7 +134,7 @@
 
     <!-- 약속잡기, 송금하기 버튼 -->
     <div
-      class="flex w-full h-[41px] gap-1 pt-2 pl-3 pb-2 border-b border-gray-300"
+      class="flex w-[320px] h-[41px] gap-1 pt-2 pl-3 pb-2 border-b border-gray-300"
     >
       <button
         class="border rounded-lg border-gray-400 flex items-center gap-1 px-2 py-1.5 text-[10.503px]"
@@ -128,7 +157,7 @@
 
     <!-- 안내 -->
     <div
-      class="bg-[#8db0f9] rounded-lg px-5 py-3 text-white mx-3 my-2 text-[10.503px]"
+      class="w-[286px] bg-[#8db0f9] rounded-lg p-3 m-3 text-white mx-4 my-2 text-[10.503px]"
     >
       <span class="font-bold">님은 우수판매자예요.</span>
       <span class="">개인정보유도와 명예훼손 내용은 차단될 수 있어요.</span>
@@ -136,7 +165,7 @@
     </div>
 
     <!-- 날짜 -->
-    <div class="w-full h-[32px] grid grid-cols-1 m-3 pt-1">
+    <div class="w-[320px] h-[32px] grid grid-cols-1 m-3 pt-1 mt-13">
       <time
         datetime="2025.03.19"
         class="text-[10.503px] text-[var(--color-content-tertiary)] justify-self-center pt-2"
@@ -168,7 +197,7 @@
     </div>
 
     <!-- 날짜 -->
-    <div class="w-full h-[32px] grid grid-cols-1 m-3 p-2">
+    <div class="w-[320px] h-[32px] grid grid-cols-1 m-3 pt-1 p-2">
       <time
         datetime="2025.03.20"
         class="text-[10.503px] text-[var(--color-content-tertiary)] justify-self-center pt-2"
@@ -177,7 +206,7 @@
     </div>
 
     <!-- 수신 채팅 -->
-    <div class="grid grid-cols-[auto_1fr] gap-1 w-full pt-1 px-4">
+    <div class="grid grid-cols-[auto_1fr] gap-1 w-full pt-10 px-4">
       <div
         class="bg-[#EBECF0] px-3 py-2 rounded-2xl max-w-[250px] break-normal whitespace-normal inline-block"
       >
@@ -185,22 +214,24 @@
       </div>
     </div>
 
-    <div class="grid grid-cols-[auto_1fr] gap-1 w-full pt-1 px-4">
+    <div class="grid grid-cols-[auto_1fr] gap-1 pt-1 px-4 max-w-[300px]">
       <div
-        class="bg-[#EBECF0] px-3 py-2 rounded-2xl max-w-[250px] break-normal whitespace-normal inline-block"
+        class="bg-[#EBECF0] px-3 py-2 rounded-2xl max-w-[230px] break-normal whitespace-normal inline-block"
       >
         <p class="text-black text-[14px]">
           제가 핸드폰을 바꿔서 방금 봤어요ㅜㅜ 판매 아직 안됐습니다..!
         </p>
       </div>
-      <p class="text-[10.503px] text-[var(--color-content-tertiary)] self-end">
+      <p
+        class="text-[10.503px] text-[var(--color-content-tertiary)] place-self-end w-[55px] text-center"
+      >
         오후 4:30분
       </p>
     </div>
 
     <!-- 메세지 보내기 -->
-    <div class="flex w-full px-1 py-3 items-center">
-      <button aria-label="더보기 플러스 버튼" class="p-1 ml-2 cursor-pointer">
+    <div class="flex w-[320px] px-1 py-3 items-center">
+      <button aria-label="더보기 플러스 버튼" class="pl-1 cursor-pointer">
         <svg
           aria-hidden="true"
           width="20"

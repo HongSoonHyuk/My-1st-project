@@ -15,6 +15,60 @@
     <script type="module" src="/src/main.js"></script>
   </head>
   <body>
+    <!-- 상단바 -->
+    <div
+      class="px-[24px] pt-[8px] pb-[4px] bg-white inline-flex justify-end items-center gap-44"
+    >
+      <div
+        class="text-center justify-center text-black text-sm font-semibold font-['Pretendard']"
+      >
+        2:26
+      </div>
+      <div class="flex justify-center items-center">
+        <div class="w-6 h-4 relative">
+          <div
+            class="w-3.5 h-4 left-[10px] absolute bg-cover bg-[url('./assets/celluar.svg')]"
+          ></div>
+        </div>
+        <div class="flex justify-center items-center gap-0.5">
+          <div class="w-6 h-6 relative">
+            <div
+              class="w-6 h-6 absolute bg-cover bg-[url('./assets/lte.svg')]"
+            ></div>
+          </div>
+          <div class="w-6 h-5 relative">
+            <div
+              class="w-5 h-5 absolute bg-cover bg-[url('./assets/battery.svg')]"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 뒤로가기 -->
+    <header class="grid grid-cols-1 items-center w-[320px] h-[30px]">
+      <button
+        aria-label="되로가기 버튼"
+        type="button"
+        class="flex items-center pl-4 w-8 cursor-pointer"
+      >
+        <svg
+          aria-hidden="true"
+          width="20"
+          height="20"
+          viewBox="0 0 20 20"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M12.9422 15.8079C13.0003 15.866 13.0463 15.9349 13.0777 16.0108C13.1092 16.0867 13.1254 16.168 13.1254 16.2501C13.1254 16.3322 13.1092 16.4135 13.0777 16.4894C13.0463 16.5653 13.0003 16.6342 12.9422 16.6923C12.8841 16.7504 12.8152 16.7964 12.7393 16.8278C12.6634 16.8593 12.5821 16.8755 12.5 16.8755C12.4179 16.8755 12.3366 16.8593 12.2607 16.8278C12.1848 16.7964 12.1159 16.7504 12.0578 16.6923L5.80782 10.4423C5.74971 10.3842 5.70361 10.3153 5.67215 10.2394C5.6407 10.1636 5.62451 10.0822 5.62451 10.0001C5.62451 9.91797 5.6407 9.83664 5.67215 9.76077C5.70361 9.68489 5.74971 9.61596 5.80782 9.55792L12.0578 3.30792C12.1751 3.19064 12.3342 3.12476 12.5 3.12476C12.6659 3.12476 12.8249 3.19064 12.9422 3.30792C13.0595 3.42519 13.1254 3.58425 13.1254 3.7501C13.1254 3.91596 13.0595 4.07502 12.9422 4.19229L7.1336 10.0001L12.9422 15.8079Z"
+            fill="black"
+          />
+        </svg>
+      </button>
+    </header>
+
+    <!-- 플러스 버튼 -->
     <button
       class="fixed bottom-20 right-3 bg-[#373F67] shadow-lg rounded-full flex items-center justify-center z-[9999] cursor-pointer hover:bg-white group w-[47px] h-[47px]"
     >
@@ -50,7 +104,7 @@
     </button>
     <!-- 상단 참여중 -->
     <div
-      class="w-full grid grid-cols-[auto_2fr_auto] items-center pl-4 pr-5 py-3 border-b-4 border-[#BDBDBD]"
+      class="w-[320px] grid grid-cols-[auto_2fr_auto] items-center pl-4 pr-5 py-3 border-b-4 border-[#BDBDBD]"
     >
       <figure
         class="bg-[#D9D9D9] w-[54px] h-[54px] rounded-lg justify-self-end"
@@ -81,10 +135,11 @@
         <p class="text-white font-['Pretendard'] pr-1">참여중</p>
       </div>
     </div>
-    <!-- q&a 텍스트 이미지  -->
+
+    <!-- q&a 리스트  -->
     <a href="/">
       <div
-        class="w-full h-[104px] grid gap-x-2 grid-cols-[3fr_1fr] relative isolate p-2"
+        class="w-[320px] h-[104px] grid gap-x-2 grid-cols-[3fr_1fr] relative isolate p-2"
       >
         <section class="w-full max-w-[227px] h-[80px] pl-2">
           <!-- 카테고리 -->
@@ -162,7 +217,7 @@
 
     <a href="/">
       <div
-        class="w-full h-[104px] grid gap-x-2 grid-cols-[3fr_1fr] relative isolate p-2"
+        class="w-[320px] h-[104px] grid gap-x-2 grid-cols-[3fr_1fr] relative isolate p-2"
       >
         <section class="w-full max-w-[227px] h-[80px] pl-2">
           <!-- 카테고리 -->
@@ -240,7 +295,7 @@
 
     <a href="/">
       <div
-        class="w-full h-[104px] grid gap-x-2 grid-cols-[3fr_1fr] relative isolate p-2"
+        class="w-[320px] h-[104px] grid gap-x-2 grid-cols-[3fr_1fr] relative isolate p-2"
       >
         <section class="w-full max-w-[227px] h-[80px] pl-2">
           <!-- 카테고리 -->
@@ -315,9 +370,10 @@
         </div>
       </div>
     </a>
+
     <a href="/">
       <div
-        class="w-full h-[104px] grid gap-x-2 grid-cols-[3fr_1fr] relative isolate p-2"
+        class="w-[320px] h-[104px] grid gap-x-2 grid-cols-[3fr_1fr] relative isolate p-2"
       >
         <section class="w-full max-w-[227px] h-[80px] pl-2">
           <!-- 카테고리 -->
@@ -397,7 +453,7 @@
 
     <a href="/">
       <div
-        class="w-full h-[104px] grid gap-x-2 grid-cols-[3fr_1fr] relative isolate p-2"
+        class="w-[320px] h-[104px] grid gap-x-2 grid-cols-[3fr_1fr] relative isolate p-2"
       >
         <section class="w-full max-w-[227px] h-[80px] pl-2">
           <!-- 카테고리 -->
@@ -475,7 +531,7 @@
 
     <a href="/">
       <div
-        class="w-full h-[104px] grid gap-x-2 grid-cols-[3fr_1fr] relative isolate p-2"
+        class="w-[320px] h-[104px] grid gap-x-2 grid-cols-[3fr_1fr] relative isolate p-2"
       >
         <section class="w-full max-w-[227px] h-[80px] pl-2">
           <!-- 카테고리 -->
@@ -555,7 +611,7 @@
 
     <a href="/">
       <div
-        class="w-full h-[104px] grid gap-x-2 grid-cols-[3fr_1fr] relative isolate p-2"
+        class="w-[320px] h-[104px] grid gap-x-2 grid-cols-[3fr_1fr] relative isolate p-2"
       >
         <section class="w-full max-w-[227px] h-[80px] pl-2">
           <!-- 카테고리 -->
@@ -632,6 +688,7 @@
         </div>
       </div>
     </a>
+
     <!-- 하단 nav -->
     <div
       class="w-80 px-[12px] pt-[8px] pb-[24px] bg-white inline-flex justify-start items-center gap-10"
@@ -693,7 +750,7 @@
               class="w-5 h-5 absolute bg-[url('./assets/my.svg')] hover:bg-[url('./assets/fullMy.svg')] bg-cover"
             ></div>
           </div>
-          <div class="justify-center text-black text-[9px] font-['Pretendard']">
+          <div class="justify-center text-black text-[8px] font-['Pretendard']">
             나의 이듬
           </div>
         </div>

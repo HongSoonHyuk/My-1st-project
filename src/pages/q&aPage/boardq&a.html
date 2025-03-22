@@ -15,8 +15,38 @@
     <script type="module" src="/src/main.js"></script>
   </head>
   <body>
+    <!-- 상단바 -->
+    <div
+      class="px-[24px] pt-[8px] pb-[4px] bg-white inline-flex justify-end items-center gap-44"
+    >
+      <div
+        class="text-center justify-center text-black text-sm font-semibold font-['Pretendard']"
+      >
+        2:26
+      </div>
+      <div class="flex justify-center items-center">
+        <div class="w-6 h-4 relative">
+          <div
+            class="w-3.5 h-4 left-[10px] absolute bg-cover bg-[url('./assets/celluar.svg')]"
+          ></div>
+        </div>
+        <div class="flex justify-center items-center gap-0.5">
+          <div class="w-6 h-6 relative">
+            <div
+              class="w-6 h-6 absolute bg-cover bg-[url('./assets/lte.svg')]"
+            ></div>
+          </div>
+          <div class="w-6 h-5 relative">
+            <div
+              class="w-5 h-5 absolute bg-cover bg-[url('./assets/battery.svg')]"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
     <!-- 상단 버튼 -->
-    <header class="grid grid-cols-[auto_auto_1fr] items-center w-full h-[40px] mb-2">
+    <header class="grid grid-cols-[auto_auto_1fr] items-center w-[320px] h-[40px] mb-2">
       <button
         aria-label="되로가기 버튼"
         type="button"
@@ -91,6 +121,7 @@
         </button>
       </nav>
     </header>
+
     <!-- 카테고리 -->
     <p
       class="bg-[#C4C7D2] text-white text-[10.503px] rounded-sm w-[48px] h-[20px] m-3 grid place-items-center"
@@ -99,7 +130,7 @@
     </p>
     <!-- 프로필, 닉네임, 위치 등 -->
     <div
-      class="grid grid-cols-[auto_1fr] items-center gap-2.5 w-full p-2 ml-1"
+      class="w-[320px] grid grid-cols-[auto_1fr] items-center gap-2.5 p-2 ml-1"
     >
       <!-- 프로필 이미지 -->
       <div
@@ -122,7 +153,7 @@
     </div>
 
     <!-- Q. 제목, 내용, 사진 -->
-    <div class="grid grid-rows-[auto_auto_1fr] w-full p-3">
+    <div class="w-[320px] grid grid-rows-[auto_auto_1fr] p-3">
       <div class="mb-3">
         <div>
           <h2 class="font-bold">
@@ -136,12 +167,12 @@
       <img
         src=""
         alt=""
-        class="bg-[var(--color-content-secondary)] w-[294px] h-[367px] mb-1 rounded-xl overflow-hidden"
+        class="bg-[var(--color-content-secondary)] w-full h-[367px] mb-1 rounded-xl overflow-hidden"
       />
     </div>
 
     <!-- 위치, 장소, 댓글 입력창, 이모티콘 버튼 -->
-    <div class="flex w-full px-3 mt-2 items-center gap-1">
+    <div class="flex w-[320px] px-3 mt-2 items-center gap-1">
       <button aria-label="사진 추가 버튼" class="p-1 cursor-pointer">
         <svg
           aria-hidden="true"
@@ -174,7 +205,7 @@
       </button>
 
       <div
-        class="bg-gray-200 rounded-3xl w-full h-[38px] flex items-center px-1"
+        class="w-[320px] bg-gray-200 rounded-3xl h-[38px] flex items-center px-1"
       >
         <input
           type="text"
@@ -207,7 +238,7 @@
 
     <!-- 배지 -->
     <article
-    class="bg-[var(--color-primary)] w-[300px] h-auto p-5 mt-20 rounded-xl m-3 flex justify-between items-center"
+    class="bg-[var(--color-primary)] w-[296px] h-[90px] p-5 mt-12 rounded-xl m-3 flex justify-between items-center"
   >
     <div class="flex flex-col">
       <header class="grid grid-rows-2 w-full">
@@ -284,7 +315,7 @@
     </article>
 
     <div
-      class="text-xs text-[var(--color-content-tertiary)] text-center w-full mt-30 mb-30"
+      class="text-xs text-[var(--color-content-tertiary)] text-center w-[320px] mt-30 mb-30"
     >
       <p class="">아직 댓글이 없어요.</p>
       <p class="">가장 먼저 댓글을 남겨보세요.</p>

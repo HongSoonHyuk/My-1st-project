@@ -15,9 +15,38 @@
     <script type="module" src="/src/main.js"></script>
   </head>
   <body>
+    <!-- 상단바 -->
+    <div
+      class="px-[24px] pt-[8px] pb-[4px] bg-white inline-flex justify-end items-center gap-44"
+    >
+      <div
+        class="text-center justify-center text-black text-sm font-semibold font-['Pretendard']"
+      >
+        2:26
+      </div>
+      <div class="flex justify-center items-center">
+        <div class="w-6 h-4 relative">
+          <div
+            class="w-3.5 h-4 left-[10px] absolute bg-cover bg-[url('./assets/celluar.svg')]"
+          ></div>
+        </div>
+        <div class="flex justify-center items-center gap-0.5">
+          <div class="w-6 h-6 relative">
+            <div
+              class="w-6 h-6 absolute bg-cover bg-[url('./assets/lte.svg')]"
+            ></div>
+          </div>
+          <div class="w-6 h-5 relative">
+            <div
+              class="w-5 h-5 absolute bg-cover bg-[url('./assets/battery.svg')]"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- 질문 채팅바 -->
     <div
-      class="grid grid-cols-[1fr_auto_auto] w-full h-[40px] text-m justify-self-center"
+      class="grid grid-cols-[1fr_auto_auto] w-[320px] h-[40px] text-m justify-self-start"
     >
       <h2 class="font-bold pl-3 self-center text-[18.662px]">질문채팅</h2>
       <button aria-label="스캔 버튼" class="pr-2 cursor-pointer">
@@ -54,7 +83,40 @@
     <!-- 사진 없는 채팅 리스트 -->
     <a href="/">
       <div
-        class="w-full mx-auto px-3 py-2 border-b-[0.3px] border-[var(--Contents-contentSecondary,#919191)]"
+        class="w-[320px] px-3 py-2 border-b-[0.3px] border-[var(--Contents-contentSecondary,#919191)]"
+      >
+        <div class="grid grid-cols-[auto_1fr] items-center gap-2.5">
+          <!-- 프로필 이미지 -->
+          <div
+            class="bg-[var(--color-content-secondary)] w-[44px] h-[44px] rounded-full overflow-hidden"
+          >
+            <img src="/" alt="" class="w-full h-full object-cover" />
+          </div>
+
+          <section class="flex flex-col w-full min-w-0">
+            <div class="flex gap-1">
+              <h2 class="font-bold text-[14px]">닉네임</h2>
+              <p
+                class="text-[var(--color-content-secondary)] text-[9px] self-center m-1"
+              >
+                위치<span>·</span><span>날짜</span>
+              </p>
+            </div>
+
+            <p
+              class="truncate max-w-[140px] text-ellipsis whitespace-nowrap overflow-hidden text-[14px] text-gray-700"
+            >
+              text
+            </p>
+          </section>
+        </div>
+      </div>
+    </a>
+
+    <!-- 사진 없는 채팅 리스트 -->
+    <a href="/">
+      <div
+        class="w-[320px] px-3 py-2 border-b-[0.3px] border-[var(--Contents-contentSecondary,#919191)]"
       >
         <div class="grid grid-cols-[auto_1fr] items-center gap-2.5">
           <!-- 프로필 이미지 -->
@@ -86,7 +148,287 @@
 
     <!-- 사진 추가 -->
     <div
-      class="w-full mx-auto px-3 py-2 border-b-[0.3px] border-[var(--Contents-contentSecondary,#919191)] flex justify-between items-center"
+      class="w-[320px] px-3 py-2 border-b-[0.3px] border-[var(--Contents-contentSecondary,#919191)] flex justify-between items-center"
+    >
+      <div class="grid grid-cols-[auto_1fr] items-center gap-2.5">
+        <!-- 프로필 이미지 -->
+        <div
+          class="bg-[var(--color-content-secondary)] w-[44px] h-[44px] rounded-full overflow-hidden"
+        >
+          <img src="/" alt="" class="w-full h-full object-cover" />
+        </div>
+
+        <section class="flex flex-col w-full">
+          <div class="flex gap-1">
+            <h2 class="font-bold text-[14px]">닉네임</h2>
+            <p
+              class="text-[var(--color-content-secondary)] text-[9px] self-center m-1"
+            >
+              위치<span>·</span><span>날짜</span>
+            </p>
+          </div>
+
+          <p
+            class="truncate w-full text-ellipsis whitespace-nowrap overflow-hidden text-[14px] text-gray-700"
+          >
+            text
+          </p>
+        </section>
+      </div>
+
+      <div
+        class="flex flex-col bg-[var(--color-content-secondary)] w-[44px] h-[44px] rounded-xl overflow-hidden"
+      >
+        <img src="" alt="" />
+      </div>
+    </div>
+
+    <!-- 사진 없는 채팅 리스트 -->
+    <a href="/">
+      <div
+        class="w-[320px] px-3 py-2 border-b-[0.3px] border-[var(--Contents-contentSecondary,#919191)]"
+      >
+        <div class="grid grid-cols-[auto_1fr] items-center gap-2.5">
+          <!-- 프로필 이미지 -->
+          <div
+            class="bg-[var(--color-content-secondary)] w-[44px] h-[44px] rounded-full overflow-hidden"
+          >
+            <img src="/" alt="" class="w-full h-full object-cover" />
+          </div>
+
+          <section class="flex flex-col w-full min-w-0">
+            <div class="flex gap-1">
+              <h2 class="font-bold text-[14px]">닉네임</h2>
+              <p
+                class="text-[var(--color-content-secondary)] text-[9px] self-center m-1"
+              >
+                위치<span>·</span><span>날짜</span>
+              </p>
+            </div>
+
+            <p
+              class="truncate max-w-[140px] text-ellipsis whitespace-nowrap overflow-hidden text-[14px] text-gray-700"
+            >
+              text
+            </p>
+          </section>
+        </div>
+      </div>
+    </a>
+
+    <!-- 사진 없는 채팅 리스트 -->
+    <a href="/">
+      <div
+        class="w-[320px] px-3 py-2 border-b-[0.3px] border-[var(--Contents-contentSecondary,#919191)]"
+      >
+        <div class="grid grid-cols-[auto_1fr] items-center gap-2.5">
+          <!-- 프로필 이미지 -->
+          <div
+            class="bg-[var(--color-content-secondary)] w-[44px] h-[44px] rounded-full overflow-hidden"
+          >
+            <img src="/" alt="" class="w-full h-full object-cover" />
+          </div>
+
+          <section class="flex flex-col w-full min-w-0">
+            <div class="flex gap-1">
+              <h2 class="font-bold text-[14px]">닉네임</h2>
+              <p
+                class="text-[var(--color-content-secondary)] text-[9px] self-center m-1"
+              >
+                위치<span>·</span><span>날짜</span>
+              </p>
+            </div>
+
+            <p
+              class="truncate max-w-[140px] text-ellipsis whitespace-nowrap overflow-hidden text-[14px] text-gray-700"
+            >
+              text
+            </p>
+          </section>
+        </div>
+      </div>
+    </a>
+
+    <!-- 사진 추가 -->
+    <div
+      class="w-[320px] px-3 py-2 border-b-[0.3px] border-[var(--Contents-contentSecondary,#919191)] flex justify-between items-center"
+    >
+      <div class="grid grid-cols-[auto_1fr] items-center gap-2.5">
+        <!-- 프로필 이미지 -->
+        <div
+          class="bg-[var(--color-content-secondary)] w-[44px] h-[44px] rounded-full overflow-hidden"
+        >
+          <img src="/" alt="" class="w-full h-full object-cover" />
+        </div>
+
+        <section class="flex flex-col w-full">
+          <div class="flex gap-1">
+            <h2 class="font-bold text-[14px]">닉네임</h2>
+            <p
+              class="text-[var(--color-content-secondary)] text-[9px] self-center m-1"
+            >
+              위치<span>·</span><span>날짜</span>
+            </p>
+          </div>
+
+          <p
+            class="truncate w-full text-ellipsis whitespace-nowrap overflow-hidden text-[14px] text-gray-700"
+          >
+            text
+          </p>
+        </section>
+      </div>
+
+      <div
+        class="flex flex-col bg-[var(--color-content-secondary)] w-[44px] h-[44px] rounded-xl overflow-hidden"
+      >
+        <img src="" alt="" />
+      </div>
+    </div>
+
+    <!-- 사진 추가 -->
+    <div
+      class="w-[320px] px-3 py-2 border-b-[0.3px] border-[var(--Contents-contentSecondary,#919191)] flex justify-between items-center"
+    >
+      <div class="grid grid-cols-[auto_1fr] items-center gap-2.5">
+        <!-- 프로필 이미지 -->
+        <div
+          class="bg-[var(--color-content-secondary)] w-[44px] h-[44px] rounded-full overflow-hidden"
+        >
+          <img src="/" alt="" class="w-full h-full object-cover" />
+        </div>
+
+        <section class="flex flex-col w-full">
+          <div class="flex gap-1">
+            <h2 class="font-bold text-[14px]">닉네임</h2>
+            <p
+              class="text-[var(--color-content-secondary)] text-[9px] self-center m-1"
+            >
+              위치<span>·</span><span>날짜</span>
+            </p>
+          </div>
+
+          <p
+            class="truncate w-full text-ellipsis whitespace-nowrap overflow-hidden text-[14px] text-gray-700"
+          >
+            text
+          </p>
+        </section>
+      </div>
+
+      <div
+        class="flex flex-col bg-[var(--color-content-secondary)] w-[44px] h-[44px] rounded-xl overflow-hidden"
+      >
+        <img src="" alt="" />
+      </div>
+    </div>
+
+    <!-- 사진 없는 채팅 리스트 -->
+    <a href="/">
+      <div
+        class="w-[320px] px-3 py-2 border-b-[0.3px] border-[var(--Contents-contentSecondary,#919191)]"
+      >
+        <div class="grid grid-cols-[auto_1fr] items-center gap-2.5">
+          <!-- 프로필 이미지 -->
+          <div
+            class="bg-[var(--color-content-secondary)] w-[44px] h-[44px] rounded-full overflow-hidden"
+          >
+            <img src="/" alt="" class="w-full h-full object-cover" />
+          </div>
+
+          <section class="flex flex-col w-full min-w-0">
+            <div class="flex gap-1">
+              <h2 class="font-bold text-[14px]">닉네임</h2>
+              <p
+                class="text-[var(--color-content-secondary)] text-[9px] self-center m-1"
+              >
+                위치<span>·</span><span>날짜</span>
+              </p>
+            </div>
+
+            <p
+              class="truncate max-w-[140px] text-ellipsis whitespace-nowrap overflow-hidden text-[14px] text-gray-700"
+            >
+              text
+            </p>
+          </section>
+        </div>
+      </div>
+    </a>
+
+    <!-- 사진 추가 -->
+    <div
+      class="w-[320px] px-3 py-2 border-b-[0.3px] border-[var(--Contents-contentSecondary,#919191)] flex justify-between items-center"
+    >
+      <div class="grid grid-cols-[auto_1fr] items-center gap-2.5">
+        <!-- 프로필 이미지 -->
+        <div
+          class="bg-[var(--color-content-secondary)] w-[44px] h-[44px] rounded-full overflow-hidden"
+        >
+          <img src="/" alt="" class="w-full h-full object-cover" />
+        </div>
+
+        <section class="flex flex-col w-full">
+          <div class="flex gap-1">
+            <h2 class="font-bold text-[14px]">닉네임</h2>
+            <p
+              class="text-[var(--color-content-secondary)] text-[9px] self-center m-1"
+            >
+              위치<span>·</span><span>날짜</span>
+            </p>
+          </div>
+
+          <p
+            class="truncate w-full text-ellipsis whitespace-nowrap overflow-hidden text-[14px] text-gray-700"
+          >
+            text
+          </p>
+        </section>
+      </div>
+
+      <div
+        class="flex flex-col bg-[var(--color-content-secondary)] w-[44px] h-[44px] rounded-xl overflow-hidden"
+      >
+        <img src="" alt="" />
+      </div>
+    </div>
+
+    <!-- 사진 없는 채팅 리스트 -->
+    <a href="/">
+      <div
+        class="w-[320px] px-3 py-2 border-b-[0.3px] border-[var(--Contents-contentSecondary,#919191)]"
+      >
+        <div class="grid grid-cols-[auto_1fr] items-center gap-2.5">
+          <!-- 프로필 이미지 -->
+          <div
+            class="bg-[var(--color-content-secondary)] w-[44px] h-[44px] rounded-full overflow-hidden"
+          >
+            <img src="/" alt="" class="w-full h-full object-cover" />
+          </div>
+
+          <section class="flex flex-col w-full min-w-0">
+            <div class="flex gap-1">
+              <h2 class="font-bold text-[14px]">닉네임</h2>
+              <p
+                class="text-[var(--color-content-secondary)] text-[9px] self-center m-1"
+              >
+                위치<span>·</span><span>날짜</span>
+              </p>
+            </div>
+
+            <p
+              class="truncate max-w-[140px] text-ellipsis whitespace-nowrap overflow-hidden text-[14px] text-gray-700"
+            >
+              text
+            </p>
+          </section>
+        </div>
+      </div>
+    </a>
+
+    <!-- 사진 추가 -->
+    <div
+      class="w-[320px] px-3 py-2 border-b-[0.3px] border-[var(--Contents-contentSecondary,#919191)] flex justify-between items-center"
     >
       <div class="grid grid-cols-[auto_1fr] items-center gap-2.5">
         <!-- 프로필 이미지 -->
@@ -141,7 +483,7 @@
         <div tabindex="0" class="flex flex-col justify-center items-center">
           <div class="w-5 h-5 relative">
             <div
-              class="w-5 h-5 absolute bg-[url('./assets/file.svg')] hover:bg-[url('./assets/fullFile.svg')] bg-cover"
+              class="w-5 h-5 absolute bg-[url('./assets/life.svg')] hover:bg-[url('./assets/fullFile.svg')] bg-cover"
             ></div>
           </div>
           <div
@@ -182,7 +524,7 @@
               class="w-5 h-5 absolute bg-[url('./assets/my.svg')] hover:bg-[url('./assets/fullMy.svg')] bg-cover"
             ></div>
           </div>
-          <div class="justify-center text-black text-[9px] font-['Pretendard']">
+          <div class="justify-center text-black text-[8px] font-['Pretendard']">
             나의 이듬
           </div>
         </div>
