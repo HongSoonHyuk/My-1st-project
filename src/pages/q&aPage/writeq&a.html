@@ -15,8 +15,38 @@
     <script type="module" src="/src/main.js"></script>
   </head>
   <body>
+    <!-- 상단바 -->
+    <div
+      class="px-[24px] pt-[8px] pb-[4px] bg-white inline-flex justify-end items-center gap-44"
+    >
+      <div
+        class="text-center justify-center text-black text-sm font-semibold font-['Pretendard']"
+      >
+        2:26
+      </div>
+      <div class="flex justify-center items-center">
+        <div class="w-6 h-4 relative">
+          <div
+            class="w-3.5 h-4 left-[10px] absolute bg-cover bg-[url('./assets/celluar.svg')]"
+          ></div>
+        </div>
+        <div class="flex justify-center items-center gap-0.5">
+          <div class="w-6 h-6 relative">
+            <div
+              class="w-6 h-6 absolute bg-cover bg-[url('./assets/lte.svg')]"
+            ></div>
+          </div>
+          <div class="w-6 h-5 relative">
+            <div
+              class="w-5 h-5 absolute bg-cover bg-[url('./assets/battery.svg')]"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!--상단 글쓰기 지우기,완료버튼 nav-->
-    <header class="grid grid-cols-[auto_1fr_auto] items-center w-full">
+    <header class="w-[320px] grid grid-cols-[auto_1fr_auto] items-center">
       <button
         aria-label="그만하기 버튼"
         type="button"
@@ -43,7 +73,7 @@
 
       <nav class="flex gap-2 pt-1">
         <a href="/">
-          <button aria-label="완료 버튼" type="button" class="pr-2">
+          <button aria-label="완료 버튼" type="button" class="pr-3">
             <svg
               aria-hidden="true"
               width="25"
@@ -64,7 +94,7 @@
 
     <!-- frontend 상단-->
     <div
-      class="grid grid-cols-[1fr_auto] py-3 px-3 border-b-1 border-gray-400 items-center"
+      class="w-[320px] grid grid-cols-[1fr_auto] py-3 px-3 border-b-1 border-gray-400 items-center"
     >
       <h2 class="text-[14px] font-bold text-start-center">FRONTEND</h2>
       <a href="/">
@@ -88,10 +118,10 @@
 
     <!-- info -->
     <div
-      class="bg-[#8db0f9] rounded-lg px-3 sm:px-4 md:px-6 py-2 sm:py-3 text-white m-2 gap-2 text-[10.503px] sm:text-sm md:text-base"
+      class="w-[290px] bg-[#8db0f9] rounded-lg text-white text-[10.503px] p-4 m-3"
     >
       <p>
-        <span class="font-bold pr-1.5">안내</span>
+        <span class="font-bold pr-1">안내</span>
         <span class="pr-1"
           >중고거래 관련, 명예훼손, 광고/홍보 목적의 글은 올리실 수
           없어요.</span
@@ -99,8 +129,9 @@
         <a href="/" class="underline">Q&A글쓰기 운영정책</a>
       </p>
     </div>
+
     <!-- 제목 -->
-    <div class="grid grid-rows-[1fr_auto]">
+    <div class="w-[320px] grid grid-rows-[1fr_auto]">
       <input
         type="text"
         placeholder="제목"
@@ -109,13 +140,13 @@
       <!-- 내용쓰는 곳 -->
       <textarea
         placeholder="관심있는 분야에 대한 질문을 올려주세요. 장소 정보와 사진을 함께 올리면 친구들에게 더 도움이 돼요!"
-        class="w-full h-[160px] border-none focus:outline-none placeholder-gray-400 px-5 py-2 resize-none"
+        class="w-full h-[160px] border-none focus:outline-none placeholder-gray-400 px-5 py-1 resize-none"
       ></textarea>
     </div>
 
     <!-- 하단 사진, 장소, 키보드 버튼 -->
-    <div class="grid grid-cols-[auto_auto_1fr]">
-      <div class="justify-self-center py-2 px-3">
+    <div class="w-[320px] grid grid-cols-[auto_auto_1fr]">
+      <div class="justify-self-center py-2 pl-3">
         <a href="/">
           <button
             aria-label="사진 아이콘"
