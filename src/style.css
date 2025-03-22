@@ -145,12 +145,23 @@
   .category-checkbox:checked + .category-label .check-icon {
     @apply block;
   }
+
+  .layout {
+    @apply w-[340px] h-[694px] mx-auto my-[10vh] border-[10px] border-double border-black rounded-[25px] relative overflow-auto;
+  }
 }
 .phone-input:focus ~ .keyboard-container {
   display: block;
 }
 
-.layout {
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+/* .layout {
   width: 340px;
   height: 694px;
   margin: 10vh auto;
@@ -162,4 +173,4 @@
   &::-webkit-scrollbar {
     display: none;
   }
-}
+} */
