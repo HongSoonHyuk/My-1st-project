@@ -2,7 +2,7 @@
 
 <br>
 <div align="center">
-<img alt="위닝일레븐 로고" src="public/img/winningeleven.png">
+<img src="https://github.com/user-attachments/assets/49f2760f-bfab-494c-b653-e6c96e45c1bb">
 <br>
 <br>
 <img alt="Static Badge" src="https://img.shields.io/badge/2025.03.14~2025.03.25-%23719CF7?style=flat&label=%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%EA%B8%B0%EA%B0%84">
@@ -59,11 +59,11 @@
 
 <div align="center">
 
-| **최동환**<br>스크럼 마스터 | **김지수**<br>팀원 | **차형주**<br>팀원 | **홍순혁**<br>팀원 | **홍예린**<br>팀원 |
-| :-------------------------: | :----------------: | :----------------: | :----------------: | :----------------: |
-|            사진             |       주시면       |        넣을        |        예정        |       입니다       |
-|           이메일            |       주소랑       |       깃허브       |        넣을        |        예정        |
-|          Main Page          |    Profile Page    |     Start Page     |     Board Page     |      Q&A Page      |
+|                                **최동환**<br>스크럼 마스터                                |                                    **김지수**<br>팀원                                     |                                    **차형주**<br>팀원                                     | **홍순혁**<br>팀원 |                                    **홍예린**<br>팀원                                     |
+| :---------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------: | :----------------: | :---------------------------------------------------------------------------------------: |
+| ![Image](https://github.com/user-attachments/assets/593b08f3-c543-4c32-b4b4-961eaae9134e) | ![Image](https://github.com/user-attachments/assets/1950b94e-b888-4857-9099-c3bbde7180ba) | ![Image](https://github.com/user-attachments/assets/2cf238c6-21c7-4d4e-88ff-1a98f70854db) |        예정        | ![Image](https://github.com/user-attachments/assets/afa27246-bffb-4ce7-b3f3-3b39ed1b04c2) |
+|                                          이메일                                           |                                          주소랑                                           |                                          깃허브                                           |        넣을        |                                           예정                                            |
+|                                         Main Page                                         |                                       Profile Page                                        |                                        Start Page                                         |     Board Page     |                                         Q&A Page                                          |
 
 </div>
 
