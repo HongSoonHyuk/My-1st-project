@@ -5,146 +5,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>q&a</title>
     <link rel="icon" href="/vite.svg" />
-    <link
-      rel="preload"
-      as="font"
-      href="/font/woff2/PretendardVariable.woff2"
-      crossorigin="anonymous"
-    />
+    <link rel="preload" as="font" href="/font/woff2/PretendardVariable.woff2" crossorigin="anonymous" />
     <link rel="stylesheet" as="style" href="/font/pretendardvariable.css" />
     <script type="module" src="/src/main.js"></script>
   </head>
   <body>
     <!-- 상단바 -->
-    <div
-      class="px-[24px] pt-[8px] pb-[4px] bg-white inline-flex justify-end items-center gap-44"
-    >
-      <div
-        class="text-center justify-center text-black text-sm font-semibold font-['Pretendard']"
-      >
-        2:26
-      </div>
+    <div class="px-[24px] pt-[8px] pb-[4px] bg-white inline-flex justify-end items-center gap-44">
+      <div class="text-center justify-center text-black text-sm font-semibold font-['Pretendard']">2:26</div>
       <div class="flex justify-center items-center">
         <div class="w-6 h-4 relative">
-          <div
-            class="w-3.5 h-4 left-[10px] absolute bg-cover bg-[url('./assets/celluar.svg')]"
-          ></div>
+          <div class="w-3.5 h-4 left-[10px] absolute bg-cover bg-[url('./assets/celluar.svg')]"></div>
         </div>
         <div class="flex justify-center items-center gap-0.5">
           <div class="w-6 h-6 relative">
-            <div
-              class="w-6 h-6 absolute bg-cover bg-[url('./assets/lte.svg')]"
-            ></div>
+            <div class="w-6 h-6 absolute bg-cover bg-[url('./assets/lte.svg')]"></div>
           </div>
           <div class="w-6 h-5 relative">
-            <div
-              class="w-5 h-5 absolute bg-cover bg-[url('./assets/battery.svg')]"
-            ></div>
+            <div class="w-5 h-5 absolute bg-cover bg-[url('./assets/battery.svg')]"></div>
           </div>
         </div>
       </div>
     </div>
 
     <!-- 상단 버튼 -->
-    <header
-      class="grid grid-cols-[auto_auto_1fr] items-center w-[320px] h-[40px] mb-2"
-    >
+    <header class="grid grid-cols-[auto_auto_1fr] items-center w-[320px] h-[40px] mb-2">
       <button
         onclick="location.href='/src/pages/q&aPage/chatList.html'"
         aria-label="되로가기 버튼"
         type="button"
-        class="flex items-center pl-2 w-8 cursor-pointer"
-      >
-        <svg
-          aria-hidden="true"
-          width="20"
-          height="20"
-          viewBox="0 0 20 20"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
+        class="flex items-center pl-2 w-8 cursor-pointer">
+        <svg aria-hidden="true" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
             d="M12.9422 15.8079C13.0003 15.866 13.0463 15.9349 13.0777 16.0108C13.1092 16.0867 13.1254 16.168 13.1254 16.2501C13.1254 16.3322 13.1092 16.4135 13.0777 16.4894C13.0463 16.5653 13.0003 16.6342 12.9422 16.6923C12.8841 16.7504 12.8152 16.7964 12.7393 16.8278C12.6634 16.8593 12.5821 16.8755 12.5 16.8755C12.4179 16.8755 12.3366 16.8593 12.2607 16.8278C12.1848 16.7964 12.1159 16.7504 12.0578 16.6923L5.80782 10.4423C5.74971 10.3842 5.70361 10.3153 5.67215 10.2394C5.6407 10.1636 5.62451 10.0822 5.62451 10.0001C5.62451 9.91797 5.6407 9.83664 5.67215 9.76077C5.70361 9.68489 5.74971 9.61596 5.80782 9.55792L12.0578 3.30792C12.1751 3.19064 12.3342 3.12476 12.5 3.12476C12.6659 3.12476 12.8249 3.19064 12.9422 3.30792C13.0595 3.42519 13.1254 3.58425 13.1254 3.7501C13.1254 3.91596 13.0595 4.07502 12.9422 4.19229L7.1336 10.0001L12.9422 15.8079Z"
-            fill="black"
-          />
+            fill="black" />
         </svg>
       </button>
       <button
         onclick="location.href='/src/pages/mainpage/mainPage.html'"
         aria-label="홈 버튼"
         type="button"
-        class="flex justify-center w-8 cursor-pointer"
-      >
-        <svg
-          width="20"
-          height="20"
-          viewBox="0 0 20 20"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
+        class="flex justify-center w-8 cursor-pointer">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
             d="M9.19167 2.15834C9.41757 1.96704 9.70399 1.86206 10 1.86206C10.296 1.86206 10.5824 1.96704 10.8083 2.15834L17.0583 7.46084C17.1967 7.57817 17.3079 7.72422 17.3842 7.88884C17.4605 8.05347 17.5 8.23273 17.5 8.41417V16.25C17.5 16.5815 17.3683 16.8995 17.1339 17.1339C16.8995 17.3683 16.5815 17.5 16.25 17.5H11.4583C11.2926 17.5 11.1336 17.4342 11.0164 17.3169C10.8992 17.1997 10.8333 17.0408 10.8333 16.875V11.6667H9.16667V16.875C9.16667 17.0408 9.10082 17.1997 8.98361 17.3169C8.8664 17.4342 8.70743 17.5 8.54167 17.5H3.75C3.41848 17.5 3.10054 17.3683 2.86612 17.1339C2.6317 16.8995 2.5 16.5815 2.5 16.25V8.41417C2.5 8.0475 2.66167 7.69834 2.94167 7.46084L9.19167 2.15834ZM10 3.11167L3.75 8.41417V16.25H7.91667V11.0417C7.91667 10.8759 7.98251 10.7169 8.09973 10.5997C8.21694 10.4825 8.37591 10.4167 8.54167 10.4167H11.4583C11.6241 10.4167 11.7831 10.4825 11.9003 10.5997C12.0175 10.7169 12.0833 10.8759 12.0833 11.0417V16.25H16.25V8.41417L10 3.11167Z"
-            fill="black"
-          />
+            fill="black" />
         </svg>
       </button>
 
       <nav class="flex justify-self-end gap-2">
         <button aria-label="공유 버튼" type="button" class="cursor-pointer">
-          <svg
-            width="20"
-            height="20"
-            viewBox="0 0 20 20"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M16.4618 9.16668C16.6128 9.16668 16.7587 9.22138 16.8725 9.32065C16.9864 9.41992 17.0604 9.55705 17.0809 9.70668L17.0868 9.79168V15.625C17.087 16.3169 16.8224 16.9827 16.3473 17.4857C15.8722 17.9887 15.2226 18.2908 14.5318 18.33L14.3784 18.3342H5.21175C4.51997 18.3342 3.85439 18.0695 3.35156 17.5945C2.84872 17.1194 2.54675 16.4698 2.50758 15.7792L2.50342 15.6258V9.79168C2.50347 9.63332 2.56362 9.48089 2.67173 9.36518C2.77984 9.24948 2.92783 9.17912 3.08582 9.16832C3.2438 9.15753 3.39999 9.20711 3.52283 9.30704C3.64567 9.40697 3.726 9.5498 3.74758 9.70668L3.75342 9.79168V15.625C3.75322 15.9911 3.89076 16.344 4.1387 16.6134C4.38665 16.8828 4.72686 17.0491 5.09175 17.0792L5.21175 17.0842H14.3784C14.7445 17.0841 15.0973 16.9464 15.3665 16.6983C15.6358 16.4502 15.8018 16.1099 15.8318 15.745L15.8368 15.6258V9.79168C15.8368 9.62592 15.9026 9.46695 16.0198 9.34974C16.137 9.23253 16.296 9.16668 16.4618 9.16668ZM5.18258 6.01334L9.34675 1.85001C9.45257 1.74416 9.59287 1.67981 9.74213 1.66864C9.89139 1.65748 10.0397 1.70025 10.1601 1.78918L10.2301 1.84918L14.4009 6.01334C14.513 6.12472 14.5788 6.27444 14.585 6.43236C14.5911 6.59027 14.5372 6.74466 14.4341 6.86444C14.331 6.98423 14.1864 7.0605 14.0293 7.07793C13.8723 7.09535 13.7144 7.05262 13.5876 6.95834L13.5176 6.89751L10.4151 3.80084V13.5458C10.4151 13.6967 10.3605 13.8426 10.2614 13.9564C10.1623 14.0702 10.0254 14.1443 9.87592 14.165L9.79092 14.1708C9.63989 14.1708 9.49397 14.1161 9.38014 14.0169C9.26632 13.9176 9.19229 13.7805 9.17175 13.6308L9.16592 13.5458L9.16508 3.79834L6.06675 6.89751C5.96088 7.00358 5.82042 7.06807 5.67097 7.07924C5.52153 7.0904 5.37304 7.0475 5.25258 6.95834L5.18258 6.89751C5.07664 6.79153 5.0123 6.65102 5.00129 6.50158C4.99028 6.35213 5.03332 6.20371 5.12258 6.08334L5.18258 6.01334Z"
-              fill="black"
-            />
+              fill="black" />
           </svg>
         </button>
-        <button
-          aria-label="더보기 버튼"
-          type="button"
-          class="pr-2 cursor-pointer"
-        >
-          <svg
-            aria-hidden="true"
-            width="20"
-            height="20"
-            viewBox="0 0 20 20"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
+        <button aria-label="더보기 버튼" type="button" class="pr-2 cursor-pointer">
+          <svg aria-hidden="true" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M9.99967 6.66668C10.9163 6.66668 11.6663 5.91668 11.6663 5.00001C11.6663 4.08334 10.9163 3.33334 9.99967 3.33334C9.08301 3.33334 8.33301 4.08334 8.33301 5.00001C8.33301 5.91668 9.08301 6.66668 9.99967 6.66668ZM9.99967 8.33334C9.08301 8.33334 8.33301 9.08334 8.33301 10C8.33301 10.9167 9.08301 11.6667 9.99967 11.6667C10.9163 11.6667 11.6663 10.9167 11.6663 10C11.6663 9.08334 10.9163 8.33334 9.99967 8.33334ZM9.99967 13.3333C9.08301 13.3333 8.33301 14.0833 8.33301 15C8.33301 15.9167 9.08301 16.6667 9.99967 16.6667C10.9163 16.6667 11.6663 15.9167 11.6663 15C11.6663 14.0833 10.9163 13.3333 9.99967 13.3333Z"
-              fill="black"
-            />
+              fill="black" />
           </svg>
         </button>
       </nav>
     </header>
 
     <!-- 카테고리 -->
-    <p
-      class="bg-[#C4C7D2] text-white text-[10.503px] rounded-sm w-[48px] h-[20px] m-3 grid place-items-center"
-    >
-      Q&A
-    </p>
+    <p class="bg-[#C4C7D2] text-white text-[10.503px] rounded-sm w-[48px] h-[20px] m-3 grid place-items-center">Q&A</p>
     <!-- 프로필, 닉네임, 위치 등 -->
-    <div
-      class="w-[320px] grid grid-cols-[auto_1fr] items-center gap-2.5 p-2 ml-1"
-    >
+    <div class="w-[320px] grid grid-cols-[auto_1fr] items-center gap-2.5 p-2 ml-1">
       <!-- 프로필 이미지 -->
-      <div
-        class="bg-[var(--color-content-secondary)] w-[30px] h-[30px] rounded-full overflow-hidden"
-      >
-        <img
-          src="/public/img/whatNono.webp"
-          alt=""
-          class="w-full h-full object-cover"
-        />
+      <div class="bg-[var(--color-content-secondary)] w-[30px] h-[30px] rounded-full overflow-hidden">
+        <img src="/public/img/whatNono.webp" alt="" class="w-full h-full object-cover" />
       </div>
 
       <section class="flex flex-col min-w-0 w-[120px]">
@@ -152,11 +85,7 @@
           <h2 class="text-[10.503px]">라움</h2>
         </div>
 
-        <p
-          class="whitespace-nowrap overflow-hidden text-[10.503px] text-[var(--color-content-secondary)]"
-        >
-          연희동 · 2시간 전
-        </p>
+        <p class="whitespace-nowrap overflow-hidden text-[10.503px] text-[var(--color-content-secondary)]">연희동 · 2시간 전</p>
       </section>
     </div>
 
@@ -172,159 +101,91 @@
         <p class="text-[14px] pt-1">계신가요? 있으면 참가하고 싶어서요!</p>
       </div>
 
-      <img
-        src="/public/img/whatNono.webp"
-        alt=""
-        class="bg-[var(--color-content-secondary)] w-full h-[367px] mb-1 rounded-xl overflow-hidden"
-      />
+      <img src="/public/img/whatNono.webp" alt="" class="bg-[var(--color-content-secondary)] w-full h-[367px] mb-1 rounded-xl overflow-hidden" />
     </div>
 
     <!-- 위치, 장소, 댓글 입력창, 이모티콘 버튼 -->
     <div class="flex w-[320px] px-3 mt-2 items-center gap-1">
       <button aria-label="사진 추가 버튼" class="p-1 cursor-pointer">
-        <svg
-          aria-hidden="true"
-          width="20"
-          height="20"
-          viewBox="0 0 20 20"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
+        <svg aria-hidden="true" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
             d="M18.125 9.53125H14.7797C15.2422 8.69883 15.4794 7.76005 15.4677 6.80782C15.456 5.85559 15.1958 4.92292 14.713 4.10211C14.2301 3.28131 13.5413 2.60081 12.7147 2.12798C11.8881 1.65515 10.9523 1.40636 10 1.40625C9.87568 1.40625 9.75645 1.45564 9.66854 1.54354C9.58064 1.63145 9.53125 1.75068 9.53125 1.875V5.22031C8.69883 4.75777 7.76005 4.52061 6.80782 4.53231C5.85559 4.544 4.92292 4.80415 4.10211 5.28701C3.28131 5.76987 2.60081 6.45869 2.12798 7.28531C1.65515 8.11193 1.40636 9.0477 1.40625 10C1.40625 10.1243 1.45564 10.2435 1.54354 10.3315C1.63145 10.4194 1.75068 10.4688 1.875 10.4688H5.22031C4.75777 11.3012 4.52061 12.24 4.53231 13.1922C4.544 14.1444 4.80415 15.0771 5.28701 15.8979C5.76987 16.7187 6.45869 17.3992 7.28531 17.872C8.11193 18.3449 9.0477 18.5936 10 18.5938C10.1243 18.5938 10.2435 18.5444 10.3315 18.4565C10.4194 18.3685 10.4688 18.2493 10.4688 18.125V14.7797C11.3012 15.2422 12.24 15.4794 13.1922 15.4677C14.1444 15.456 15.0771 15.1958 15.8979 14.713C16.7187 14.2301 17.3992 13.5413 17.872 12.7147C18.3449 11.8881 18.5936 10.9523 18.5938 10C18.5938 9.87568 18.5444 9.75645 18.4565 9.66854C18.3685 9.58064 18.2493 9.53125 18.125 9.53125ZM14.5312 6.875C14.5353 7.82939 14.2342 8.76008 13.6719 9.53125H10.4688V2.36797C11.5828 2.48524 12.6141 3.01047 13.3642 3.84256C14.1142 4.67465 14.5299 5.75478 14.5312 6.875ZM6.875 5.46875C7.82939 5.46473 8.76008 5.76584 9.53125 6.32812V9.53125H2.36797C2.48524 8.41718 3.01047 7.38587 3.84256 6.63585C4.67465 5.88582 5.75478 5.47012 6.875 5.46875ZM5.46875 13.125C5.46473 12.1706 5.76584 11.2399 6.32812 10.4688H9.53125V17.632C8.41718 17.5148 7.38587 16.9895 6.63585 16.1574C5.88582 15.3253 5.47012 14.2452 5.46875 13.125ZM13.125 14.5312C12.1706 14.5353 11.2399 14.2342 10.4688 13.6719V10.4688H17.632C17.5148 11.5828 16.9895 12.6141 16.1574 13.3642C15.3253 14.1142 14.2452 14.5299 13.125 14.5312Z"
-            fill="#9DA1B4"
-          />
+            fill="#9DA1B4" />
         </svg>
       </button>
       <button aria-label="위치 추가 버튼" class="p-1 cursor-pointer">
-        <svg
-          aria-hidden="true"
-          width="20"
-          height="20"
-          viewBox="0 0 20 20"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
+        <svg aria-hidden="true" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
             d="M15.625 17.6562H11.3453C12.1065 17.0039 12.8196 16.2973 13.4789 15.5422C15.5984 13.1047 16.7188 10.5422 16.7188 8.125C16.7188 6.34308 16.0109 4.63414 14.7509 3.37413C13.4909 2.11412 11.7819 1.40625 10 1.40625C8.21808 1.40625 6.50914 2.11412 5.24913 3.37413C3.98912 4.63414 3.28125 6.34308 3.28125 8.125C3.28125 10.5398 4.40156 13.1047 6.52109 15.5422C7.18044 16.2973 7.8935 17.0039 8.65469 17.6562H4.375C4.25068 17.6562 4.13145 17.7056 4.04354 17.7935C3.95564 17.8815 3.90625 18.0007 3.90625 18.125C3.90625 18.2493 3.95564 18.3685 4.04354 18.4565C4.13145 18.5444 4.25068 18.5938 4.375 18.5938H15.625C15.7493 18.5938 15.8685 18.5444 15.9565 18.4565C16.0444 18.3685 16.0938 18.2493 16.0938 18.125C16.0938 18.0007 16.0444 17.8815 15.9565 17.7935C15.8685 17.7056 15.7493 17.6562 15.625 17.6562ZM4.21875 8.125C4.21875 6.59172 4.82784 5.12123 5.91204 4.03704C6.99623 2.95284 8.46672 2.34375 10 2.34375C11.5333 2.34375 13.0038 2.95284 14.088 4.03704C15.1722 5.12123 15.7812 6.59172 15.7812 8.125C15.7812 12.7828 11.1719 16.6352 10 17.5398C8.82812 16.6352 4.21875 12.7828 4.21875 8.125ZM12.9688 8.125C12.9688 7.53784 12.7946 6.96386 12.4684 6.47565C12.1422 5.98744 11.6786 5.60693 11.1361 5.38223C10.5936 5.15754 9.99671 5.09874 9.42083 5.21329C8.84494 5.32784 8.31596 5.61059 7.90078 6.02578C7.48559 6.44096 7.20284 6.96994 7.08829 7.54583C6.97374 8.12171 7.03254 8.71862 7.25723 9.26109C7.48193 9.80356 7.86244 10.2672 8.35065 10.5934C8.83886 10.9196 9.41284 11.0938 10 11.0938C10.7874 11.0938 11.5425 10.781 12.0992 10.2242C12.656 9.66747 12.9688 8.91236 12.9688 8.125ZM7.96875 8.125C7.96875 7.72326 8.08788 7.33054 8.31108 6.9965C8.53427 6.66246 8.85151 6.40211 9.22267 6.24837C9.59384 6.09463 10.0023 6.0544 10.3963 6.13278C10.7903 6.21116 11.1522 6.40461 11.4363 6.68869C11.7204 6.97276 11.9138 7.3347 11.9922 7.72872C12.0706 8.12275 12.0304 8.53116 11.8766 8.90233C11.7229 9.27349 11.4625 9.59073 11.1285 9.81392C10.7945 10.0371 10.4017 10.1562 10 10.1562C9.46128 10.1562 8.94462 9.94224 8.56369 9.56131C8.18276 9.18038 7.96875 8.66372 7.96875 8.125Z"
-            fill="#9DA1B4"
-          />
+            fill="#9DA1B4" />
         </svg>
       </button>
 
-      <div
-        class="w-[320px] bg-gray-200 rounded-3xl h-[38px] flex items-center px-1"
-      >
+      <div class="w-[320px] bg-gray-200 rounded-3xl h-[38px] flex items-center px-1">
         <input
           type="text"
           placeholder="댓글을 입력해주세요."
-          class="text-xs bg-transparent flex-1 focus:outline-none focus:ring-0 placeholder-gray-400 p-2"
-        />
+          class="text-xs bg-transparent flex-1 focus:outline-none focus:ring-0 placeholder-gray-400 p-2" />
         <button aria-label="이모티콘 버튼" class="pr-2 cursor-pointer">
-          <svg
-            aria-hidden="true"
-            width="17.917"
-            height="17.917"
-            viewBox="0 0 20 20"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
+          <svg aria-hidden="true" width="17.917" height="17.917" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               fill-rule="evenodd"
               clip-rule="evenodd"
               d="M9.99984 2.29163C7.95546 2.29163 5.99482 3.10375 4.54922 4.54934C3.10363 5.99494 2.2915 7.95558 2.2915 9.99996C2.2915 12.0443 3.10363 14.005 4.54922 15.4506C5.99482 16.8962 7.95546 17.7083 9.99984 17.7083C12.0442 17.7083 14.0049 16.8962 15.4505 15.4506C16.896 14.005 17.7082 12.0443 17.7082 9.99996C17.7082 7.95558 16.896 5.99494 15.4505 4.54934C14.0049 3.10375 12.0442 2.29163 9.99984 2.29163ZM1.0415 9.99996C1.0415 5.05246 5.05234 1.04163 9.99984 1.04163C14.9473 1.04163 18.9582 5.05246 18.9582 9.99996C18.9582 14.9475 14.9473 18.9583 9.99984 18.9583C5.05234 18.9583 1.0415 14.9475 1.0415 9.99996ZM6.99734 12.9608C7.04627 12.8948 7.10774 12.8391 7.17821 12.7969C7.24869 12.7547 7.32679 12.7268 7.40806 12.7148C7.48933 12.7028 7.57216 12.707 7.65183 12.727C7.73149 12.747 7.80642 12.7826 7.87234 12.8316C8.479 13.2816 9.2115 13.5416 9.99984 13.5416C10.7882 13.5416 11.5207 13.2808 12.1273 12.8316C12.193 12.7805 12.2683 12.743 12.3487 12.7214C12.4291 12.6997 12.513 12.6944 12.5955 12.7056C12.678 12.7168 12.7575 12.7444 12.8291 12.7868C12.9008 12.8292 12.9633 12.8854 13.013 12.9523C13.0626 13.0191 13.0984 13.0952 13.1182 13.1761C13.138 13.257 13.1415 13.341 13.1284 13.4232C13.1153 13.5054 13.0859 13.5842 13.0419 13.6549C12.9979 13.7256 12.9403 13.7868 12.8723 13.835C12.0429 14.4551 11.0354 14.7906 9.99984 14.7916C8.96426 14.7906 7.95673 14.4551 7.12734 13.835C6.99419 13.7363 6.9057 13.5887 6.88132 13.4248C6.85694 13.2609 6.89867 13.094 6.99734 12.9608Z"
-              fill="#9DA1B4"
-            />
+              fill="#9DA1B4" />
             <path
               d="M13.3332 8.75C13.3332 9.44 12.9598 10 12.4998 10C12.0398 10 11.6665 9.44 11.6665 8.75C11.6665 8.06 12.0398 7.5 12.4998 7.5C12.9598 7.5 13.3332 8.06 13.3332 8.75ZM8.33317 8.75C8.33317 9.44 7.95984 10 7.49984 10C7.03984 10 6.6665 9.44 6.6665 8.75C6.6665 8.06 7.03984 7.5 7.49984 7.5C7.95984 7.5 8.33317 8.06 8.33317 8.75Z"
-              fill="#9DA1B4"
-            />
+              fill="#9DA1B4" />
           </svg>
         </button>
       </div>
     </div>
 
     <!-- 배지 -->
-    <article
-      class="bg-[var(--color-primary)] w-[296px] h-[90px] p-5 mt-12 rounded-xl m-3 flex justify-between items-center"
-    >
+    <article class="bg-[var(--color-primary)] w-[296px] h-[90px] p-5 mt-12 rounded-xl m-3 flex justify-between items-center">
       <div class="flex flex-col">
         <header class="grid grid-rows-2 w-full">
           <div class="grid grid-cols-[auto_1fr] gap-1 items-center">
-            <svg
-              aria-hidden="true"
-              width="13"
-              height="13"
-              viewBox="0 0 20 20"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
+            <svg aria-hidden="true" width="13" height="13" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M4.99984 2.5C5.22085 2.5 5.43281 2.5878 5.58909 2.74408C5.74537 2.90036 5.83317 3.11232 5.83317 3.33333V4.06667C6.7165 3.7 7.9165 3.33333 9.1665 3.33333C11.6665 3.33333 11.6665 5 13.3332 5C15.8332 5 16.6665 3.33333 16.6665 3.33333V10C16.6665 10 15.8332 11.6667 13.3332 11.6667C10.8332 11.6667 10.8332 10 9.1665 10C6.6665 10 5.83317 11.6667 5.83317 11.6667V17.5H4.1665V3.33333C4.1665 3.11232 4.2543 2.90036 4.41058 2.74408C4.56686 2.5878 4.77882 2.5 4.99984 2.5Z"
-                fill="white"
-              />
+                fill="white" />
             </svg>
-            <h2 class="text-[var(--color-background)] text-[10.503px]">
-              5개의 친구질문 글에 댓글 남기기
-            </h2>
+            <h2 class="text-[var(--color-background)] text-[10.503px]">5개의 친구질문 글에 댓글 남기기</h2>
           </div>
-          <p class="text-[var(--color-content-tertiary)] text-[10.503px] mt-1">
-            미션 완료 시 '우수답변가' 배지를 받아요
-          </p>
+          <p class="text-[var(--color-content-tertiary)] text-[10.503px] mt-1">미션 완료 시 '우수답변가' 배지를 받아요</p>
         </header>
 
         <div class="flex justify-start pt-3 gap-1 w-[190px] pb-3">
-          <div
-            class="w-[38px] h-[3px] max-w-[200px] bg-gray-400 rounded-full overflow-hidden"
-          >
-            <div
-              class="w-[50%] h-full bg-[var(--color-secondary)] rounded-full"
-            ></div>
+          <div class="w-[38px] h-[3px] max-w-[200px] bg-gray-400 rounded-full overflow-hidden">
+            <div class="w-[50%] h-full bg-[var(--color-secondary)] rounded-full"></div>
           </div>
-          <div
-            class="w-[38px] h-[3px] max-w-[200px] bg-gray-400 rounded-full overflow-hidden"
-          >
-            <div
-              class="w-[0%] h-full bg-[var(--color-secondary)] rounded-full"
-            ></div>
+          <div class="w-[38px] h-[3px] max-w-[200px] bg-gray-400 rounded-full overflow-hidden">
+            <div class="w-[0%] h-full bg-[var(--color-secondary)] rounded-full"></div>
           </div>
-          <div
-            class="w-[38px] h-[3px] max-w-[200px] bg-gray-400 rounded-full overflow-hidden"
-          >
-            <div
-              class="w-[0%] h-full bg-[var(--color-secondary)] rounded-full"
-            ></div>
+          <div class="w-[38px] h-[3px] max-w-[200px] bg-gray-400 rounded-full overflow-hidden">
+            <div class="w-[0%] h-full bg-[var(--color-secondary)] rounded-full"></div>
           </div>
-          <div
-            class="w-[38px] h-[3px] max-w-[200px] bg-gray-400 rounded-full overflow-hidden"
-          >
-            <div
-              class="w-[0%] h-full bg-[var(--color-secondary)] rounded-full"
-            ></div>
+          <div class="w-[38px] h-[3px] max-w-[200px] bg-gray-400 rounded-full overflow-hidden">
+            <div class="w-[0%] h-full bg-[var(--color-secondary)] rounded-full"></div>
           </div>
-          <div
-            class="w-[38px] h-[3px] max-w-[200px] bg-gray-400 rounded-full overflow-hidden"
-          >
-            <div
-              class="w-[0%] h-full bg-[var(--color-secondary)] rounded-full"
-            ></div>
+          <div class="w-[38px] h-[3px] max-w-[200px] bg-gray-400 rounded-full overflow-hidden">
+            <div class="w-[0%] h-full bg-[var(--color-secondary)] rounded-full"></div>
           </div>
         </div>
       </div>
-    <div class="flex flex-col self-start pt-1 w-[53px] h-[53px] relative">
-      <!-- 배경 박스 -->
-      <p class="bg-[var(--color-background)] w-full h-full rounded-xl mt-[-4px]"></p>
-    
-      <!-- 배지 이미지 (가운데 배치) -->
-      <div class="absolute inset-0 flex items-center justify-center z-10">
-        <img src="/public/img/badge.png" alt="badge" class="w-[36px]" />
+      <div class="flex flex-col self-start pt-1 w-[53px] h-[53px] relative">
+        <!-- 배경 박스 -->
+        <p class="bg-[var(--color-background)] w-full h-full rounded-xl mt-[-4px]"></p>
+
+        <!-- 배지 이미지 (가운데 배치) -->
+        <div class="absolute inset-0 flex items-center justify-center z-10">
+          <img src="/img/badge.png" alt="badge" class="w-[36px]" />
+        </div>
       </div>
-    </div>
     </article>
 
-    <div
-      class="text-xs text-[var(--color-content-tertiary)] text-center w-[320px] mt-30 mb-30"
-    >
+    <div class="text-xs text-[var(--color-content-tertiary)] text-center w-[320px] mt-30 mb-30">
       <p class="">아직 댓글이 없어요.</p>
       <p class="">가장 먼저 댓글을 남겨보세요.</p>
     </div>
