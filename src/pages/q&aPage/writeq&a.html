@@ -52,7 +52,7 @@
       >
         <button
           onclick="location.href='/src/pages/q&aPage/q&a.html'"
-          aria-label="그만하기 버튼"
+          aria-label="글쓰기 취소 버튼"
           type="button"
           class="flex items-center pl-3 w-8 cursor-pointer"
         >
@@ -78,6 +78,7 @@
         <nav class="flex gap-2 pt-1">
           <button
             onclick="location.href='/src/pages/q&aPage/boardq&a.html'"
+            aria-label="글쓰기 완료 버튼"
             type="button"
             class="pr-3 cursor-pointer"
           >
@@ -151,7 +152,10 @@
       <!-- 하단 사진, 장소, 키보드 버튼 -->
       <div class="w-[320px] grid grid-cols-[auto_auto_1fr]">
         <div class="justify-self-center py-2 pl-3">
-          <button class="flex items-center cursor-pointer gap-1">
+          <button
+            aria-label="사진 버튼"
+            class="flex items-center cursor-pointer gap-1"
+          >
             <svg
               aria-hidden="true"
               width="16"
@@ -171,7 +175,7 @@
 
         <div class="justify-self-center py-2 px-3">
           <button
-            aria-label="위치 아이콘"
+            aria-label="장소 버튼"
             class="flex gap-1 cursor-pointer items-center"
           >
             <svg
