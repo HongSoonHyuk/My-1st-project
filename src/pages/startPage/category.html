@@ -15,31 +15,48 @@
     <script type="module" src="/src/main.js"></script>
   </head>
   <body>
-    <div class="w-[320px] h-[693px] relative">
+    <div
+      class="w-[320px] h-[693px] relative"
+      role="main"
+      aria-label="관심분야 선택 페이지"
+    >
       <!-- 상단바 -->
       <div
         class="px-[24px] pt-[8px] pb-[4px] bg-white inline-flex justify-end items-center gap-44"
+        role="banner"
+        aria-label="상태 표시줄"
       >
         <div
           class="text-center justify-center text-black text-sm font-semibold font-['Pretendard']"
+          aria-label="현재 시간"
         >
           2:26
         </div>
-        <div class="flex justify-center items-center">
+        <div
+          class="flex justify-center items-center"
+          role="group"
+          aria-label="상태 아이콘"
+        >
           <div class="w-6 h-4 relative">
             <div
               class="w-3.5 h-4 left-[10px] absolute bg-cover bg-[url('./assets/celluar.svg')]"
+              role="img"
+              aria-label="셀룰러 신호"
             ></div>
           </div>
           <div class="flex justify-center items-center gap-0.5">
             <div class="w-6 h-6 relative">
               <div
                 class="w-6 h-6 absolute bg-cover bg-[url('./assets/lte.svg')]"
+                role="img"
+                aria-label="LTE 연결 상태"
               ></div>
             </div>
             <div class="w-6 h-5 relative">
               <div
                 class="w-5 h-5 absolute bg-cover bg-[url('./assets/battery.svg')]"
+                role="img"
+                aria-label="배터리 상태"
               ></div>
             </div>
           </div>
@@ -47,36 +64,49 @@
       </div>
       <div
         class="mt-[18px] pl-[12px] pr-[12px] py-[8px] bg-white flex justify-start items-center gap-1 w-full"
+        role="navigation"
+        aria-label="페이지 네비게이션"
       >
         <!-- 뒤로가기 버튼 -->
         <a
           href="./start.html"
           class="w-5 h-5 relative block rounded-[4px] hover:outline-[#719cf7] focus:outline-2 focus:outline-[#719cf7]"
+          role="button"
           aria-label="메인 페이지로 이동"
         >
           <div
             class="w-5 h-5 absolute bg-[url('./assets/direction=left.svg')] bg-cover"
+            aria-hidden="true"
           ></div>
         </a>
         <!-- 검색창 -->
-        <div class="relative w-full flex items-center">
-          <div class="absolute left-2 w-4 h-4 flex items-center justify-center">
+        <div
+          class="relative w-full flex items-center"
+          role="search"
+          aria-label="분야 검색"
+        >
+          <div
+            class="absolute left-2 w-4 h-4 flex items-center justify-center"
+            aria-hidden="true"
+          >
             <div class="w-3 h-3 bg-[url('./assets/search.svg')] bg-cover"></div>
           </div>
           <input
             type="text"
             placeholder="분야 (이름)로 검색 ( ex.프론트)"
             class="w-full pl-8 pr-4 py-1.5 border-b-[0.50px] border-neutral-400 text-sm font-['Pretendard'] focus:outline-none focus:border-blue-500"
+            aria-label="분야 이름으로 검색"
           />
         </div>
       </div>
       <!-- 관심분야 선택버튼 -->
-      <div class="flex p-3">
+      <div class="flex p-3" role="region" aria-label="관심분야 선택 안내">
         <button
           type="button"
           class="w-full py-2 bg-[#373f67] rounded-[8px] inline-flex justify-center items-center gap-2 hover:outline-2 hover:outline-[#719cf7] focus:outline-2 focus:outline-[#719cf7]"
+          aria-label="관심분야 선택하기"
         >
-          <div class="w-4 h-4 relative flex-shrink-0">
+          <div class="w-4 h-4 relative flex-shrink-0" aria-hidden="true">
             <div
               class="w-5 h-5 absolute bg-[url('./assets/positionWhite.svg')] bg-cover bg-no-repeat"
             ></div>
@@ -89,22 +119,28 @@
         </button>
       </div>
       <!-- 카테고리 -->
-      <div class="grid grid-cols-2 gap-3 px-3 pb-4 max-w-md">
-        <div class="relative">
+      <div
+        class="grid grid-cols-2 gap-3 px-3 pb-4 max-w-md"
+        role="group"
+        aria-label="관심분야 카테고리 목록"
+      >
+        <div class="relative" role="group" aria-label="프론트엔드 카테고리">
           <input
             type="checkbox"
             id="frontend"
             class="category-checkbox peer sr-only"
             tabindex="0"
+            aria-label="프론트엔드 선택"
           />
           <label
             for="frontend"
             class="category-label p-4 rounded-lg hover:outline-2 hover:outline-[#719cf7] peer-focus:outline-2 peer-focus:outline-[#719cf7]"
+            role="button"
           >
             <div class="category-subtitle">프로그래밍</div>
             <div class="category-title">
               프론트엔드
-              <div class="icon-container">
+              <div class="icon-container" aria-hidden="true">
                 <div class="plus-icon"></div>
                 <div class="check-icon"></div>
               </div>
@@ -112,21 +148,23 @@
           </label>
         </div>
 
-        <div class="relative">
+        <div class="relative" role="group" aria-label="백엔드 카테고리">
           <input
             type="checkbox"
             id="backend"
             class="category-checkbox peer sr-only"
             tabindex="0"
+            aria-label="백엔드 선택"
           />
           <label
             for="backend"
             class="category-label p-4 rounded-lg hover:outline-2 hover:outline-[#719cf7] peer-focus:outline-2 peer-focus:outline-[#719cf7]"
+            role="button"
           >
             <div class="category-subtitle">프로그래밍</div>
             <div class="category-title">
               백 엔드
-              <div class="icon-container">
+              <div class="icon-container" aria-hidden="true">
                 <div class="plus-icon"></div>
                 <div class="check-icon"></div>
               </div>
@@ -134,21 +172,23 @@
           </label>
         </div>
 
-        <div class="relative">
+        <div class="relative" role="group" aria-label="리액트 카테고리">
           <input
             type="checkbox"
             id="react"
             class="category-checkbox peer sr-only"
             tabindex="0"
+            aria-label="리액트 선택"
           />
           <label
             for="react"
             class="category-label p-4 rounded-lg hover:outline-2 hover:outline-[#719cf7] peer-focus:outline-2 peer-focus:outline-[#719cf7]"
+            role="button"
           >
             <div class="category-subtitle">프로그래밍</div>
             <div class="category-title">
               리액트
-              <div class="icon-container">
+              <div class="icon-container" aria-hidden="true">
                 <div class="plus-icon"></div>
                 <div class="check-icon"></div>
               </div>
@@ -156,22 +196,25 @@
           </label>
         </div>
 
-        <div class="relative">
+        <div class="relative" role="group" aria-label="풀스택 카테고리">
           <input
             type="checkbox"
             id="fullstack"
             class="category-checkbox peer sr-only"
             tabindex="0"
             checked
+            aria-label="풀스택 선택"
+            aria-checked="true"
           />
           <label
             for="fullstack"
             class="category-label p-4 rounded-lg hover:outline-2 hover:outline-[#719cf7] peer-focus:outline-2 peer-focus:outline-[#719cf7]"
+            role="button"
           >
             <div class="category-subtitle">프로그래밍</div>
             <div class="category-title">
               풀스택
-              <div class="icon-container">
+              <div class="icon-container" aria-hidden="true">
                 <div class="plus-icon"></div>
                 <div class="check-icon"></div>
               </div>
@@ -179,21 +222,23 @@
           </label>
         </div>
 
-        <div class="relative">
+        <div class="relative" role="group" aria-label="알고리즘 카테고리">
           <input
             type="checkbox"
             id="algorithm"
             class="category-checkbox peer sr-only"
             tabindex="0"
+            aria-label="알고리즘 선택"
           />
           <label
             for="algorithm"
             class="category-label p-4 rounded-lg hover:outline-2 hover:outline-[#719cf7] peer-focus:outline-2 peer-focus:outline-[#719cf7]"
+            role="button"
           >
             <div class="category-subtitle">프로그래밍</div>
             <div class="category-title">
               알고리즘
-              <div class="icon-container">
+              <div class="icon-container" aria-hidden="true">
                 <div class="plus-icon"></div>
                 <div class="check-icon"></div>
               </div>
@@ -201,21 +246,23 @@
           </label>
         </div>
 
-        <div class="relative">
+        <div class="relative" role="group" aria-label="기초지식 카테고리">
           <input
             type="checkbox"
             id="basic"
             class="category-checkbox peer sr-only"
             tabindex="0"
+            aria-label="기초지식 선택"
           />
           <label
             for="basic"
             class="category-label p-4 rounded-lg hover:outline-2 hover:outline-[#719cf7] peer-focus:outline-2 peer-focus:outline-[#719cf7]"
+            role="button"
           >
             <div class="category-subtitle">프로그래밍</div>
             <div class="category-title">
               기초지식
-              <div class="icon-container">
+              <div class="icon-container" aria-hidden="true">
                 <div class="plus-icon"></div>
                 <div class="check-icon"></div>
               </div>
@@ -223,22 +270,25 @@
           </label>
         </div>
 
-        <div class="relative">
+        <div class="relative" role="group" aria-label="UI디자인 카테고리">
           <input
             type="checkbox"
             id="ui"
             class="category-checkbox peer sr-only"
             tabindex="0"
             checked
+            aria-label="UI디자인 선택"
+            aria-checked="true"
           />
           <label
             for="ui"
             class="category-label p-4 rounded-lg hover:outline-2 hover:outline-[#719cf7] peer-focus:outline-2 peer-focus:outline-[#719cf7]"
+            role="button"
           >
             <div class="category-subtitle">디자인</div>
             <div class="category-title">
               UI디자인
-              <div class="icon-container">
+              <div class="icon-container" aria-hidden="true">
                 <div class="plus-icon"></div>
                 <div class="check-icon"></div>
               </div>
@@ -246,22 +296,25 @@
           </label>
         </div>
 
-        <div class="relative">
+        <div class="relative" role="group" aria-label="UX디자인 카테고리">
           <input
             type="checkbox"
             id="ux"
             class="category-checkbox peer sr-only"
             tabindex="0"
             checked
+            aria-label="UX디자인 선택"
+            aria-checked="true"
           />
           <label
             for="ux"
             class="category-label p-4 rounded-lg hover:outline-2 hover:outline-[#719cf7] peer-focus:outline-2 peer-focus:outline-[#719cf7]"
+            role="button"
           >
             <div class="category-subtitle">디자인</div>
             <div class="category-title">
               UX디자인
-              <div class="icon-container">
+              <div class="icon-container" aria-hidden="true">
                 <div class="plus-icon"></div>
                 <div class="check-icon"></div>
               </div>
@@ -269,22 +322,25 @@
           </label>
         </div>
 
-        <div class="relative">
+        <div class="relative" role="group" aria-label="UI UX 카테고리">
           <input
             type="checkbox"
             id="uiux"
             class="category-checkbox peer sr-only"
             tabindex="0"
             checked
+            aria-label="UI UX 선택"
+            aria-checked="true"
           />
           <label
             for="uiux"
             class="category-label p-4 rounded-lg hover:outline-2 hover:outline-[#719cf7] peer-focus:outline-2 peer-focus:outline-[#719cf7]"
+            role="button"
           >
             <div class="category-subtitle">디자인</div>
             <div class="category-title">
               UI • UX
-              <div class="icon-container">
+              <div class="icon-container" aria-hidden="true">
                 <div class="plus-icon"></div>
                 <div class="check-icon"></div>
               </div>
@@ -292,21 +348,23 @@
           </label>
         </div>
 
-        <div class="relative">
+        <div class="relative" role="group" aria-label="데이터분석 카테고리">
           <input
             type="checkbox"
             id="data-analysis"
             class="category-checkbox peer sr-only"
             tabindex="0"
+            aria-label="데이터분석 선택"
           />
           <label
             for="data-analysis"
             class="category-label p-4 rounded-lg hover:outline-2 hover:outline-[#719cf7] peer-focus:outline-2 peer-focus:outline-[#719cf7]"
+            role="button"
           >
             <div class="category-subtitle">데이터</div>
             <div class="category-title">
               데이터분석
-              <div class="icon-container">
+              <div class="icon-container" aria-hidden="true">
                 <div class="plus-icon"></div>
                 <div class="check-icon"></div>
               </div>
@@ -314,21 +372,23 @@
           </label>
         </div>
 
-        <div class="relative">
+        <div class="relative" role="group" aria-label="통계분석 카테고리">
           <input
             type="checkbox"
             id="statistics"
             class="category-checkbox peer sr-only"
             tabindex="0"
+            aria-label="통계분석 선택"
           />
           <label
             for="statistics"
             class="category-label p-4 rounded-lg hover:outline-2 hover:outline-[#719cf7] peer-focus:outline-2 peer-focus:outline-[#719cf7]"
+            role="button"
           >
             <div class="category-subtitle">데이터</div>
             <div class="category-title">
               통계분석
-              <div class="icon-container">
+              <div class="icon-container" aria-hidden="true">
                 <div class="plus-icon"></div>
                 <div class="check-icon"></div>
               </div>
@@ -336,21 +396,23 @@
           </label>
         </div>
 
-        <div class="relative">
+        <div class="relative" role="group" aria-label="시각화 카테고리">
           <input
             type="checkbox"
             id="visualization"
             class="category-checkbox peer sr-only"
             tabindex="0"
+            aria-label="시각화 선택"
           />
           <label
             for="visualization"
             class="category-label p-4 rounded-lg hover:outline-2 hover:outline-[#719cf7] peer-focus:outline-2 peer-focus:outline-[#719cf7]"
+            role="button"
           >
             <div class="category-subtitle">데이터</div>
             <div class="category-title">
               시각화
-              <div class="icon-container">
+              <div class="icon-container" aria-hidden="true">
                 <div class="plus-icon"></div>
                 <div class="check-icon"></div>
               </div>
@@ -358,11 +420,13 @@
           </label>
         </div>
       </div>
-      <div class="flex p-3">
+      <div class="flex p-3" role="region" aria-label="저장 버튼 영역">
         <!-- 맨아래 저장버튼을 a 태그로 변경 -->
         <a
           href="./signup.html"
           class="w-full py-2 bg-[#373f67] rounded-[8px] inline-flex justify-center items-center gap-1 hover:outline-2 hover:outline-[#719cf7] focus:outline-2 focus:outline-[#719cf7] no-underline"
+          role="button"
+          aria-label="관심분야 저장 후 회원가입 화면으로 이동"
         >
           <span class="text-white text-sm font-bold font-['Pretendard']">
             이대로 저장할래요
