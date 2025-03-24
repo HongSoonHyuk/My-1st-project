@@ -5,25 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>11조 위닝일레븐</title>
     <link rel="icon" href="/favicon-16x16.png" />
-    <link
-      rel="preload"
-      as="font"
-      href="/font/woff2/PretendardVariable.woff2"
-      crossorigin="anonymous"
-    />
+    <link rel="preload" as="font" href="/font/woff2/PretendardVariable.woff2" crossorigin="anonymous" />
     <link rel="stylesheet" as="style" href="/font/pretendardvariable.css" />
     <script type="module" src="/src/main.js"></script>
   </head>
   <body>
     <div class="layout scrollbar-hide">
-      <header
-        class="grid grid-cols-2 grid-rows-1 justify-items-center gap-3 mt-60"
-      >
+      <header class="grid grid-cols-2 justify-items-center gap-3 mt-60">
         <h1 class="headding-l col-span-2">멋쟁이 사자처럼 UI 프로젝트 11팀</h1>
-        <h2 class="label-l col-span-2">
-          <span class="text-indigo-500">Winning</span>
-          <span class="text-red-500">Eleven</span>
-        </h2>
+        <img class="col-span-2" src="/img/teamlogo.png" alt="위닝일레븐 팀로고" />
         <nav class="w-full col-span-2">
           <ul class="grid grid-cols-2 gap-2 mb-4 px-2.5 shadow-xl">
             <li class="ring text-center"><a href="">팀원소개</a></li>
@@ -34,58 +24,56 @@
         </nav>
       </header>
       <!-- 팀원소개 -->
-      <section class="flex flex-col justify-center items-center text-center">
-        <h3>팀원 소개</h3>
+      <section class="grid gap-4 justify-items-center text-center">
+        <h3 class="headding-l col-span-2 my-3">팀원 소개</h3>
         <div class="border">
-          <img src="/img/profile.png" alt="" />
+          <img class="w-[100px] h-[100px] object-cover" src="/img/dongfa.jpeg" alt="최동환프로필이미지" />
           <p>최동환</p>
           <p>팀장</p>
         </div>
         <figure class="border">
-          <img src="/img/profile.png" alt="" />
-          <figcaption>최동환</figcaption>
-          <p>팀장</p>
+          <img class="w-[100px] h-[100px] rounded-2xl object-cover" src="/img/jisu.png" alt="김지수프로필이미지" />
+          <figcaption>김지수</figcaption>
+          <p>팀원</p>
         </figure>
         <figure class="border">
-          <img src="/img/profile.png" alt="" />
-          <figcaption>최동환</figcaption>
-          <p>팀장</p>
+          <img class="w-[100px] h-[100px] rounded-2xl object-cover" src="/img/hyongju.png" alt="차형주프로필이미지" />
+          <figcaption>차형주</figcaption>
+          <p>팀원</p>
         </figure>
         <figure class="border">
-          <img src="/img/profile.png" alt="" />
-          <figcaption>최동환</figcaption>
-          <p>팀장</p>
+          <img class="w-[100px] h-[100px] rounded-2xl object-cover" src="/img/yerin.jpeg" alt="홍예린프로필이미지" />
+          <figcaption>홍예린</figcaption>
+          <p>팀원</p>
         </figure>
         <figure class="border">
-          <img src="/img/profile.png" alt="" />
-          <figcaption>최동환</figcaption>
-          <p>팀장</p>
+          <img class="w-[100px] h-[100px] object-cover" src="/img/soonhyuk.jpeg" alt="홍순혁프로필이미지" />
+          <figcaption>홍순혁</figcaption>
+          <p>팀원</p>
         </figure>
       </section>
       <!-- 프로젝트 소개 -->
       <section class="p-2.5">
-        <h3>프로젝트 소개</h3>
-        <div
-          class="flex flex-col justify-center items-center p-2.5 border rounded-2xl"
-        >
-          <a
-            class="contents border rounded-2xl"
-            href="/src/pages/startPage/start.html"
-          >
+        <h3 class="headding-l text-center my-3">프로젝트 소개</h3>
+        <a class="contents border rounded-2xl" href="/src/pages/startPage/start.html">
+          <div class="flex flex-col justify-center items-center p-2.5 border rounded-2xl">
             <img class="mb-10" src="/src/assets/logo.svg" alt="이듬로고" />
             <p class="headding-l">당신 곁에 엔터 이듬</p>
             <p>With EUID’s 함께 성장하기</p>
             <p>함께 배우고 적용하며 성장해보세요!</p>
-          </a>
-        </div>
+          </div>
+        </a>
       </section>
       <!-- 컴포넌트 소개 -->
-      <section class="grid">
-        <a href="/src/pages/startPage/start.html">시작 페이지</a>
-        <a href="/src/pages/mainpage/mainPage.html">메인 페이지</a>
-        <a href="#">보드&#40;제작중&#41;</a>
-        <a href="/src/pages/q&aPage/q&a.html">Q&A</a>
-        <a href="/src/pages/profilePage/profile.html">프로필 페이지</a>
+      <section class="grid grid-cols-2 gap-2 my-3 p-3 text-center">
+        <h3 class="headding-l my-3 col-span-2">컴포넌트 소개</h3>
+        <a class="bg-(--color-secondary) text-(--color-background) rounded-2xl p-2" href="/src/pages/componentsPage/designSystem.html"
+          >디자인 시스템</a
+        >
+        <a class="bg-(--color-primary) text-(--color-background) rounded-2xl p-2" href="/src/pages/componentsPage/button.html">버튼 컴포넌트</a>
+        <a class="bg-(--color-primary) text-(--color-background) rounded-2xl p-2" href="/src/pages/componentsPage/header&nav.html">헤더 & 네비</a>
+        <a class="bg-(--color-secondary) text-(--color-background) rounded-2xl p-2" href="/src/pages/componentsPage/input.html">인풋 컴포넌트</a>
+        <a class="bg-(--color-secondary) text-(--color-background) rounded-2xl p-2" href="/src/pages/componentsPage/textfield.html">카드 컴포넌트</a>
       </section>
     </div>
   </body>
