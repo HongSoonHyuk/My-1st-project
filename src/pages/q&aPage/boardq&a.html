@@ -306,12 +306,16 @@
       </div>
     </div>
 
-    <div class="flex flex-col self-start pt-1">
-      <p
-        class="bg-[var(--color-background)] w-[53px] h-[53px] rounded-xl"
-      ></p>
-      <img src="" alt="" />
+    <div class="flex flex-col self-start pt-1 w-[53px] h-[53px] relative">
+      <!-- 배경 박스 -->
+      <p class="bg-[var(--color-background)] w-full h-full rounded-xl mt-[-4px]"></p>
+    
+      <!-- 배지 이미지 (가운데 배치) -->
+      <div class="absolute inset-0 flex items-center justify-center z-10">
+        <img src="/public/img/badge.png" alt="badge" class="w-[36px]" />
+      </div>
     </div>
+    
   </article>
 
     </article>
