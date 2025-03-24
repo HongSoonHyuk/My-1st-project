@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>11조 위닝일레븐</title>
+    <link rel="icon" href="/favicon-16x16.png" />
+    <link rel="preload" as="font" href="/font/woff2/PretendardVariable.woff2" crossorigin="anonymous" />
+    <link rel="stylesheet" as="style" href="/font/pretendardvariable.css" />
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body class="flex flex-col justify-center items-center p-14">
+    <h1 class="headding-xxxl">디자인 시스템</h1>
+    <div class="flex flex-col gap-8">
+      <fieldset class="border p-3 flex flex-col gap-3">
+        <legend class="headding-xl">Spacing</legend>
+        <p>4px spacing</p>
+        <div class="flex gap-5 items-end">
+          <p>4px</p>
+          <div class="w-1 h-1 bg-black"></div>
+          <div class="w-2 h-2 bg-black"></div>
+          <div class="w-3 h-3 bg-black"></div>
+          <div class="w-4 h-4 bg-black"></div>
+          <div class="w-5 h-5 bg-black"></div>
+          <p>.......</p>
+          <div class="w-13 h-13 bg-black"></div>
+          <div class="w-14 h-14 bg-black"></div>
+          <div class="w-15 h-15 bg-black"></div>
+          <div class="w-16 h-16 bg-black"></div>
+          <p>64px</p>
+        </div>
+      </fieldset>
+      <fieldset class="border p-3 flex flex-col gap-3">
+        <legend class="headding-xl">컬러 팔레트</legend>
+        <p>Foundation</p>
+        <div class="flex gap-5">
+          <div>
+            <div class="w-[50px] h-[50px] bg-(--color-primary)"></div>
+            <p>primary</p>
+            <span>#373F67</span>
+          </div>
+          <div>
+            <div class="w-[50px] h-[50px] bg-(--color-secondary)"></div>
+            <p>secondary</p>
+            <span>#5A85EE</span>
+          </div>
+          <div>
+            <div class="w-[50px] h-[50px] bg-(--color-tertiary)"></div>
+            <p>tertiary</p>
+            <span>#719CF7</span>
+          </div>
+          <div>
+            <div class="w-[50px] h-[50px] bg-red-500"></div>
+            <p>nagative</p>
+            <span>red.500</span>
+          </div>
+          <div>
+            <div class="w-[50px] h-[50px] bg-(--color-background) border"></div>
+            <p>background</p>
+            <span>#ffffff</span>
+          </div>
+        </div>
+      </fieldset>
+      <fieldset class="border p-3 flex flex-col gap-3">
+        <legend class="headding-xl">콘텐츠 컬러 팔레트</legend>
+        <p>Contents</p>
+        <div class="flex gap-5">
+          <div>
+            <div class="w-[50px] h-[50px] bg-(--color-content-primary)"></div>
+            <p>contentPrimary</p>
+            <span>black</span>
+          </div>
+          <div>
+            <div class="w-[50px] h-[50px] bg-(--color-content-secondary)"></div>
+            <p>contentSecondary</p>
+            <span>#919191</span>
+          </div>
+          <div>
+            <div class="w-[50px] h-[50px] bg-(--color-content-tertiary)"></div>
+            <p>contentsTertiary</p>
+            <span>#9DA1B4</span>
+          </div>
+        </div>
+      </fieldset>
+
+      <h3 class="headding-xxl">타이포그라피</h3>
+      <fieldset class="border p-3 flex flex-col gap-3">
+        <legend class="headding-xl">헤딩 요소</legend>
+        <div>
+          <p class="headding-xxxl">We ignite opportunity by setting the world in motion.</p>
+          <p class="headding-xxxl">0123456789</p>
+        </div>
+        <div>
+          <p class="headding-xxl">We ignite opportunity by setting the world in motion.</p>
+          <p class="headding-xxl">0123456789</p>
+        </div>
+        <div>
+          <p class="headding-xl">We ignite opportunity by setting the world in motion.</p>
+          <p class="headding-xl">0123456789</p>
+        </div>
+        <div>
+          <p class="headding-l">We ignite opportunity by setting the world in motion.</p>
+          <p class="headding-l">0123456789</p>
+        </div>
+        <div>
+          <p class="headding-m">We ignite opportunity by setting the world in motion.</p>
+          <p class="headding-m">0123456789</p>
+        </div>
+        <div>
+          <p class="headding-s">We ignite opportunity by setting the world in motion.</p>
+          <p class="headding-s">0123456789</p>
+        </div>
+      </fieldset>
+      <fieldset class="border p-3 flex flex-col gap-3">
+        <legend class="headding-xl">라벨 요소</legend>
+        <div>
+          <p class="label-xxl">We ignite opportunity by setting the world in motion.</p>
+          <p class="label-xxl">0123456789</p>
+        </div>
+        <div>
+          <p class="label-xl">We ignite opportunity by setting the world in motion.</p>
+          <p class="label-xl">0123456789</p>
+        </div>
+        <div>
+          <p class="label-l">We ignite opportunity by setting the world in motion.</p>
+          <p class="label-l">0123456789</p>
+        </div>
+        <div>
+          <p class="label-m">We ignite opportunity by setting the world in motion.</p>
+          <p class="label-m">0123456789</p>
+        </div>
+        <div>
+          <p class="label-s">We ignite opportunity by setting the world in motion.</p>
+          <p class="label-s">0123456789</p>
+        </div>
+      </fieldset>
+      <fieldset class="border p-3 flex flex-col gap-3">
+        <legend class="headding-xl">파라그래프 요소</legend>
+        <div>
+          <p class="paragraph-xl">We ignite opportunity by setting the world in motion.</p>
+          <p class="paragraph-xl">0123456789</p>
+        </div>
+        <div>
+          <p class="paragraph-l">We ignite opportunity by setting the world in motion.</p>
+          <p class="paragraph-l">0123456789</p>
+        </div>
+        <div>
+          <p class="paragraph-m">We ignite opportunity by setting the world in motion.</p>
+          <p class="paragraph-m">0123456789</p>
+        </div>
+        <div>
+          <p class="paragraph-s">We ignite opportunity by setting the world in motion.</p>
+          <p class="paragraph-s">0123456789</p>
+        </div>
+      </fieldset>
+    </div>
+  </body>
+</html>
