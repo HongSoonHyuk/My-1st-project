@@ -16,8 +16,9 @@
   </head>
   <body>
     <div class="layout scrollbar-hide">
-
-    <div
+    <!-- 상단 nav -->
+    <div class="sticky top-0 z-50 bg-white">
+      <div
       class="px-[24px] pt-[8px] pb-[2px] bg-white inline-flex justify-end items-center gap-44"
     >
       <div
@@ -45,66 +46,6 @@
         </div>
       </div>
     </div>
-    <!-- 플러스 버튼(->글쓰기로 이동) -->
-    <button
-      class="fixed bottom-20 right-6 bg-[#373F67] shadow-lg rounded-full flex items-center justify-center z-[9999] cursor-pointer hover:bg-white group w-[47px] h-[47px]"
-      onclick="location.href='/src/pages/q&aPage/writeq&a.html'"
-    >
-      <!-- 기본 상태 아이콘 (흰색 +) -->
-      <svg
-        viewBox="0 0 14 15"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        class="fill-white absolute group-hover:hidden"
-        width="45"
-        height="45"
-      >
-        <path
-          d="M9.91634 7.91585H7.41634V10.4159H6.58301V7.91585H4.08301V7.08252H6.58301V4.58252H7.41634V7.08252H9.91634V7.91585Z"
-          fill="white"
-        />
-      </svg>
-
-      <svg
-        viewBox="0 0 14 15"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        class="hidden absolute group-hover:block"
-        width="47"
-        height="47"
-      >
-        <rect x="0.5" y="1" width="13" height="13" rx="6.5" stroke="white" />
-        <path
-          d="M9.91634 7.91585H7.41634V10.4159H6.58301V7.91585H4.08301V7.08252H6.58301V4.58252H7.41634V7.08252H9.91634V7.91585Z"
-          fill="#373F67"
-        />
-      </svg>
-    </button>
-
-    <header
-      class="w-[320px] h-[35px] grid grid-cols-[auto_1fr_auto] items-center"
-    >
-      <button
-        onclick="location.href='/src/pages/q&aPage/q&a.html'"
-        aria-label="뒤로가기 버튼"
-        type="button"
-        class="flex items-center pl-3 w-8 cursor-pointer"
-      >
-        <svg
-          width="20"
-          height="20"
-          viewBox="0 0 20 20"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M12.9422 15.8078C13.0003 15.8659 13.0463 15.9348 13.0777 16.0107C13.1092 16.0865 13.1254 16.1679 13.1254 16.25C13.1254 16.3321 13.1092 16.4134 13.0777 16.4893C13.0463 16.5652 13.0003 16.6341 12.9422 16.6922C12.8841 16.7502 12.8152 16.7963 12.7393 16.8277C12.6634 16.8592 12.5821 16.8753 12.5 16.8753C12.4179 16.8753 12.3366 16.8592 12.2607 16.8277C12.1848 16.7963 12.1159 16.7502 12.0578 16.6922L5.80782 10.4422C5.74971 10.3841 5.70361 10.3152 5.67215 10.2393C5.6407 10.1634 5.62451 10.0821 5.62451 9.99998C5.62451 9.91785 5.6407 9.83652 5.67215 9.76064C5.70361 9.68477 5.74971 9.61584 5.80782 9.55779L12.0578 3.30779C12.1751 3.19052 12.3342 3.12463 12.5 3.12463C12.6659 3.12463 12.8249 3.19052 12.9422 3.30779C13.0595 3.42507 13.1254 3.58413 13.1254 3.74998C13.1254 3.91583 13.0595 4.07489 12.9422 4.19217L7.1336 9.99998L12.9422 15.8078Z"
-            fill="black"
-          />
-        </svg>
-      </button>
-    </header>
-
     <!-- 상단 참여중 -->
     <div
       class="w-[320px] bg-white grid grid-cols-[auto_2fr_auto] items-center pl-4 pr-5 py-3 border-b-4 border-[#BDBDBD]"
@@ -117,31 +58,35 @@
         >Q&A</span
       >
 
-      <div
-        aria-label="체크 아이콘"
-        class="bg-[#9DA1B4] w-[72px] h-[32px] rounded-lg text-[10.503px] flex items-center justify-center"
+      <button
+        type="button"
+        onclick="location.href='/src/pages/q&aPage/writeq&a.html'" 
+        aria-label="체크 참여중 아이콘"
+        class="bg-[#9DA1B4] w-[72px] h-[32px] rounded-lg text-[10.503px] flex items-center justify-center hover:bg-[#7f8391] transition"
+>
+      <svg
+       aria-hidden="true"
+       width="20"
+        height="20"
+        viewBox="0 0 20 20"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        class="transform -translate-x-[1px]"
       >
-        <svg
-          aria-hidden="true"
-          width="20"
-          height="20"
-          viewBox="0 0 20 20"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          class="transform -translate-x-[1px]"
-        >
-          <path
-            d="M9 15.8334L5 11.5781L6.4 10.0887L9 12.8547L15.6 5.83337L17 7.32274L9 15.8334Z"
-            fill="white"
-          />
-        </svg>
-        <p class="text-white font-['Pretendard'] pr-1">참여중</p>
-      </div>
+      <path
+        d="M9 15.8334L5 11.5781L6.4 10.0887L9 12.8547L15.6 5.83337L17 7.32274L9 15.8334Z"
+        fill="white"
+      />
+      </svg>
+      <p class="text-white font-['Pretendard'] pr-1">참여중</p>
+    </button>
+
     </div>
+  </div>
 
     <!-- q&a 텍스트 이미지  -->
     <div
-      onclick="location.href='https://example.com'"
+      onclick="location.href='#'"
       class="w-[320px] h-[104px] grid gap-x-2 grid-cols-[3fr_1fr] relative isolate p-2 cursor-pointer"
     >
       <section class="w-full max-w-[227px] h-[80px] pl-2">
@@ -170,7 +115,7 @@
       <!-- 프로필 이미지 & 좋아요/댓글 -->
       <div class="relative flex flex-col items-end">
         <figure class="bg-[#D9D9D9] w-[56px] h-[56px] rounded-lg mr-2 mt-2">
-          <img src="/public/img/whatNono.webp" alt="" />
+          <img src="/img/whatNono.webp" alt="어? 금지 사진" />
         </figure>
 
         <!-- 좋아요 & 댓글 -->
@@ -223,7 +168,7 @@
 
     <!-- 사진 없는 버전 -->
     <div
-      onclick="location.href='https://example.com'"
+      onclick="location.href='#'"
       class="w-[320px] h-[104px] grid gap-x-2 grid-cols-[3fr_1fr] relative isolate p-2 cursor-pointer"
     >
       <section class="w-full max-w-[227px] h-[80px] pl-2">
@@ -304,7 +249,7 @@
     </div>
 
     <div
-      onclick="location.href='https://example.com'"
+      onclick="location.href='#'"
       class="w-[320px] h-[104px] grid gap-x-2 grid-cols-[3fr_1fr] relative isolate p-2 cursor-pointer"
     >
       <section class="w-full max-w-[227px] h-[80px] pl-2">
@@ -332,9 +277,6 @@
 
       <!-- 프로필 이미지 & 좋아요/댓글 -->
       <div class="relative flex flex-col justify-end items-end h-full pb-1">
-        <!-- <figure class="bg-[#D9D9D9] w-[56px] h-[56px] rounded-lg mr-2 mt-2">
-            <img src="" alt="" />
-          </figure> -->
 
         <!-- 좋아요 & 댓글 -->
         <div class="flex gap-1 text-[#B1B4C3] text-[10.503px] items-end">
@@ -385,7 +327,7 @@
     </div>
 
     <div
-      onclick="location.href='https://example.com'"
+      onclick="location.href='#'"
       class="w-[320px] h-[104px] grid gap-x-2 grid-cols-[3fr_1fr] relative isolate p-2 cursor-pointer"
     >
       <section class="w-full max-w-[227px] h-[80px] pl-2">
@@ -416,30 +358,11 @@
         <figure
           class="bg-[#D9D9D9] w-[56px] h-[56px] rounded-lg mr-2 mt-2 mb-1"
         >
-          <img src="/public/img/whatNono.webp" alt="" />
+          <img src="/img/whatNono.webp" alt="어? 금지 사진" />
         </figure>
 
         <!-- 좋아요 & 댓글 -->
         <div class="flex gap-1 text-[#B1B4C3] text-[10.503px] items-end">
-          <!-- <button
-              aria-label="좋아요 아이콘"
-              class="flex items-center gap-1 cursor-pointer"
-            >
-              <svg
-                aria-hidden="true"
-                width="16"
-                height="16"
-                viewBox="0 0 16 16"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M8.3975 1.36206C9.11416 1.41272 9.77016 1.54939 10.2262 1.99939C10.6915 2.45806 10.8395 3.13006 10.8395 3.96006C10.8395 4.24806 10.8015 4.59672 10.7615 4.91872C10.7442 5.05206 10.7275 5.18006 10.7108 5.30006L10.6735 5.58606H12.0402C12.5415 5.58606 13.0042 5.65806 13.3975 5.85539C13.8055 6.05939 14.1055 6.38006 14.3008 6.80939C14.6682 7.61873 14.6622 8.81473 14.4495 10.4054L14.4155 10.6654C14.3262 11.3387 14.2502 11.9134 14.1515 12.3854C14.0408 12.9154 13.8888 13.3827 13.6075 13.7521C13.0142 14.5307 12.0108 14.6667 10.5522 14.6667C8.99816 14.6667 7.83216 14.3881 6.85616 14.1174L6.45483 14.0041C5.77283 13.8107 5.22016 13.6534 4.6615 13.6134C4.63334 13.9019 4.49882 14.1695 4.28414 14.3642C4.06946 14.5589 3.78999 14.6668 3.50016 14.6667H2.50016C2.19074 14.6667 1.894 14.5438 1.6752 14.325C1.45641 14.1062 1.3335 13.8095 1.3335 13.5001V6.50006C1.3335 5.85606 1.85616 5.33339 2.50016 5.33339H3.50016C3.79607 5.33341 4.08092 5.44586 4.29703 5.64799C4.51315 5.85012 4.64438 6.12681 4.66416 6.42206C4.78403 6.41013 4.9015 6.38071 5.01283 6.33472C5.6535 6.05806 6.86216 5.31206 6.86216 3.53473V2.83273C6.86216 2.01939 7.53016 1.30072 8.3975 1.36206ZM4.66683 12.6121C5.37283 12.6547 6.05283 12.8487 6.7455 13.0467L7.12416 13.1534C8.0615 13.4134 9.12816 13.6667 10.5522 13.6667C12.0702 13.6667 12.5548 13.4841 12.8122 13.1461C12.9562 12.9574 13.0708 12.6674 13.1722 12.1807C13.2628 11.7474 13.3335 11.2141 13.4248 10.5294L13.4582 10.2734C13.6715 8.67339 13.6268 7.74339 13.3902 7.22339C13.2835 6.98873 13.1402 6.84473 12.9502 6.74939C12.7468 6.64739 12.4568 6.58606 12.0402 6.58606H10.4602C10.0062 6.58606 9.59816 6.20606 9.65283 5.70072C9.67016 5.53872 9.69616 5.34273 9.72283 5.14472L9.7695 4.79339C9.8095 4.47206 9.8395 4.17939 9.8395 3.96006C9.8395 3.21006 9.6975 2.88206 9.52416 2.71139C9.34083 2.53139 9.00816 2.40806 8.3275 2.35939C8.0935 2.34339 7.86216 2.54206 7.86216 2.83273V3.53473C7.86216 5.90139 6.2035 6.91006 5.40883 7.25273C5.16083 7.35939 4.90616 7.40739 4.66683 7.42606V12.6121ZM2.50016 13.6667H3.50016C3.54437 13.6667 3.58676 13.6492 3.61801 13.6179C3.64927 13.5867 3.66683 13.5443 3.66683 13.5001V6.50006C3.66683 6.45586 3.64927 6.41346 3.61801 6.38221C3.58676 6.35095 3.54437 6.33339 3.50016 6.33339H2.50016C2.45596 6.33339 2.41357 6.35095 2.38231 6.38221C2.35106 6.41346 2.3335 6.45586 2.3335 6.50006V13.5001C2.3335 13.5921 2.40816 13.6667 2.50016 13.6667Z"
-                  fill="#B1B4C3"
-                />
-              </svg>
-              <p class="text-xs">2</p>
-            </button> -->
 
           <button
             aria-label="댓글 아이콘"
@@ -468,7 +391,7 @@
     </div>
 
     <div
-      onclick="location.href='https://example.com'"
+      onclick="location.href='#'"
       class="w-[320px] h-[104px] grid gap-x-2 grid-cols-[3fr_1fr] relative isolate p-2 cursor-pointer"
     >
       <section class="w-full max-w-[227px] h-[80px] pl-2">
@@ -496,9 +419,6 @@
 
       <!-- 프로필 이미지 & 좋아요/댓글 -->
       <div class="relative flex flex-col justify-end items-end h-full pb-1">
-        <!-- <figure class="bg-[#D9D9D9] w-[56px] h-[56px] rounded-lg mr-2 mt-2">
-            <img src="" alt="" />
-          </figure> -->
 
         <!-- 좋아요 & 댓글 -->
         <div class="flex gap-1 text-[#B1B4C3] text-[10.503px] items-end">
@@ -549,7 +469,7 @@
     </div>
 
     <div
-      onclick="location.href='https://example.com'"
+      onclick="location.href='#'"
       class="w-[320px] h-[104px] grid gap-x-2 grid-cols-[3fr_1fr] relative isolate p-2 cursor-pointer"
     >
       <section class="w-full max-w-[227px] h-[80px] pl-2">
@@ -580,30 +500,11 @@
         <figure
           class="bg-[#D9D9D9] w-[56px] h-[56px] rounded-lg mr-2 mt-2 mb-1"
         >
-          <img src="/public/img/whatNono.webp" alt="" />
+          <img src="/img/whatNono.webp" alt="어? 금지 사진" />
         </figure>
 
         <!-- 좋아요 & 댓글 -->
         <div class="flex gap-1 text-[#B1B4C3] text-[10.503px] items-end">
-          <!-- <button
-              aria-label="좋아요 아이콘"
-              class="flex items-center gap-1 cursor-pointer"
-            >
-              <svg
-                aria-hidden="true"
-                width="16"
-                height="16"
-                viewBox="0 0 16 16"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M8.3975 1.36206C9.11416 1.41272 9.77016 1.54939 10.2262 1.99939C10.6915 2.45806 10.8395 3.13006 10.8395 3.96006C10.8395 4.24806 10.8015 4.59672 10.7615 4.91872C10.7442 5.05206 10.7275 5.18006 10.7108 5.30006L10.6735 5.58606H12.0402C12.5415 5.58606 13.0042 5.65806 13.3975 5.85539C13.8055 6.05939 14.1055 6.38006 14.3008 6.80939C14.6682 7.61873 14.6622 8.81473 14.4495 10.4054L14.4155 10.6654C14.3262 11.3387 14.2502 11.9134 14.1515 12.3854C14.0408 12.9154 13.8888 13.3827 13.6075 13.7521C13.0142 14.5307 12.0108 14.6667 10.5522 14.6667C8.99816 14.6667 7.83216 14.3881 6.85616 14.1174L6.45483 14.0041C5.77283 13.8107 5.22016 13.6534 4.6615 13.6134C4.63334 13.9019 4.49882 14.1695 4.28414 14.3642C4.06946 14.5589 3.78999 14.6668 3.50016 14.6667H2.50016C2.19074 14.6667 1.894 14.5438 1.6752 14.325C1.45641 14.1062 1.3335 13.8095 1.3335 13.5001V6.50006C1.3335 5.85606 1.85616 5.33339 2.50016 5.33339H3.50016C3.79607 5.33341 4.08092 5.44586 4.29703 5.64799C4.51315 5.85012 4.64438 6.12681 4.66416 6.42206C4.78403 6.41013 4.9015 6.38071 5.01283 6.33472C5.6535 6.05806 6.86216 5.31206 6.86216 3.53473V2.83273C6.86216 2.01939 7.53016 1.30072 8.3975 1.36206ZM4.66683 12.6121C5.37283 12.6547 6.05283 12.8487 6.7455 13.0467L7.12416 13.1534C8.0615 13.4134 9.12816 13.6667 10.5522 13.6667C12.0702 13.6667 12.5548 13.4841 12.8122 13.1461C12.9562 12.9574 13.0708 12.6674 13.1722 12.1807C13.2628 11.7474 13.3335 11.2141 13.4248 10.5294L13.4582 10.2734C13.6715 8.67339 13.6268 7.74339 13.3902 7.22339C13.2835 6.98873 13.1402 6.84473 12.9502 6.74939C12.7468 6.64739 12.4568 6.58606 12.0402 6.58606H10.4602C10.0062 6.58606 9.59816 6.20606 9.65283 5.70072C9.67016 5.53872 9.69616 5.34273 9.72283 5.14472L9.7695 4.79339C9.8095 4.47206 9.8395 4.17939 9.8395 3.96006C9.8395 3.21006 9.6975 2.88206 9.52416 2.71139C9.34083 2.53139 9.00816 2.40806 8.3275 2.35939C8.0935 2.34339 7.86216 2.54206 7.86216 2.83273V3.53473C7.86216 5.90139 6.2035 6.91006 5.40883 7.25273C5.16083 7.35939 4.90616 7.40739 4.66683 7.42606V12.6121ZM2.50016 13.6667H3.50016C3.54437 13.6667 3.58676 13.6492 3.61801 13.6179C3.64927 13.5867 3.66683 13.5443 3.66683 13.5001V6.50006C3.66683 6.45586 3.64927 6.41346 3.61801 6.38221C3.58676 6.35095 3.54437 6.33339 3.50016 6.33339H2.50016C2.45596 6.33339 2.41357 6.35095 2.38231 6.38221C2.35106 6.41346 2.3335 6.45586 2.3335 6.50006V13.5001C2.3335 13.5921 2.40816 13.6667 2.50016 13.6667Z"
-                  fill="#B1B4C3"
-                />
-              </svg>
-              <p class="text-xs">2</p>
-            </button> -->
 
           <button
             aria-label="댓글 아이콘"
@@ -632,7 +533,7 @@
     </div>
 
     <div
-      onclick="location.href='https://example.com'"
+      onclick="location.href='#'"
       class="w-[320px] h-[104px] grid gap-x-2 grid-cols-[3fr_1fr] relative isolate p-2 cursor-pointer"
     >
       <section class="w-full max-w-[227px] h-[80px] pl-2">
@@ -713,7 +614,7 @@
     </div>
 
     <div
-      onclick="location.href='https://example.com'"
+      onclick="location.href='#'"
       class="w-[320px] h-[104px] grid gap-x-2 grid-cols-[3fr_1fr] relative isolate p-2 cursor-pointer"
     >
       <section class="w-full max-w-[227px] h-[80px] pl-2">
@@ -741,9 +642,6 @@
 
       <!-- 프로필 이미지 & 좋아요/댓글 -->
       <div class="relative flex flex-col justify-end items-end h-full pb-1">
-        <!-- <figure class="bg-[#D9D9D9] w-[56px] h-[56px] rounded-lg mr-2 mt-2">
-            <img src="" alt="" />
-          </figure> -->
 
         <!-- 좋아요 & 댓글 -->
         <div class="flex gap-1 text-[#B1B4C3] text-[10.503px] items-end">
@@ -868,5 +766,47 @@
       </div>
     </a>
   </div>
+
+  <!-- 플러스 버튼 -->
+  <div class="flex flex-col-reverse items-end gap-3 sticky bottom-18 pr-3">
+    <button class="peer bg-(--color-primary) p-2.5 rounded-full focus:animate-spin">
+      <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+        <path
+          d="M22.1666 15.1643H15.1666V22.1643H12.8333V15.1643H5.83325V12.831H12.8333V5.83099H15.1666V12.831H22.1666V15.1643Z"
+          fill="white" />
+      </svg>
+    </button>
+    <ul class="hidden peer-focus-within:inline-flex flex-col gap-1 ">
+      <li>
+        <button 
+        type="button" class="cursor-pointer inline-flex w-27 justify-center items-center rounded-xl gap-0.5 px-5 py-2.5 bg-[var(--color-primary)]
+        " 
+        onclick="location.href='/src/pages/q&aPage/writeq&a.html'">
+          <span class="label-m">🎈</span><span class="label-m text-white">글쓰기</span>
+        </button>
+      </li>
+      <li>
+        <button class="inline-flex w-27 justify-center items-center rounded-xl gap-0.5 px-5 py-2.5 bg-(--color-primary)">
+          <span class="label-m">🎧</span><span class="label-m text-white">text</span>
+        </button>
+      </li>
+      <li>
+        <button class="inline-flex w-27 justify-center items-center rounded-xl gap-0.5 bg-(--color-primary) px-5 py-2.5">
+          <span class="label-m">⌨️</span><span class="label-m text-white">text</span>
+        </button>
+      </li>
+      <li>
+        <button class="inline-flex w-27 justify-center items-center rounded-xl gap-0.5 bg-(--color-primary) px-5 py-2.5">
+          <span class="label-m">🖱️</span><span class="label-m text-white">text</span>
+        </button>
+      </li>
+      <li>
+        <button class="inline-flex w-27 justify-center items-center rounded-xl gap-0.5 bg-(--color-primary) px-5 py-2.5">
+          <span class="label-m">💻</span><span class="label-m text-white">text</span>
+        </button>
+      </li>
+    </ul>
+  </div>
+</section>
   </body>
 </html>
