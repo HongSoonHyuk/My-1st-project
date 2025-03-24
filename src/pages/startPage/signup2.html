@@ -46,7 +46,7 @@
 
       <!-- 전화번호 입력 -->
       <div class="px-4" role="form" aria-label="회원가입 인증 양식">
-        <div class="">
+        <div class="mb-4">
           <input
             type="tel"
             pattern="[0-9]*"
@@ -155,115 +155,141 @@
         <!-- 다시받기 버튼 -->
         <a
           href="./signup2.html"
-          class="block w-full mt-4 py-2 border text-sm border-gray-400 rounded-lg text-black font-['Pretendard'] font-medium text-center no-underline hover:outline-[#719cf7] focus:outline-2 focus:outline-[#719cf7]"
+          class="flex justify-center items-center w-full mt-4 py-2 border text-sm border-gray-400 rounded-lg text-black font-['Pretendard'] font-medium text-center no-underline hover:outline-[#719cf7] focus:outline-2 focus:outline-[#719cf7]"
           role="button"
           aria-label="인증문자 다시 받기">
           인증문자 다시 받기(04분 57초)
         </a>
-      </div>
+        <!-- 인증번호 입력 -->
+        <div class="mt-3 py-2" role="region" aria-label="인증번호 입력 영역">
+          <div class="mb-4">
+            <input
+              type="tel"
+              pattern="[0-9]*"
+              maxlength="6"
+              placeholder="인증번호 입력"
+              class="phone-input w-full pl-3 py-2 border text-sm border-gray-400 rounded-lg focus:outline-none focus:ring-1 focus:ring-blue-500"
+              aria-label="인증번호 입력"
+              required
+            />
 
-      <!-- 인증번호 입력 -->
-      <div class="px-4 mt-3 py-2" role="region" aria-label="인증번호 입력 영역">
-        <div class="">
-          <input
-            type="tel"
-            pattern="[0-9]*"
-            maxlength="6"
-            placeholder="인증번호 입력"
-            class="phone-input w-full pl-3 py-2 border text-sm border-gray-400 rounded-lg focus:outline-none focus:ring-1 focus:ring-blue-500"
-            aria-label="인증번호 입력"
-            required />
+            <!-- 키보드 (중복된 키보드는 제거해도 됨) -->
+            <div
+              class="keyboard-container hidden absolute bottom-0 left-0 right-0"
+              role="application"
+              aria-label="가상 키보드"
+            >
+              <div class="bg-gray-200 rounded-t-lg p-2 select-none">
+                <div class="flex justify-between mb-2" role="row">
+                  <div
+                    class="w-[90px] h-12 bg-white rounded-lg border border-gray-300 flex items-center justify-center text-lg font-bold font-['Pretendard'] cursor-pointer hover:bg-gray-50 active:bg-gray-100 active:translate-y-0.5"
+                    role="button"
+                    aria-label="숫자 1"
+                  >
+                    1
+                  </div>
+                  <div
+                    class="w-[90px] h-12 bg-white rounded-lg border border-gray-300 flex items-center justify-center text-lg font-bold font-['Pretendard'] cursor-pointer hover:bg-gray-50 active:bg-gray-100 active:translate-y-0.5"
+                    role="button"
+                    aria-label="숫자 2"
+                  >
+                    2
+                  </div>
+                  <div
+                    class="w-[90px] h-12 bg-white rounded-lg border border-gray-300 flex items-center justify-center text-lg font-bold font-['Pretendard'] cursor-pointer hover:bg-gray-50 active:bg-gray-100 active:translate-y-0.5"
+                    role="button"
+                    aria-label="숫자 3"
+                  >
+                    3
+                  </div>
+                </div>
 
-          <!-- 키보드 (중복된 키보드는 제거해도 됨) -->
-          <div class="keyboard-container hidden absolute bottom-0 left-0 right-0" role="application" aria-label="가상 키보드">
-            <div class="bg-gray-200 rounded-t-lg p-2 select-none">
-              <div class="flex justify-between mb-2" role="row">
-                <div
-                  class="w-[90px] h-12 bg-white rounded-lg border border-gray-300 flex items-center justify-center text-lg font-bold font-['Pretendard'] cursor-pointer hover:bg-gray-50 active:bg-gray-100 active:translate-y-0.5"
-                  role="button"
-                  aria-label="숫자 1">
-                  1
+                <div class="flex justify-between mb-2" role="row">
+                  <div
+                    class="w-[90px] h-12 bg-white rounded-lg border border-gray-300 flex items-center justify-center text-lg font-bold font-['Pretendard'] cursor-pointer hover:bg-gray-50 active:bg-gray-100 active:translate-y-0.5"
+                    role="button"
+                    aria-label="숫자 4"
+                  >
+                    4
+                  </div>
+                  <div
+                    class="w-[90px] h-12 bg-white rounded-lg border border-gray-300 flex items-center justify-center text-lg font-bold font-['Pretendard'] cursor-pointer hover:bg-gray-50 active:bg-gray-100 active:translate-y-0.5"
+                    role="button"
+                    aria-label="숫자 5"
+                  >
+                    5
+                  </div>
+                  <div
+                    class="w-[90px] h-12 bg-white rounded-lg border border-gray-300 flex items-center justify-center text-lg font-bold font-['Pretendard'] cursor-pointer hover:bg-gray-50 active:bg-gray-100 active:translate-y-0.5"
+                    role="button"
+                    aria-label="숫자 6"
+                  >
+                    6
+                  </div>
                 </div>
-                <div
-                  class="w-[90px] h-12 bg-white rounded-lg border border-gray-300 flex items-center justify-center text-lg font-bold font-['Pretendard'] cursor-pointer hover:bg-gray-50 active:bg-gray-100 active:translate-y-0.5"
-                  role="button"
-                  aria-label="숫자 2">
-                  2
-                </div>
-                <div
-                  class="w-[90px] h-12 bg-white rounded-lg border border-gray-300 flex items-center justify-center text-lg font-bold font-['Pretendard'] cursor-pointer hover:bg-gray-50 active:bg-gray-100 active:translate-y-0.5"
-                  role="button"
-                  aria-label="숫자 3">
-                  3
-                </div>
-              </div>
 
-              <div class="flex justify-between mb-2" role="row">
-                <div
-                  class="w-[90px] h-12 bg-white rounded-lg border border-gray-300 flex items-center justify-center text-lg font-bold font-['Pretendard'] cursor-pointer hover:bg-gray-50 active:bg-gray-100 active:translate-y-0.5"
-                  role="button"
-                  aria-label="숫자 4">
-                  4
-                </div>
-                <div
-                  class="w-[90px] h-12 bg-white rounded-lg border border-gray-300 flex items-center justify-center text-lg font-bold font-['Pretendard'] cursor-pointer hover:bg-gray-50 active:bg-gray-100 active:translate-y-0.5"
-                  role="button"
-                  aria-label="숫자 5">
-                  5
-                </div>
-                <div
-                  class="w-[90px] h-12 bg-white rounded-lg border border-gray-300 flex items-center justify-center text-lg font-bold font-['Pretendard'] cursor-pointer hover:bg-gray-50 active:bg-gray-100 active:translate-y-0.5"
-                  role="button"
-                  aria-label="숫자 6">
-                  6
-                </div>
-              </div>
 
-              <div class="flex justify-between mb-2" role="row">
-                <div
-                  class="w-[90px] h-12 bg-white rounded-lg border border-gray-300 flex items-center justify-center text-lg font-bold font-['Pretendard'] cursor-pointer hover:bg-gray-50 active:bg-gray-100 active:translate-y-0.5"
-                  role="button"
-                  aria-label="숫자 7">
-                  7
+                <div class="flex justify-between mb-2" role="row">
+                  <div
+                    class="w-[90px] h-12 bg-white rounded-lg border border-gray-300 flex items-center justify-center text-lg font-bold font-['Pretendard'] cursor-pointer hover:bg-gray-50 active:bg-gray-100 active:translate-y-0.5"
+                    role="button"
+                    aria-label="숫자 7"
+                  >
+                    7
+                  </div>
+                  <div
+                    class="w-[90px] h-12 bg-white rounded-lg border border-gray-300 flex items-center justify-center text-lg font-bold font-['Pretendard'] cursor-pointer hover:bg-gray-50 active:bg-gray-100 active:translate-y-0.5"
+                    role="button"
+                    aria-label="숫자 8"
+                  >
+                    8
+                  </div>
+                  <div
+                    class="w-[90px] h-12 bg-white rounded-lg border border-gray-300 flex items-center justify-center text-lg font-bold font-['Pretendard'] cursor-pointer hover:bg-gray-50 active:bg-gray-100 active:translate-y-0.5"
+                    role="button"
+                    aria-label="숫자 9"
+                  >
+                    9
+                  </div>
                 </div>
-                <div
-                  class="w-[90px] h-12 bg-white rounded-lg border border-gray-300 flex items-center justify-center text-lg font-bold font-['Pretendard'] cursor-pointer hover:bg-gray-50 active:bg-gray-100 active:translate-y-0.5"
-                  role="button"
-                  aria-label="숫자 8">
-                  8
-                </div>
-                <div
-                  class="w-[90px] h-12 bg-white rounded-lg border border-gray-300 flex items-center justify-center text-lg font-bold font-['Pretendard'] cursor-pointer hover:bg-gray-50 active:bg-gray-100 active:translate-y-0.5"
-                  role="button"
-                  aria-label="숫자 9">
-                  9
-                </div>
-              </div>
 
-              <div class="flex justify-between mb-2" role="row">
-                <div
-                  class="w-[90px] h-12 rounded-lg border-none flex items-center justify-center text-lg font-bold font-['Pretendard'] cursor-pointer hover:bg-gray-50 active:bg-gray-100 active:translate-y-0.5"
-                  role="button"
-                  aria-label="특수문자">
-                  +*#
-                </div>
-                <div
-                  class="w-[90px] h-12 bg-white rounded-lg border border-gray-300 flex items-center justify-center text-lg font-bold font-['Pretendard'] cursor-pointer hover:bg-gray-50 active:bg-gray-100 active:translate-y-0.5"
-                  role="button"
-                  aria-label="숫자 0">
-                  0
-                </div>
-                <div
-                  class="flex w-[90px] h-12 rounded-lg border-none items-center justify-center text-lg font-bold font-['Pretendard'] cursor-pointer hover:bg-gray-50 active:bg-gray-100 active:translate-y-0.5"
-                  role="button"
-                  aria-label="지우기">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M12 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2M3 12l6.414 6.414a2 2 0 001.414.586H19a2 2 0 002-2V7a2 2 0 00-2-2h-8.172a2 2 0 00-1.414.586L3 12z" />
-                  </svg>
+
+                <div class="flex justify-between mb-2" role="row">
+                  <div
+                    class="w-[90px] h-12 rounded-lg border-none flex items-center justify-center text-lg font-bold font-['Pretendard'] cursor-pointer hover:bg-gray-50 active:bg-gray-100 active:translate-y-0.5"
+                    role="button"
+                    aria-label="특수문자"
+                  >
+                    +*#
+                  </div>
+                  <div
+                    class="w-[90px] h-12 bg-white rounded-lg border border-gray-300 flex items-center justify-center text-lg font-bold font-['Pretendard'] cursor-pointer hover:bg-gray-50 active:bg-gray-100 active:translate-y-0.5"
+                    role="button"
+                    aria-label="숫자 0"
+                  >
+                    0
+                  </div>
+                  <div
+                    class="flex w-[90px] h-12 rounded-lg border-none items-center justify-center text-lg font-bold font-['Pretendard'] cursor-pointer hover:bg-gray-50 active:bg-gray-100 active:translate-y-0.5"
+                    role="button"
+                    aria-label="지우기"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-6 w-6"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M12 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2M3 12l6.414 6.414a2 2 0 001.414.586H19a2 2 0 002-2V7a2 2 0 00-2-2h-8.172a2 2 0 00-1.414.586L3 12z"
+                      />
+                    </svg>
+                  </div>
                 </div>
               </div>
             </div>
@@ -271,8 +297,8 @@
 
           <!-- 시작버튼 -->
           <a
-            href="/src/pages/mainpage/mainPage.html"
-            class="block w-full mt-4 py-2 border text-sm border-gray-400 bg-neutral-400 rounded-lg text-white font-['Pretendard'] font-medium text-center no-underline hover:outline-[#719cf7] focus:outline-2 focus:outline-[#719cf7]"
+            href="./login.html"
+            class="flex justify-center items-center w-full mt-4 py-2 border text-sm border-gray-400 bg-neutral-400 rounded-lg text-white font-['Pretendard'] font-medium text-center no-underline hover:outline-[#719cf7] focus:outline-2 focus:outline-[#719cf7]"
             role="button"
             aria-label="동의하고 시작하기">
             동의하고 시작하기
