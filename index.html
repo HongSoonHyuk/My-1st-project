@@ -18,22 +18,21 @@
     <div class="layout scrollbar-hide">
       <header class="grid grid-cols-2 justify-items-center gap-3 mt-60">
         <h1 class="headding-l col-span-2">멋쟁이 사자처럼 UI 프로젝트 11팀</h1>
-        <img
-          class="col-span-2"
-          src="/img/teamlogo.webp"
-          alt="위닝일레븐 팀로고"
-        />
-        <nav class="w-full col-span-2">
+        <h2 class="sr-only">위닝일레븐</h2>
+        <img class="col-span-2" src="/img/teamlogo.webp" alt="위닝일레븐 팀로고" />
+        <nav aria-label="프로젝트 목차" class="w-full col-span-2">
           <ul class="grid grid-cols-2 gap-2 mb-4 px-2.5 shadow-xl">
-            <li class="ring text-center"><a href="">팀원소개</a></li>
-            <li class="ring text-center"><a href="">프로젝트</a></li>
-            <li class="ring text-center"><a href="">컴포넌트</a></li>
-            <li class="ring text-center"><a href="">트러블슈팅</a></li>
+            <li class="ring text-center"><a href="#teamInfo">팀원소개</a></li>
+            <li class="ring text-center"><a href="#projectInfo">프로젝트</a></li>
+            <li class="ring text-center"><a href="#components">컴포넌트</a></li>
+            <li class="ring text-center">
+              <a target="_blank" href="https://www.notion.so/Validate-Local-HTML-1c173873401a8075bef2c9b2cc070a1b?pvs=25">Q & A</a>
+            </li>
           </ul>
         </nav>
       </header>
       <!-- 팀원소개 -->
-      <section class="grid gap-4 justify-items-center text-center">
+      <section id="teamInfo" class="grid gap-4 justify-items-center text-center">
         <h3 class="headding-l col-span-2 my-3">팀원 소개</h3>
         <div class="border">
           <img
@@ -82,7 +81,7 @@
         </figure>
       </section>
       <!-- 프로젝트 소개 -->
-      <section class="p-2.5">
+      <section id="projectInfo" class="p-2.5">
         <h3 class="headding-l text-center my-3">프로젝트 소개</h3>
         <a
           class="contents border rounded-2xl"
@@ -99,34 +98,29 @@
         </a>
       </section>
       <!-- 컴포넌트 소개 -->
-      <section class="grid grid-cols-2 gap-2 my-3 p-3 text-center">
-        <h3 class="headding-l my-3 col-span-2">컴포넌트 소개</h3>
-        <a
-          class="bg-(--color-secondary) text-(--color-background) rounded-2xl p-2"
-          href="/src/pages/componentsPage/designSystem.html"
-          >디자인 시스템</a
-        >
-        <a
-          class="bg-(--color-primary) text-(--color-background) rounded-2xl p-2"
-          href="/src/pages/componentsPage/button.html"
-          >버튼 컴포넌트</a
-        >
-        <a
-          class="bg-(--color-primary) text-(--color-background) rounded-2xl p-2"
-          href="/src/pages/componentsPage/header&nav.html"
-          >헤더 & 네비</a
-        >
-        <a
-          class="bg-(--color-secondary) text-(--color-background) rounded-2xl p-2"
-          href="/src/pages/componentsPage/input.html"
-          >인풋 컴포넌트</a
-        >
-        <a
-          class="bg-(--color-secondary) text-(--color-background) rounded-2xl p-2"
-          href="/src/pages/componentsPage/textfield.html"
-          >카드 컴포넌트</a
-        >
-      </section>
+      <main>
+        <section id="components" class="grid grid-cols-2 gap-2 my-3 p-3 text-center">
+          <h3 class="headding-l my-3 col-span-2">컴포넌트 소개</h3>
+          <a
+            target="_blank"
+            class="bg-(--color-secondary) text-(--color-background) rounded-2xl p-2"
+            href="/src/pages/componentsPage/designSystem.html"
+            >디자인 시스템</a
+          >
+          <a target="_blank" class="bg-(--color-primary) text-(--color-background) rounded-2xl p-2" href="/src/pages/componentsPage/button.html"
+            >버튼 컴포넌트</a
+          >
+          <a target="_blank" class="bg-(--color-primary) text-(--color-background) rounded-2xl p-2" href="/src/pages/componentsPage/header&nav.html"
+            >헤더 & 네비</a
+          >
+          <a target="_blank" class="bg-(--color-secondary) text-(--color-background) rounded-2xl p-2" href="/src/pages/componentsPage/input.html"
+            >인풋 컴포넌트</a
+          >
+          <a target="_blank" class="bg-(--color-secondary) text-(--color-background) rounded-2xl p-2" href="/src/pages/componentsPage/textfield.html"
+            >카드 컴포넌트</a
+          >
+        </section>
+      </main>
     </div>
   </body>
 </html>

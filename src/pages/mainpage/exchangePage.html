@@ -3,14 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>exchange</title>
-    <link rel="icon" href="/vite.svg" />
+    <title>exchangePage</title>
+    <link rel="icon" href="/favicon-16x16.png" />
     <link rel="preload" as="font" href="/font/woff2/PretendardVariable.woff2" crossorigin="anonymous" />
     <link rel="stylesheet" as="style" href="/font/pretendardvariable.css" />
     <script type="module" src="/src/main.js"></script>
   </head>
   <body>
     <div class="layout scrollbar-hide">
+      <h1 class="sr-only">기기거래 페이지</h1>
       <header class="sticky top-0 bg-white z-1">
         <!-- 셀룰러 -->
         <div class="px-[24px] pt-[8px] pb-[4px] bg-white flex justify-between items-center gap-44">
@@ -30,10 +31,10 @@
           </div>
         </div>
         <!-- 지역 메뉴 -->
-        <nav class="w-auto h-10 flex justify-between px-5 py-1.5">
+        <nav class="w-auto h-10 flex justify-between px-5 py-1.5" aria-label="메인 내비게이션">
           <div class="inline-flex gap-1.5 items-center">
             <span class="label-l whitespace-nowrap">남가좌제2동</span>
-            <button>
+            <button aria-label="지역 보기 버튼">
               <img src="/src/assets/down.svg" alt="지역보기버튼" />
             </button>
           </div>
@@ -51,30 +52,32 @@
         </nav>
       </header>
       <!-- 네비 아이템 -->
-      <ul class="flex justify-center gap-2 bg-(--color-primary)">
-        <li class="h-[37px]">
-          <a href="/src/pages/mainpage/mainPage.html" class="h-full focus:border-b-1 p-2 inline-block border-(--color-tertiary)">
-            <p class="label-m text-white whitespace-nowrap">선배님 스토리</p>
-          </a>
-        </li>
-        <li class="h-[37px]">
-          <a href="/src/pages/mainpage/exchangePage.html" class="h-full focus:border-b-1 p-2 inline-block border-(--color-tertiary)">
-            <span class="label-m text-white whitespace-nowrap">기기 거래</span>
-          </a>
-        </li>
-        <li class="h-[37px]">
-          <a href="/src/pages/q&aPage/q&a.html" class="h-full focus:border-b-1 p-2 inline-block border-(--color-tertiary)">
-            <span class="label-m text-white whitespace-nowrap">질의 응답</span>
-          </a>
-        </li>
-        <li class="h-[37px]">
-          <a href="/src/pages/boardPage/board1.html" class="h-full p-2 focus:border-b-1 inline-block border-(--color-tertiary)">
-            <span class="label-m text-white whitespace-nowrap">함께 해요</span>
-          </a>
-        </li>
-      </ul>
-      <section>
-        <!-- 리스트 아이템  -->
+      <nav aria-label="카테고리 네비게이션">
+        <ul class="flex justify-center gap-2 bg-(--color-primary)">
+          <li class="h-[37px]">
+            <a href="/src/pages/mainpage/mainPage.html" class="h-full focus:border-b-1 p-2 inline-block border-(--color-tertiary)">
+              <p class="label-m text-white whitespace-nowrap">선배님 스토리</p>
+            </a>
+          </li>
+          <li class="h-[37px]">
+            <a href="/src/pages/mainpage/exchangePage.html" class="h-full focus:border-b-1 p-2 inline-block border-(--color-tertiary)">
+              <span class="label-m text-white whitespace-nowrap">기기 거래</span>
+            </a>
+          </li>
+          <li class="h-[37px]">
+            <a href="/src/pages/q&aPage/q&a.html" class="h-full focus:border-b-1 p-2 inline-block border-(--color-tertiary)">
+              <span class="label-m text-white whitespace-nowrap">질의 응답</span>
+            </a>
+          </li>
+          <li class="h-[37px]">
+            <a href="/src/pages/boardPage/board1.html" class="h-full p-2 focus:border-b-1 inline-block border-(--color-tertiary)">
+              <span class="label-m text-white whitespace-nowrap">함께 해요</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- 리스트 아이템  -->
+      <main>
         <ul>
           <li class="relative overflow-clip p-3">
             <a href="/src/pages/mainpage/productInfoPage.html">
@@ -303,50 +306,52 @@
             </li>
           </ul>
         </div>
-      </section>
+      </main>
       <!-- 네비 아이템 바 -->
-      <div class="sticky bottom-0 px-[12px] pt-[8px] pb-[24px] bg-white flex justify-center items-center gap-10">
-        <a href="/src/pages/mainpage/mainPage.html">
-          <div tabindex="0" class="flex flex-col justify-center items-center">
-            <div class="w-5 h-5 relative">
-              <div class="w-5 h-5 absolute bg-[url('./assets/home.svg')] hover:bg-[url('./assets/fullHome.svg')] bg-cover"></div>
+      <footer aria-label="푸터 네비게이션">
+        <div class="sticky bottom-0 px-[12px] pt-[8px] pb-[24px] bg-white flex justify-center items-center gap-10">
+          <a href="/src/pages/mainpage/mainPage.html">
+            <div tabindex="0" class="flex flex-col justify-center items-center">
+              <div class="w-5 h-5 relative">
+                <div class="w-5 h-5 absolute bg-[url('./assets/home.svg')] hover:bg-[url('./assets/fullHome.svg')] bg-cover"></div>
+              </div>
+              <div class="justify-center text-black text-[9px] font-['Pretendard']">홈</div>
             </div>
-            <div class="justify-center text-black text-[9px] font-['Pretendard']">홈</div>
-          </div>
-        </a>
-        <a href="/src/pages/boardPage/board1.html">
-          <div tabindex="0" class="flex flex-col justify-center items-center">
-            <div class="w-5 h-5 relative">
-              <div class="w-5 h-5 absolute bg-[url('./assets/life.svg')] hover:bg-[url('./assets/fullFile.svg')] bg-cover"></div>
+          </a>
+          <a href="/src/pages/boardPage/board1.html">
+            <div tabindex="0" class="flex flex-col justify-center items-center">
+              <div class="w-5 h-5 relative">
+                <div class="w-5 h-5 absolute bg-[url('./assets/life.svg')] hover:bg-[url('./assets/fullFile.svg')] bg-cover"></div>
+              </div>
+              <div class="justify-center text-black text-[8.9px] font-['Pretendard']">게시판</div>
             </div>
-            <div class="justify-center text-black text-[8.9px] font-['Pretendard']">게시판</div>
-          </div>
-        </a>
-        <a href="#">
-          <div tabindex="0" class="flex flex-col justify-center items-center">
-            <div class="w-5 h-5 relative">
-              <div class="w-5 h-5 absolute bg-[url('./assets/map.svg')] hover:bg-[url('./assets/fullMap.svg')] bg-cover"></div>
+          </a>
+          <a href="#">
+            <div tabindex="0" class="flex flex-col justify-center items-center">
+              <div class="w-5 h-5 relative">
+                <div class="w-5 h-5 absolute bg-[url('./assets/map.svg')] hover:bg-[url('./assets/fullMap.svg')] bg-cover"></div>
+              </div>
+              <div class="justify-center text-black text-[9px] font-['Pretendard']">내 근처</div>
             </div>
-            <div class="justify-center text-black text-[9px] font-['Pretendard']">내 근처</div>
-          </div>
-        </a>
-        <a href="/src/pages/q&aPage/chatContent.html">
-          <div tabindex="0" class="flex flex-col justify-center items-center">
-            <div class="w-5 h-5 relative">
-              <div class="w-5 h-5 absolute bg-[url('./assets/chat.svg')] hover:bg-[url('./assets/fullChat.svg')] bg-cover"></div>
+          </a>
+          <a href="/src/pages/q&aPage/chatContent.html">
+            <div tabindex="0" class="flex flex-col justify-center items-center">
+              <div class="w-5 h-5 relative">
+                <div class="w-5 h-5 absolute bg-[url('./assets/chat.svg')] hover:bg-[url('./assets/fullChat.svg')] bg-cover"></div>
+              </div>
+              <div class="justify-center text-black text-[9px] font-['Pretendard']">채팅</div>
             </div>
-            <div class="justify-center text-black text-[9px] font-['Pretendard']">채팅</div>
-          </div>
-        </a>
-        <a href="/src/pages/profilePage/profile.html">
-          <div tabindex="0" class="flex flex-col justify-center items-center">
-            <div class="w-5 h-5 relative">
-              <div class="w-5 h-5 absolute bg-[url('./assets/my.svg')] hover:bg-[url('./assets/fullMy.svg')] bg-cover"></div>
+          </a>
+          <a href="/src/pages/profilePage/profile.html">
+            <div tabindex="0" class="flex flex-col justify-center items-center">
+              <div class="w-5 h-5 relative">
+                <div class="w-5 h-5 absolute bg-[url('./assets/my.svg')] hover:bg-[url('./assets/fullMy.svg')] bg-cover"></div>
+              </div>
+              <div class="justify-center text-black text-[9px] font-['Pretendard']">나의 이듬</div>
             </div>
-            <div class="justify-center text-black text-[9px] font-['Pretendard']">나의 이듬</div>
-          </div>
-        </a>
-      </div>
+          </a>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
