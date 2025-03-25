@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <script type="module" src="/@vite/client"></script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>시작페이지</title>
+    <link rel="icon" href="/public/favicon-16x16.png" />
+    <link
+      rel="preload"
+      as="font"
+      href="/font/woff2/PretendardVariable.woff2"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" as="style" href="/font/pretendardvariable.css" />
+    <script type="module" src="/src/main.js?t=1742876629947"></script>
+  </head>
+  <body>
+    <div class="layout scrollbar-hide" role="main" aria-label="시작 페이지">
+      <!-- 상단바 -->
+      <div
+        class="px-[24px] pt-[8px] pb-[4px] bg-white inline-flex justify-end items-center gap-44"
+        role="banner"
+        aria-label="상태 표시줄"
+      >
+        <div
+          class="text-center justify-center text-black text-sm font-semibold font-['Pretendard']"
+          role="timer"
+          aria-label="현재 시간"
+        >
+          2:26
+        </div>
+        <div
+          class="flex justify-center items-center"
+          role="group"
+          aria-label="상태 아이콘"
+        >
+          <div class="w-6 h-4 relative">
+            <div
+              class="w-3.5 h-4 left-[10px] absolute bg-cover bg-[url('./assets/celluar.svg')]"
+              role="img"
+              aria-label="셀룰러 신호"
+            ></div>
+          </div>
+          <div class="flex justify-center items-center gap-0.5">
+            <div class="w-6 h-6 relative">
+              <div
+                class="w-6 h-6 absolute bg-cover bg-[url('./assets/lte.svg')]"
+                role="img"
+                aria-label="LTE 연결 상태"
+              ></div>
+            </div>
+            <div class="w-6 h-5 relative">
+              <div
+                class="w-5 h-5 absolute bg-cover bg-[url('./assets/battery.svg')]"
+                role="img"
+                aria-label="배터리 상태"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 로고 -->
+      <div
+        class="top-[140px] w-[320px] h-[220px] relative bg-white overflow-hidden"
+        role="region"
+        aria-label="앱 소개"
+      >
+        <div
+          class="w-[160px] left-[80px] top-[113px] absolute text-center justify-center text-slate-700 text-lg font-bold font-['Pretendard']"
+        >
+          당신 곁에 엔터이듬
+        </div>
+        <div
+          class="w-[170px] left-[75px] top-[152px] absolute justify-center text-slate-700 text-sm font-['Pretendard']"
+        >
+          With EUID's 함께 성장하기
+        </div>
+        <div
+          class="w-[230px] left-[45px] top-[169px] absolute justify-center text-slate-700 text-sm font-['Pretendard']"
+        >
+          함께 배우고 적용하며 성장해보세요!
+        </div>
+        <div
+          class="w-20 h-8 left-[118px] top-[37px] absolute overflow-hidden bg-[url('./assets/logo.svg')] bg-no-repeat bg-center"
+          role="img"
+          aria-label="위닝일레븐 로고"
+        ></div>
+      </div>
+
+      <div
+        class="absolute left-1/2 transform -translate-x-1/2 top-[572px]"
+        role="group"
+        aria-label="시작하기 버튼 영역"
+      >
+        <!-- 시작하기 버튼 -->
+        <a
+          href="./category.html"
+          class="px-[126px] py-[12px] bg-[#373f67] hover:outline-2 hover:outline-[#719cf7] focus:outline-2 focus:outline-[#719cf7] rounded-[8px] flex justify-center items-center no-underline"
+          role="button"
+          aria-label="시작하기"
+        >
+          <span
+            class="text-white text-sm font-bold font-['Pretendard'] whitespace-nowrap"
+          >
+            시작하기
+          </span>
+        </a>
+      </div>
+
+      <div
+        class="top-[632px] left-[96px] absolute inline-flex justify-start items-start gap-3"
+        role="contentinfo"
+        aria-label="로그인 안내"
+      >
+        <!-- 맨아래 div -->
+        <div
+          class="justify-center text-neutral-400 text-xs font-normal font-['Pretendard']"
+        >
+          이미 계정이 있나요?
+        </div>
+        <a
+          href="./login.html"
+          class="hover:outline-[#719cf7] focus:outline-2 focus:outline-[#719cf7] rounded-[4px]"
+          role="link"
+          aria-label="로그인 페이지로 이동"
+        >
+          <div
+            class="justify-center text-slate-700 text-xs font-semibold font-['Pretendard']"
+          >
+            로그인
+          </div>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>

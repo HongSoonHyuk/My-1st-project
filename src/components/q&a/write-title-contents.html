@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>q&a</title>
+    <link rel="icon" href="/vite.svg" />
+    <link
+      rel="preload"
+      as="font"
+      href="/font/woff2/PretendardVariable.woff2"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" as="style" href="/font/pretendardvariable.css" />
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body>
+    <!-- 제목 -->
+    <div class="grid grid-rows-[1fr_auto]">
+      <input
+        type="text"
+        placeholder="제목"
+        class="w-full text-[18.662px] border-none focus:outline-none placeholder:font-bold placeholder-gray-400 px-5 py-2"
+      />
+      <!-- 내용쓰는 곳 -->
+      <textarea
+        placeholder="관심있는 분야에 대한 질문을 올려주세요. 장소 정보와 사진을 함께 올리면 친구들에게 더 도움이 돼요!"
+        class="w-full h-[300px] border-none focus:outline-none placeholder-gray-400 px-5 py-2 resize-none"
+      ></textarea>
+    </div>
+
+    <br />
+    <!-- Q. 제목, 내용, 사진 -->
+    <div class="grid grid-rows-[auto_auto_1fr] w-full">
+      <div class="mb-3">
+        <div>
+          <h2 class="font-bold">
+            <span class="pr-1 text-[18.662px]">Q.</span>
+            혹시 홍대나 연희동 주변에 프론트 스터디 하시는 분
+          </h2>
+        </div>
+        <p class="text-[14px] pt-1">계신가요? 있으면 참가하고 싶어서요!</p>
+      </div>
+
+      <img
+        src=""
+        alt=""
+        class="bg-[var(--color-content-secondary)] w-[294px] h-[367px] mb-1 rounded-xl overflow-hidden"
+      />
+    </div>
+  </body>
+</html>

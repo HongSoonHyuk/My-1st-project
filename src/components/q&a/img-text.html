@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>11조 위닝일레븐</title>
+    <link rel="icon" href="/vite.svg" />
+    <link
+      rel="preload"
+      as="font"
+      href="/font/woff2/PretendardVariable.woff2"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" as="style" href="/font/pretendardvariable.css" />
+    <link rel="stylesheet" href="/src/pages/yerin/components/styles/info.css" />
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body>
+    <div class="m-2">
+      <div class="w-[320px]">
+        <div class="grid grid-cols-[auto_1fr] items-center gap-2.5">
+          <!-- 프로필 이미지 -->
+          <div
+            class="bg-[var(--color-content-secondary)] w-[44px] h-[44px] rounded-md overflow-hidden"
+          >
+            <img src="/" alt="" class="w-full h-full object-cover" />
+          </div>
+
+          <section class="flex flex-col">
+            <div class="flex gap-2">
+              <h2 class="font-bold text-base">text</h2>
+              <p class="text-sm">text</p>
+            </div>
+
+            <p class="font-bold overflow-hidden text-sm">text</p>
+          </section>
+        </div>
+      </div>
+    </div>
+    <br />
+
+    <!-- 카테고리 -->
+    <p
+      class="bg-[#C4C7D2] text-white text-[10.503px] rounded-sm w-[48px] h-[20px] mx-3 grid place-items-center"
+    >
+      Q&A
+    </p>
+    <!-- 프로필, 닉네임, 위치 등 -->
+    <div
+      class="grid grid-cols-[auto_1fr] items-center gap-2.5 w-full mx-3 my-4"
+    >
+      <!-- 프로필 이미지 -->
+      <div
+        class="bg-[var(--color-content-secondary)] w-[30px] h-[30px] rounded-full overflow-hidden"
+      >
+        <img src="/" alt="" class="w-full h-full object-cover" />
+      </div>
+
+      <section class="flex flex-col min-w-0 w-[120px]">
+        <div class="flex gap-2">
+          <h2 class="text-[10.503px]">닉네임</h2>
+        </div>
+
+        <p
+          class="truncate text-ellipsis whitespace-nowrap overflow-hidden text-[10.503px] text-[var(--color-content-secondary)]"
+        >
+          위치
+        </p>
+      </section>
+    </div>
+  </body>
+</html>

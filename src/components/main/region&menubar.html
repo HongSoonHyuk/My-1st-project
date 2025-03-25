@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>지역 메뉴바 컴포넌트</title>
+    <link rel="icon" href="/vite.svg" />
+    <link rel="preload" as="font" href="/font/woff2/PretendardVariable.woff2" crossorigin="anonymous" />
+    <link rel="stylesheet" as="style" href="/font/pretendardvariable.css" />
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body>
+    <div class="w-auto h-10 flex justify-between px-5 py-1.5">
+      <div class="inline-flex gap-1.5 items-center">
+        <span class="label-l">남가좌제2동</span>
+        <button>
+          <img src="/src/assets/down.svg" alt="지역보기버튼" />
+        </button>
+      </div>
+      <ul class="flex items-center gap-2">
+        <li>
+          <button><img class="w-[26px] h-[26px]" src="/src/assets/search.svg" alt="검색버튼" /></button>
+        </li>
+        <li>
+          <button><img class="w-[26px] h-[26px]" src="/src/assets/hamburger.svg" alt="메뉴보기버튼" /></button>
+        </li>
+        <li>
+          <button><img class="w-[26px] h-[26px]" src="/src/assets/alrambell.svg" alt="알림보기버튼" /></button>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

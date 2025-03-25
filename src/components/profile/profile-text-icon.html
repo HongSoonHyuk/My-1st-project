@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>프로필 텍스트 아이콘 컴포넌트</title>
+    <link rel="icon" href="/vite.svg" />
+    <link
+      rel="preload"
+      as="font"
+      href="/font/woff2/PretendardVariable.woff2"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" as="style" href="/font/pretendardvariable.css" />
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body>
+    <!-- 응답률 -->
+    <figure
+      class="inline-flex items-start bg-white gap-[5px] font-[Pretendard] text-xs text-[#000] leading-4"
+    >
+      <img src="./assets/speech.svg" alt="/" class="w-4 h-4" />
+
+      <figcaption>
+        <p class="">응답률<span class="ml-[5px]">-%</span></p>
+
+        <p class="text-[#919191]">text</p>
+      </figcaption>
+    </figure>
+
+    <br />
+
+    <!-- 받은 좋아요 -->
+    <figure
+      class="inline-flex items-start bg-white gap-[5px] font-[Pretendard] text-xs text-[#000] leading-4"
+    >
+      <img src="./assets/heart.svg" alt="/" class="w-4 h-4" />
+
+      <figcaption>
+        <p class="">받은 좋아요<span class="ml-[5px]">100%</span></p>
+
+        <p class="text-[#919191]">text</p>
+      </figcaption>
+    </figure>
+  </body>
+</html>
