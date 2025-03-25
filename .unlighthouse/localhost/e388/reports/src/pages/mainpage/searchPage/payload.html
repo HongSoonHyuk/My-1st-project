@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <script type="module" src="/@vite/client"></script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>검색</title>
+    <link rel="icon" href="/favicon-16x16.png" />
+    <link rel="preload" as="font" href="/font/woff2/PretendardVariable.woff2" crossorigin="anonymous" />
+    <link rel="stylesheet" as="style" href="/font/pretendardvariable.css" />
+    <script type="module" src="/src/main.js?t=1742876629947"></script>
+  </head>
+  <body>
+    <div class="layout scrollbar-hide">
+      <h1 class="sr-only">검색 페이지</h1>
+      <header class="sticky top-0 bg-white z-1">
+        <!-- 셀룰러 -->
+        <div class="px-[24px] pt-[8px] pb-[4px] bg-white flex justify-between items-center gap-44">
+          <div class="text-center justify-center text-black text-sm font-semibold font-['Pretendard'] leading-tight">2:26</div>
+          <div class="flex justify-center items-center">
+            <div class="w-6 h-4 relative">
+              <div class="w-3.5 h-4 left-[10px] absolute bg-cover bg-[url('./assets/celluar.svg')]"></div>
+            </div>
+            <div class="flex justify-center items-center gap-0.5">
+              <div class="w-6 h-6 relative">
+                <div class="w-6 h-6 absolute bg-cover bg-[url('./assets/lte.svg')]"></div>
+              </div>
+              <div class="w-6 h-5 relative">
+                <div class="w-5 h-5 absolute bg-cover bg-[url('./assets/battery.svg')]"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 검색바 -->
+        <div class="px-5 py-1 flex items-center gap-4">
+          <a aria-label="뒤로 가기 버튼" class="w-5 h-5" href="/src/pages/mainpage/exchangePage.html"
+            ><img class="w-5 h-5 object-cover" src="/src/assets/direction=left.svg" alt="뒤로가기"
+          /></a>
+          <label aria-label="검색 입력 바" class="w-full">
+            <input
+              type="search"
+              placeholder="검색어를 입력하세요"
+              class="paragraph-m w-full caret-(--color-tertiary) bg-[#E9E9E9] px-2.5 py-1 rounded-md outline-none" />
+          </label>
+        </div>
+      </header>
+      <main>
+        <div class="px-3 py-2 mb-[264px]">
+          <p class="mb-3">친구들이 많이 찾고 있어요!</p>
+          <div class="flex gap-1 overflow-clip">
+            <div class="inline-flex px-3 py-1.5 items-center justify-center rounded-3xl border-1 border-(--color-content-secondary)">
+              <span class="paragraph-s">tag</span>
+            </div>
+            <div class="inline-flex px-3 py-1.5 items-center justify-center rounded-3xl border-1 border-(--color-content-secondary)">
+              <span class="paragraph-s">Tag</span>
+            </div>
+            <div class="inline-flex px-3 py-1.5 items-center justify-center rounded-3xl border-1 border-(--color-content-secondary)">
+              <span class="paragraph-s">Tag</span>
+            </div>
+            <div class="inline-flex px-3 py-1.5 items-center justify-center rounded-3xl border-1 border-(--color-content-secondary)">
+              <span class="paragraph-s">Tag</span>
+            </div>
+            <div class="inline-flex px-3 py-1.5 items-center justify-center rounded-3xl border-1 border-(--color-content-secondary)">
+              <span class="paragraph-s">Tag</span>
+            </div>
+            <div class="inline-flex px-3 py-1.5 items-center justify-center rounded-3xl border-1 border-(--color-content-secondary)">
+              <span class="paragraph-s">Tag</span>
+            </div>
+            <div class="inline-flex px-3 py-1.5 items-center justify-center rounded-3xl border-1 border-(--color-content-secondary)">
+              <span class="paragraph-s">Tag</span>
+            </div>
+          </div>
+        </div>
+      </main>
+      <!-- ios 키패드 -->
+      <div class="flex flex-col items-end sticky bottom-0">
+        <span class="paragraph-m text-(--color-secondary) pr-3">완료</span>
+        <img class="w-full h-[248px]" src="/src/assets/IOSkeypad.svg" alt="IOS 스타일 키패드" />
+      </div>
+    </div>
+  </body>
+</html>
