@@ -4,19 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Input 컴포넌트</title>
+    <link rel="icon" href="/favicon-16x16.png" />
+    <link
+      rel="preload"
+      as="font"
+      href="/font/woff2/PretendardVariable.woff2"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" as="style" href="/font/pretendardvariable.css" />
     <script type="module" src="/src/main.js"></script>
   </head>
   <body>
-    <div class="p-4">
-      <h1 class="mb-4">input 컴포넌트 페이지</h1>
+    <div class="p-4 font-bold text-gray-700 font-['Pretendard']">
+      <h1 class="mb-4 text-lg">input 컴포넌트 페이지</h1>
       <fieldset
         class="border border-gray-300 rounded-md p-4 mb-6"
-        aria-label="페이지 버튼 모음"
+        aria-label="시작 페이지 인풋 모음"
       >
-        <legend class="px-2 font-bold text-gray-700">
-          시작 페이지 버튼 모음
-        </legend>
+        <legend class="px-2">시작 페이지 인풋 모음</legend>
         <div class="px-4">
           <div class="mb-4">
             <input
@@ -40,11 +45,9 @@
       </fieldset>
       <fieldset
         class="border border-gray-300 rounded-md p-4 mb-6"
-        aria-label="Q&A 페이지 버튼 모음"
+        aria-label="Q&A 페이지 인풋 모음"
       >
-        <legend class="px-2 font-bold text-gray-700">
-          Q&A 페이지 버튼 모음
-        </legend>
+        <legend class="px-2">Q&A 페이지 인풋 모음</legend>
         <!-- 위치, 장소, 댓글 입력창, 이모티콘 버튼 -->
         <div class="flex w-[320px] px-3 mt-2 items-center gap-1">
           <button aria-label="사진 추가 버튼" class="p-1 cursor-pointer">
