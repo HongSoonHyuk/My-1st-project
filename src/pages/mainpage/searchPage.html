@@ -3,14 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>11조 위닝일레븐</title>
-    <link rel="icon" href="/vite.svg" />
+    <title>검색</title>
+    <link rel="icon" href="/favicon-16x16.png" />
     <link rel="preload" as="font" href="/font/woff2/PretendardVariable.woff2" crossorigin="anonymous" />
     <link rel="stylesheet" as="style" href="/font/pretendardvariable.css" />
     <script type="module" src="/src/main.js"></script>
   </head>
   <body>
     <div class="layout scrollbar-hide">
+      <h1 class="sr-only">검색 페이지</h1>
       <header class="sticky top-0 bg-white z-1">
         <!-- 셀룰러 -->
         <div class="px-[24px] pt-[8px] pb-[4px] bg-white flex justify-between items-center gap-44">
@@ -31,10 +32,10 @@
         </div>
         <!-- 검색바 -->
         <div class="px-5 py-1 flex items-center gap-4">
-          <a class="w-5 h-5" href="/src/pages/mainpage/exchangePage.html"
+          <a aria-label="뒤로 가기 버튼" class="w-5 h-5" href="/src/pages/mainpage/exchangePage.html"
             ><img class="w-5 h-5 object-cover" src="/src/assets/direction=left.svg" alt="뒤로가기"
           /></a>
-          <label class="w-full">
+          <label aria-label="검색 입력 바" class="w-full">
             <input
               type="search"
               placeholder="검색어를 입력하세요"
@@ -42,32 +43,34 @@
           </label>
         </div>
       </header>
-      <div class="px-3 py-2 mb-[264px]">
-        <p class="mb-3">친구들이 많이 찾고 있어요!</p>
-        <div class="flex gap-1 overflow-clip">
-          <div class="inline-flex px-3 py-1.5 items-center justify-center rounded-3xl border-1 border-(--color-content-secondary)">
-            <span class="paragraph-s">tag</span>
-          </div>
-          <div class="inline-flex px-3 py-1.5 items-center justify-center rounded-3xl border-1 border-(--color-content-secondary)">
-            <span class="paragraph-s">Tag</span>
-          </div>
-          <div class="inline-flex px-3 py-1.5 items-center justify-center rounded-3xl border-1 border-(--color-content-secondary)">
-            <span class="paragraph-s">Tag</span>
-          </div>
-          <div class="inline-flex px-3 py-1.5 items-center justify-center rounded-3xl border-1 border-(--color-content-secondary)">
-            <span class="paragraph-s">Tag</span>
-          </div>
-          <div class="inline-flex px-3 py-1.5 items-center justify-center rounded-3xl border-1 border-(--color-content-secondary)">
-            <span class="paragraph-s">Tag</span>
-          </div>
-          <div class="inline-flex px-3 py-1.5 items-center justify-center rounded-3xl border-1 border-(--color-content-secondary)">
-            <span class="paragraph-s">Tag</span>
-          </div>
-          <div class="inline-flex px-3 py-1.5 items-center justify-center rounded-3xl border-1 border-(--color-content-secondary)">
-            <span class="paragraph-s">Tag</span>
+      <main>
+        <div class="px-3 py-2 mb-[264px]">
+          <p class="mb-3">친구들이 많이 찾고 있어요!</p>
+          <div class="flex gap-1 overflow-clip">
+            <div class="inline-flex px-3 py-1.5 items-center justify-center rounded-3xl border-1 border-(--color-content-secondary)">
+              <span class="paragraph-s">tag</span>
+            </div>
+            <div class="inline-flex px-3 py-1.5 items-center justify-center rounded-3xl border-1 border-(--color-content-secondary)">
+              <span class="paragraph-s">Tag</span>
+            </div>
+            <div class="inline-flex px-3 py-1.5 items-center justify-center rounded-3xl border-1 border-(--color-content-secondary)">
+              <span class="paragraph-s">Tag</span>
+            </div>
+            <div class="inline-flex px-3 py-1.5 items-center justify-center rounded-3xl border-1 border-(--color-content-secondary)">
+              <span class="paragraph-s">Tag</span>
+            </div>
+            <div class="inline-flex px-3 py-1.5 items-center justify-center rounded-3xl border-1 border-(--color-content-secondary)">
+              <span class="paragraph-s">Tag</span>
+            </div>
+            <div class="inline-flex px-3 py-1.5 items-center justify-center rounded-3xl border-1 border-(--color-content-secondary)">
+              <span class="paragraph-s">Tag</span>
+            </div>
+            <div class="inline-flex px-3 py-1.5 items-center justify-center rounded-3xl border-1 border-(--color-content-secondary)">
+              <span class="paragraph-s">Tag</span>
+            </div>
           </div>
         </div>
-      </div>
+      </main>
       <!-- ios 키패드 -->
       <div class="flex flex-col items-end sticky bottom-0">
         <span class="paragraph-m text-(--color-secondary) pr-3">완료</span>
