@@ -1,5 +1,7 @@
 const allAgree = document.querySelector("#allAgree");
-const agrees = document.querySelectorAll("input[type='checkbox'][id='agrees']");
+const agrees = document.querySelectorAll(
+  "input[type='checkbox'][name='agrees']"
+);
 const resetButton = document.querySelector("#reset");
 const submitButton = document.querySelector("#save");
 const savePopup = document.querySelector("#save-popup");

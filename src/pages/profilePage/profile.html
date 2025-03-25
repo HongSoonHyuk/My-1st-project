@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>프로필</title>
-    <link rel="icon" href="/vite.svg" />
+    <title>Profile</title>
+    <link rel="icon" href="/favicon-16x16.png" />
     <link
       rel="preload"
       as="font"
@@ -53,30 +53,31 @@
         <header class="px-[31px] pt-[42px] pb-[18px]">
           <!-- 프로필 -->
           <section class="flex flex-col items-center mb-[15px]">
-            <a href="./profileCard.html">
+            <a href="./profileCard.html" class="relative">
               <div
-                class="bg-[url('/img/profile.png')] bg-center rounded-[50%] w-[68px] h-[66px] relative mb-[9px]"
+                class="bg-[url('/img/profile.png')] bg-center rounded-[50%] w-[68px] h-[66px] mb-[9px]"
+              ></div
+            ></a>
+            <button
+              type="button"
+              onclick="location.href='./profileCard.html'"
+              class="cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-(--color-tertiary) focus-visible:rounded-[50%] bg-white shadow-[4px_4px_4px_0_rgba(0,0,0,0.15)] rounded-[50%] w-3.5 h-3.5 absolute top-[125px] right-[130px]"
+            >
+              <svg
+                aria-hidden="true"
+                width="14"
+                height="14"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <button
-                  type="button"
-                  class="cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-(--color-tertiary) focus-visible:rounded-[50%] bg-white shadow-[4px_4px_4px_0_rgba(0,0,0,0.15)] rounded-[50%] w-3.5 h-3.5 absolute right-1.5 bottom-1.5"
-                >
-                  <svg
-                    aria-hidden="true"
-                    width="14"
-                    height="14"
-                    viewBox="0 0 20 20"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M15.6817 7.17501L12.735 4.22918L13.9142 3.05085C14.4392 2.52585 15.6417 2.42168 16.2708 3.05085L16.86 3.64001C17.4892 4.26918 17.3858 5.47168 16.86 5.99751L15.6817 7.17501ZM14.5033 8.35418L6.25334 16.6042L2.42334 17.4875L3.30667 13.6575L11.5567 5.40751L14.5033 8.35418Z"
-                      fill="black"
-                    />
-                  </svg>
-                </button>
-              </div>
-            </a>
+                <path
+                  d="M15.6817 7.17501L12.735 4.22918L13.9142 3.05085C14.4392 2.52585 15.6417 2.42168 16.2708 3.05085L16.86 3.64001C17.4892 4.26918 17.3858 5.47168 16.86 5.99751L15.6817 7.17501ZM14.5033 8.35418L6.25334 16.6042L2.42334 17.4875L3.30667 13.6575L11.5567 5.40751L14.5033 8.35418Z"
+                  fill="black"
+                />
+              </svg>
+            </button>
+
             <!-- 프로필 이름 -->
             <div class="flex font-[Pretendard] gap-1.5">
               <p class="label-l">EUID***</p>
@@ -175,7 +176,7 @@
           <!-- 열정온도 -->
           <section class="p-3 border-t border-(--color-content-secondary)">
             <h3 class="text-[.75rem] flex gap-0.5 items-center">
-              <p class="text-[12px]">열정온도</p>
+              <span class="text-[12px]">열정온도</span>
               <button
                 type="button"
                 class="cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-(--color-tertiary) focus-visible:rounded-[2px]"
@@ -404,7 +405,7 @@
             </article>
           </section>
           <!-- 받은 거래 후기-->
-          <setion
+          <section
             class="p-4 bg-white flex justify-between items-center label-m border-b-[0.3px] border-t-[0.3px] border-[#919191]"
           >
             <!-- 텍스트 -->
@@ -429,7 +430,7 @@
                 />
               </svg>
             </a>
-          </setion>
+          </section>
           <!-- 후기 내용 상세 -->
           <section
             class="flex font-[Pretendard] px-3.5 pt-3.5 pb-5 justify-between items-start"
@@ -451,7 +452,7 @@
               type="button"
               class="cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-(--color-tertiary) focus-visible:rounded-[2px]"
             >
-              <p class="sr-only">거래후기 설정 메뉴</p>
+              <span class="sr-only">거래후기 설정 메뉴</span>
               <svg
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
