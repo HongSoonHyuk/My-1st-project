@@ -4,19 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Button 컴포넌트</title>
+    <link rel="icon" href="/public/favicon-16x16.png" />
+    <link
+      rel="preload"
+      as="font"
+      href="/font/woff2/PretendardVariable.woff2"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" as="style" href="/font/pretendardvariable.css" />
     <script type="module" src="/src/main.js"></script>
   </head>
   <body>
-    <div class="p-4">
+    <div class="p-4 font-bold text-gray-700 font-['Pretendard']">
       <h1 class="mb-4">button 컴포넌트 페이지</h1>
       <fieldset
         class="border border-gray-300 rounded-md p-4 mb-6"
         aria-label="시작 페이지 버튼 컴포넌트 모음"
       >
-        <legend class="px-2 font-bold text-gray-700">
-          시작 페이지 버튼 모음
-        </legend>
+        <legend class="px-2">시작 페이지 버튼 모음</legend>
 
         <!-- 시작하기 버튼 -->
         <div class="mb-4">
@@ -116,9 +121,7 @@
         class="border border-gray-300 rounded-md p-4 mb-6"
         aria-label="메인 페이지 버튼 모음"
       >
-        <legend class="px-2 font-bold text-gray-700">
-          메인 페이지 버튼 모음
-        </legend>
+        <legend class="px-2">메인 페이지 버튼 모음</legend>
         <!-- 지역 메뉴 -->
         <nav class="w-full h-10 flex justify-between px-5 py-1.5">
           <div class="inline-flex gap-1.5 items-center">
@@ -234,7 +237,7 @@
         class="border border-gray-300 rounded-md p-4 mb-6"
         aria-label="게시판 버튼 모음"
       >
-        <legend class="px-2 font-bold text-gray-700">게시판 버튼 모음</legend>
+        <legend class="px-2">게시판 버튼 모음</legend>
         <!-- board/allButton -->
         <div
           class="flex flex-col items-center w-[94px] h-auto p-[20px] bg-gray-400"
@@ -309,7 +312,7 @@
         class="border border-gray-300 rounded-md p-4 mb-6"
         aria-label="프로필 버튼 모음"
       >
-        <legend class="px-2 font-bold text-gray-700">프로필 페이지 버튼</legend>
+        <legend class="px-2">프로필 페이지 버튼</legend>
         <section class="px-3">
           <h2 class="label-m mb-[3px]">연령</h2>
           <p class="paragraph-s text-(--color-content-secondary) mb-2">
@@ -386,7 +389,7 @@
         class="border border-gray-300 rounded-md p-4 mb-6"
         aria-label="Q&A페이지 버튼 모음"
       >
-        <legend class="px-2 font-bold text-gray-700">Q&A페이지 버튼</legend>
+        <legend class="px-2">Q&A페이지 버튼</legend>
         <div
           class="flex w-[320px] h-[41px] gap-1 pt-2 pl-3 pb-2 border-b border-gray-300"
         >
