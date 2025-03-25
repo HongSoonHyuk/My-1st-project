@@ -7,11 +7,11 @@
 <br>
 <img alt="Static Badge" src="https://img.shields.io/badge/2025.03.14~2025.03.25-%23719CF7?style=flat&label=%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%EA%B8%B0%EA%B0%84">
 
-<img alt="Static Badge" src="https://img.shields.io/badge/NOTION-black?style=flat&logo=notion&link=https%3A%2F%2Fwww.notion.so%2F11-1b673873401a807e9ac9fc1a35199cbc">
-<img alt="Static Badge" src="https://img.shields.io/badge/Go%20site!-%23E11900?style=flat&logo=netlify&logoColor=white&link=https%3A%2F%2Fhelpful-empanada-051e52.netlify.app%2F">
-<img alt="Static Badge" src="https://img.shields.io/badge/winningEleven-%23fe6198?style=flat&logo=github&label=Github&link=https%3A%2F%2Fgithub.com%2FFRONTENDBOOTCAMP-13th%2FwinningEleven">
+[![Static Badge](https://img.shields.io/badge/NOTION-black?style=flat&logo=notion&logoColor=white&link=https%3A%2F%2Fwww.notion.so%2F11-1b673873401a807e9ac9fc1a35199cbc)](https://www.notion.so/11-1b673873401a807e9ac9fc1a35199cbc) [![Static Badge](https://img.shields.io/badge/Go%20site!-%23E11900?style=flat&logo=netlify&logoColor=white)](https://helpful-empanada-051e52.netlify.app/)
+[![Static Badge](https://img.shields.io/badge/winningEleven-%23fe6198?style=flat&logo=github&label=WiKi)](https://github.com/FRONTENDBOOTCAMP-13th/winningEleven/wiki)
 
 </div>
+
 <br>
 <br>
 
