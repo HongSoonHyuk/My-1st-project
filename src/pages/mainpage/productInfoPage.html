@@ -4,13 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>productInfo</title>
-    <link rel="icon" href="/vite.svg" />
+    <link rel="icon" href="/favicon-16x16.png" />
     <link rel="preload" as="font" href="/font/woff2/PretendardVariable.woff2" crossorigin="anonymous" />
     <link rel="stylesheet" as="style" href="/font/pretendardvariable.css" />
     <script type="module" src="/src/main.js"></script>
   </head>
   <body>
     <div class="layout scrollbar-hide">
+      <h1 class="sr-only">거래 제품 상세 페이지</h1>
       <header class="sticky top-0 bg-white z-1">
         <!-- 셀룰러 -->
         <div class="px-[24px] pt-[8px] pb-[4px] bg-white flex justify-between items-center gap-44">
@@ -30,112 +31,118 @@
           </div>
         </div>
         <!-- 버튼 아이템즈 -->
-        <nav>
+        <nav aria-label="메인 네비게이션">
           <ul class="bg-white px-5 py-2 flex justify-between items-center border-b border-[#D3D3D3]">
             <li class="inline-flex gap-2">
-              <a href="/src/pages/mainpage/exchangePage.html"><img class="w-5 h-5" src="/src/assets/direction=left.svg" alt="뒤로가기" /></a>
-              <a href="/src/pages/mainpage/mainPage.html"><img class="w-5 h-5" src="/src/assets/home.svg" alt="홈으로가기" /></a>
+              <a href="/src/pages/mainpage/exchangePage.html" aria-label="뒤로가기 버튼"
+                ><img class="w-5 h-5" src="/src/assets/direction=left.svg" alt="뒤로가기"
+              /></a>
+              <a href="/src/pages/mainpage/mainPage.html" aria-label="메인페이지 가기 버튼"
+                ><img class="w-5 h-5" src="/src/assets/home.svg" alt="홈으로가기"
+              /></a>
             </li>
             <li class="inline-flex gap-2">
-              <a href="#"><img class="w-5 h-5" src="/src/assets/share.svg" alt="공유하기" /></a>
-              <a href="#"><img class="w-5 h-5" src="/src/assets/more.svg" alt="더보기" /></a>
+              <a href="#" aria-label="공유하기 버튼"><img class="w-5 h-5" src="/src/assets/share.svg" alt="공유하기" /></a>
+              <a href="#" aria-label="더 보기 버튼"><img class="w-5 h-5" src="/src/assets/more.svg" alt="더보기" /></a>
             </li>
           </ul>
         </nav>
       </header>
       <!-- 본문 -->
-      <section>
-        <!-- 제품 사진 -->
-        <img class="w-full h-71 object-cover" src="/img/whatNono.webp" alt="대체 텍스트" />
-        <!-- 프로필 -->
-        <div class="flex px-3.5 py-2.5 justify-between items-center">
-          <div class="inline-flex gap-1.5">
-            <img class="w-10 h-10 rounded-full" src="/img/profile.png" alt="유저프로필" />
-            <div>
-              <p class="label-m">맥이뜸</p>
-              <p class="paragraph-s">응암동</p>
-            </div>
-          </div>
-          <div class="flex flex-col items-end">
-            <div class="flex gap-[5px] items-center">
-              <span class="label-m text-(--color-secondary)">41.2℃</span>
-              <span>😀</span>
-            </div>
-            <p class="paragraph-s">매너온도</p>
-          </div>
-        </div>
-        <!-- 제품 설명 -->
-        <div class="flex flex-col gap-3.5 p-3">
-          <div>
-            <p class="label-l">2020 MacBook Air M1</p>
-            <p class="paragraph-s text-(--color-content-secondary)">컴퓨터 • 17분전</p>
-          </div>
-          <div class="h-27">
-            <p class="paragraph-m">상태 깨끗하고 좋아요 왜냐하면 맥을 사용할 줄 몰라서 넷플릭스용으로만 봤어요. 집근처에서 거래 희망합니다.</p>
-          </div>
-          <div class="flex justify-between">
-            <div class="inline-flex items-center gap-3">
-              <img class="w-5 h-5" src="/src/assets/heart.svg" alt="하트 아이콘" />
-              <div class="w-[1px] h-full bg-(--color-content-primary)"></div>
+      <main>
+        <section>
+          <!-- 제품 사진 -->
+          <img class="w-full h-71 object-cover" src="/img/whatNono.webp" alt="대체 텍스트" />
+          <!-- 프로필 -->
+          <div class="flex px-3.5 py-2.5 justify-between items-center">
+            <div class="inline-flex gap-1.5">
+              <img class="w-10 h-10 rounded-full" src="/img/profile.png" alt="유저프로필" />
               <div>
-                <p class="label-m">820,000원</p>
-                <p class="label-s text-(--color-secondary)">가격 제안하기</p>
+                <p class="label-m">맥이뜸</p>
+                <p class="paragraph-s">응암동</p>
               </div>
             </div>
-            <a href="/src/pages/q&aPage/chatContent.html">
-              <button class="px-3.5 py-2 inline-flex rounded-lg justify-center items-center bg-(--color-secondary)">
-                <span class="label-m text-white">채팅하기</span>
-              </button>
-            </a>
+            <div class="flex flex-col items-end">
+              <div class="flex gap-[5px] items-center">
+                <span class="label-m text-(--color-secondary)">41.2℃</span>
+                <span>😀</span>
+              </div>
+              <p class="paragraph-s">매너온도</p>
+            </div>
           </div>
+          <!-- 제품 설명 -->
+          <div class="flex flex-col gap-3.5 p-3">
+            <div>
+              <h2 class="label-l">2020 MacBook Air M1</h2>
+              <p class="paragraph-s text-(--color-content-secondary)">컴퓨터 • 17분전</p>
+            </div>
+            <div class="h-27">
+              <p class="paragraph-m">상태 깨끗하고 좋아요 왜냐하면 맥을 사용할 줄 몰라서 넷플릭스용으로만 봤어요. 집근처에서 거래 희망합니다.</p>
+            </div>
+            <div class="flex justify-between">
+              <div class="inline-flex items-center gap-3">
+                <img class="w-5 h-5" src="/src/assets/heart.svg" alt="하트 아이콘" />
+                <div class="w-[1px] h-full bg-(--color-content-primary)"></div>
+                <div>
+                  <p class="label-m">820,000원</p>
+                  <p class="label-s text-(--color-secondary)">가격 제안하기</p>
+                </div>
+              </div>
+              <a href="/src/pages/q&aPage/chatContent.html">
+                <button aria-label="채팅하기 버튼" class="px-3.5 py-2 inline-flex rounded-lg justify-center items-center bg-(--color-secondary)">
+                  <span class="label-m text-white">채팅하기</span>
+                </button>
+              </a>
+            </div>
+          </div>
+        </section>
+        <!-- 다른 제품들  -->
+        <div class="px-3.5 py-3 border-t-1 border-(--color-content-primary)">
+          <p class="label-m">이 글과 함께 봤어요</p>
         </div>
-      </section>
-      <!-- 다른 제품들  -->
-      <div class="px-3.5 py-3 border-t-1 border-(--color-content-primary)">
-        <p class="label-m">이 글과 함께 봤어요</p>
-      </div>
-      <section class="grid grid-cols-2 gap-3 px-4">
-        <a class="inline-block" href="/">
-          <figure class="w-[138px] flex flex-col">
-            <img
-              class="w-full h-[104px] aspect-w-4 aspect-h-3 mb-3 overflow-hidden rounded-[8px] object-cover"
-              src="/img/whatNono.webp"
-              alt="어? 금지" />
-            <figcaption class="paragraph-s line-clamp-2">스타벅스 아메리카노</figcaption>
-            <p class="label-s">10,000</p>
-          </figure>
-        </a>
-        <a class="inline-block" href="/">
-          <figure class="w-[138px] flex flex-col">
-            <img
-              class="w-full h-[104px] aspect-w-4 aspect-h-3 mb-3 overflow-hidden rounded-[8px] object-cover"
-              src="/img/whatNono.webp"
-              alt="어? 금지" />
-            <figcaption class="paragraph-s line-clamp-2">로지텍 키보드</figcaption>
-            <p class="label-s">80,000</p>
-          </figure>
-        </a>
-        <a class="inline-block" href="/">
-          <figure class="w-[138px] flex flex-col">
-            <img
-              class="w-full h-[104px] aspect-w-4 aspect-h-3 mb-3 overflow-hidden rounded-[8px] object-cover"
-              src="/img/whatNono.webp"
-              alt="어? 금지" />
-            <figcaption class="paragraph-s line-clamp-2">자바스크립트 딥다이브</figcaption>
-            <p class="label-s">45,000</p>
-          </figure>
-        </a>
-        <a class="inline-block" href="/">
-          <figure class="w-[138px] flex flex-col">
-            <img
-              class="w-full h-[104px] aspect-w-4 aspect-h-3 mb-3 overflow-hidden rounded-[8px] object-cover"
-              src="/img/whatNono.webp"
-              alt="어? 금지" />
-            <figcaption class="paragraph-s line-clamp-2">아무거나 팝니다.</figcaption>
-            <p class="label-s">0원</p>
-          </figure>
-        </a>
-      </section>
+        <section class="grid grid-cols-2 gap-3 px-4">
+          <a class="inline-block" href="/">
+            <figure class="w-[138px] flex flex-col">
+              <img
+                class="w-full h-[104px] aspect-w-4 aspect-h-3 mb-3 overflow-hidden rounded-[8px] object-cover"
+                src="/img/whatNono.webp"
+                alt="어? 금지" />
+              <figcaption class="paragraph-s line-clamp-2">스타벅스 아메리카노</figcaption>
+              <p class="label-s">10,000</p>
+            </figure>
+          </a>
+          <a class="inline-block" href="/">
+            <figure class="w-[138px] flex flex-col">
+              <img
+                class="w-full h-[104px] aspect-w-4 aspect-h-3 mb-3 overflow-hidden rounded-[8px] object-cover"
+                src="/img/whatNono.webp"
+                alt="어? 금지" />
+              <figcaption class="paragraph-s line-clamp-2">로지텍 키보드</figcaption>
+              <p class="label-s">80,000</p>
+            </figure>
+          </a>
+          <a class="inline-block" href="/">
+            <figure class="w-[138px] flex flex-col">
+              <img
+                class="w-full h-[104px] aspect-w-4 aspect-h-3 mb-3 overflow-hidden rounded-[8px] object-cover"
+                src="/img/whatNono.webp"
+                alt="어? 금지" />
+              <figcaption class="paragraph-s line-clamp-2">자바스크립트 딥다이브</figcaption>
+              <p class="label-s">45,000</p>
+            </figure>
+          </a>
+          <a class="inline-block" href="/">
+            <figure class="w-[138px] flex flex-col">
+              <img
+                class="w-full h-[104px] aspect-w-4 aspect-h-3 mb-3 overflow-hidden rounded-[8px] object-cover"
+                src="/img/whatNono.webp"
+                alt="어? 금지" />
+              <figcaption class="paragraph-s line-clamp-2">아무거나 팝니다.</figcaption>
+              <p class="label-s">0원</p>
+            </figure>
+          </a>
+        </section>
+      </main>
       <!-- 네비 아이템 바 -->
       <div class="sticky bottom-0 px-[12px] pt-[8px] pb-[24px] bg-white flex justify-center items-center gap-10">
         <a href="/src/pages/mainpage/mainPage.html">
